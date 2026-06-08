@@ -1,0 +1,14 @@
+# Materiais grandes (manter só localmente)
+*.pptx
+*.pdf
+videos/
+
+# Áudios gerados localmente — MP3 devem ir para o GitHub Pages
+audios/.text-hashes.json
+.env
+.env.local
+
+# Sistema
+.DS_Store
+Thumbs.db
+.git/index.lock
