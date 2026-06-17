@@ -95,7 +95,7 @@
       }
 
       .slide-title {
-        font-size: 17px !important;
+        font-size: clamp(22px, 5vw, 40px) !important;
         margin-top: 4px;
         line-height: 1.3;
         display: block;
@@ -571,7 +571,7 @@
       }
 
       #s2b .slide-title {
-        font-size: 15px !important;
+        font-size: clamp(22px, 5vw, 40px) !important;
         margin-top: 4px !important;
         line-height: 1.15 !important;
         padding-right: 0 !important;
@@ -630,19 +630,19 @@
       }
 
       #s2b .atex-hero-head .ic-circle {
-        width: 34px !important;
-        height: 34px !important;
-        font-size: 17px !important;
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 20px !important;
       }
 
       #s2b .atex-hero-head h4 {
-        font-size: 13.5px !important;
+        font-size: clamp(16px, 4.2vw, 18px) !important;
         line-height: 1.25 !important;
       }
 
       #s2b .atex-intro-lead {
-        font-size: 12.5px !important;
-        line-height: 1.48 !important;
+        font-size: clamp(14px, 3.8vw, 16px) !important;
+        line-height: 1.52 !important;
       }
 
       #s2b .atex-intro-lead + .atex-intro-lead {
@@ -654,15 +654,56 @@
       }
 
       #s2b .atex-sources-container {
-        min-height: 130px;
+        min-height: clamp(175px, 26vh, 220px);
+        width: 100%;
+        flex-shrink: 0;
       }
 
       #s2b .atex-source-card {
-        min-height: 130px;
+        min-height: clamp(175px, 26vh, 220px);
+      }
+
+      #s2b .atex-source-card:not(.atex-source-active) {
+        display: none !important;
+      }
+
+      #s2b .atex-source-card.atex-source-active {
+        display: block !important;
       }
 
       #s2b .atex-source-flip {
-        min-height: 130px;
+        min-height: clamp(175px, 26vh, 220px);
+      }
+
+      #s2b .atex-sources-carousel {
+        width: 100%;
+        flex-shrink: 0;
+        gap: 10px;
+        margin-top: 4px;
+      }
+
+      #s2b .atex-sources-nav {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        width: 100%;
+        padding: 2px 0 4px;
+        flex-shrink: 0;
+      }
+
+      #s2b .atex-sources-counter {
+        font-size: 13px;
+        min-width: 52px;
+      }
+
+      #s2b .atex-sources-btn {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        min-height: 48px;
+        box-shadow: 0 4px 16px rgba(114, 9, 183, 0.45);
       }
 
       #s2b .atex-source-front .atex-source-icon {
@@ -671,24 +712,26 @@
       }
 
       #s2b .atex-source-touch-hint {
-        font-size: 9px !important;
+        font-size: clamp(10px, 2.6vw, 12px) !important;
         margin-top: 6px !important;
       }
 
-      #s2b .atex-source-back p {
-        font-size: 13px !important;
-        line-height: 1.5 !important;
+      #s2b .atex-source-back p,
+      #s2b .atex-source-back-def {
+        font-size: clamp(13px, 3.4vw, 15px) !important;
+        line-height: 1.42 !important;
+      }
+
+      #s2b .atex-ex-chip {
+        font-size: clamp(10px, 2.8vw, 12px) !important;
+      }
+
+      #s2b .atex-ex-group-label {
+        font-size: clamp(9px, 2.4vw, 10px) !important;
       }
 
       #s2b .atex-source-card h4 {
-        font-size: 16px !important;
-      }
-
-      #s2b .atex-sources-btn {
-        width: 44px;
-        height: 44px;
-        min-width: 44px;
-        min-height: 44px;
+        font-size: clamp(17px, 4.4vw, 19px) !important;
       }
 
       /* Slide s22b — Proibições (mobile portrait) */
@@ -1083,7 +1126,7 @@
     .slide-title {
       font-family: var(--font-h);
       font-weight: 900;
-      font-size: clamp(18px, 3vw, 30px);
+      font-size: clamp(22px, 5vw, 40px);
       color: var(--cream);
       line-height: 1.2;
       margin-top: 8px;
@@ -1144,7 +1187,7 @@
       }
 
       .slide-title {
-        font-size: 16px;
+        font-size: clamp(22px, 5vw, 40px);
         margin-top: 1px;
       }
 
@@ -1423,14 +1466,14 @@
     }
 
     .atex-hero-head .ic-circle {
-      width: 48px;
-      height: 48px;
-      font-size: 24px;
+      width: 54px;
+      height: 54px;
+      font-size: 28px;
     }
 
     .atex-hero-head h4 {
       margin: 0;
-      font-size: clamp(17px, 1.8vw, 22px);
+      font-size: clamp(19px, 2vw, 26px);
       color: var(--gold-lt);
       line-height: 1.2;
     }
@@ -1441,12 +1484,12 @@
     }
 
     #s2b .atex-intro-lead {
-      font-size: clamp(12.5px, 1.25vw, 15px);
-      line-height: 1.55;
+      font-size: clamp(16px, 1.65vw, 20px);
+      line-height: 1.62;
     }
 
     #s2b .atex-intro-lead + .atex-intro-lead {
-      margin-top: 8px !important;
+      margin-top: 10px !important;
     }
 
     .atex-symbol-figure {
@@ -1471,7 +1514,7 @@
 
     .atex-symbol-figure figcaption {
       font-family: var(--font-h);
-      font-size: 10px;
+      font-size: 12px;
       font-weight: 700;
       color: #ffc107;
       letter-spacing: 0.1em;
@@ -1563,7 +1606,7 @@
       gap: 5px;
       margin-top: 8px;
       font-family: var(--font-h);
-      font-size: clamp(10px, 1vw, 12px);
+      font-size: clamp(11px, 1.1vw, 14px);
       font-weight: 600;
       color: rgba(255, 255, 255, 0.55);
       letter-spacing: 0.03em;
@@ -1587,10 +1630,63 @@
       background: linear-gradient(135deg, rgba(114, 9, 183, 0.18), rgba(114, 9, 183, 0.06));
       box-shadow: 0 10px 28px rgba(114, 9, 183, 0.35);
       justify-content: center;
+      padding: 14px 12px 16px;
+      overflow: hidden;
     }
 
-    .atex-source-icon {
-      font-size: clamp(36px, 5vw, 48px);
+    .atex-source-back-def {
+      font-size: clamp(13px, 1.35vw, 16px);
+      line-height: 1.42;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 100%;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+
+    .atex-source-examples {
+      width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+
+    .atex-ex-group {
+      margin-top: 8px;
+    }
+
+    .atex-ex-group:first-child {
+      margin-top: 0;
+    }
+
+    .atex-ex-group-label {
+      display: block;
+      font-family: var(--font-h);
+      font-size: clamp(9px, 0.95vw, 11px);
+      font-weight: 700;
+      color: var(--gold-dk);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .atex-ex-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: center;
+    }
+
+    .atex-ex-chip {
+      display: inline-block;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: rgba(114, 9, 183, 0.2);
+      border: 1px solid rgba(114, 9, 183, 0.38);
+      font-size: clamp(10px, 1.05vw, 12px);
+      line-height: 1.32;
+      color: rgba(255, 255, 255, 0.92);
+      text-align: center;
+    }
+      font-size: clamp(40px, 5.5vw, 54px);
       line-height: 1;
       filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
     }
@@ -1598,20 +1694,20 @@
     .atex-source-card h4 {
       font-family: var(--font-h);
       font-weight: 800;
-      font-size: clamp(17px, 2vw, 22px);
+      font-size: clamp(19px, 2.2vw, 24px);
       color: var(--white);
       line-height: 1.2;
     }
 
     .atex-source-back p {
-      font-size: clamp(14px, 1.5vw, 17px);
+      font-size: clamp(16px, 1.7vw, 19px);
       line-height: 1.55;
       color: rgba(255, 255, 255, 0.88);
       max-width: 520px;
       margin: 0 auto;
     }
 
-    .atex-sources-nav {
+    .atex-source-icon {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -1677,7 +1773,7 @@
       }
 
       #s2b .slide-title {
-        font-size: clamp(20px, 2.2vw, 28px) !important;
+        font-size: clamp(22px, 5vw, 40px) !important;
         margin-top: 4px !important;
       }
 
@@ -1704,11 +1800,11 @@
 
       #s2b .atex-source-card {
         display: block !important;
-        min-height: 210px;
+        min-height: clamp(300px, 32vh, 360px);
       }
 
       #s2b .atex-source-flip {
-        min-height: 210px;
+        min-height: clamp(300px, 32vh, 360px);
       }
 
       #s2b .atex-source-card:hover .atex-source-front {
@@ -1717,7 +1813,7 @@
       }
 
       #s2b .atex-source-front h4 {
-        font-size: clamp(15px, 1.4vw, 18px);
+        font-size: clamp(17px, 1.6vw, 21px);
       }
     }
 
@@ -4203,13 +4299,24 @@
       background: #27ae60;
       color: #fff;
       opacity: 1;
-      right: 8px;
       top: 8px;
+      bottom: auto;
+      left: 8px;
+      right: auto;
+      transform: none;
+      font-size: 9px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
       z-index: 20;
     }
 
     #s2b .atex-source-card.req-done .atex-source-front {
       border-color: rgba(39, 174, 96, 0.65) !important;
+    }
+
+    #s2b .atex-source-card.req-done .atex-source-face {
+      padding-top: 34px;
     }
 
     .video-box.video-end-mask::before {
@@ -5026,7 +5133,7 @@
       }
 
       .slide-title {
-        font-size: clamp(15px, 2.5vw, 22px);
+        font-size: clamp(22px, 5vw, 40px);
         margin-top: 10px;
         padding-right: 0;
         display: block;
@@ -5161,7 +5268,7 @@
       }
 
       .slide-title {
-        font-size: 42px !important;
+        font-size: clamp(22px, 5vw, 40px) !important;
       }
 
       .slide-subtitle {
@@ -5221,7 +5328,7 @@
       }
 
       .video-slide .slide-title {
-        font-size: 42px !important;
+        font-size: clamp(22px, 5vw, 40px) !important;
       }
 
       .video-slide-title {
@@ -5793,12 +5900,1329 @@
       }
     }
 
+    /* ── Slide s3a / s3b / s3d — Classificação (Módulo 2) ── */
+    #s3a,
+    #s3b,
+    #s3d {
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #s3a .top-bar,
+    #s3b .top-bar,
+    #s3d .top-bar {
+      flex-shrink: 0;
+      position: relative;
+      z-index: 2;
+    }
+
+    #s3a .content-area,
+    #s3b .content-area,
+    #s3d .content-area {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding: 8px clamp(16px, 2.5vw, 28px) 100px;
+      justify-content: center;
+      justify-content: safe center;
+      align-items: center;
+    }
+
+    #s3a .content-area.s3-scroll-mode,
+    #s3b .content-area.s3-scroll-mode,
+    #s3d .content-area.s3-scroll-mode {
+      justify-content: flex-start !important;
+      padding-top: 10px !important;
+    }
+
+    #s3b .s3a-wrap,
+    #s3d .s3a-wrap {
+      max-width: 980px;
+    }
+
+    #s3a .s3a-wrap,
+    #s3b .s3a-wrap,
+    #s3d .s3a-wrap {
+      flex-shrink: 0;
+    }
+
+    .s3a-wrap {
+      width: 100%;
+      max-width: 1060px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .s3a-intro {
+      background: linear-gradient(135deg, rgba(114, 9, 183, 0.12), rgba(114, 9, 183, 0.04));
+      border: 1px solid rgba(114, 9, 183, 0.28);
+      border-radius: 18px;
+      padding: 28px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .s3a-intro::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 140px;
+      height: 140px;
+      background: radial-gradient(circle, rgba(114, 9, 183, 0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .s3a-intro-question {
+      font-family: var(--font-h);
+      font-size: clamp(20px, 2.6vw, 28px);
+      font-weight: 800;
+      color: var(--gold-lt);
+      line-height: 1.35;
+      margin: 0 0 16px;
+    }
+
+    .s3a-method-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(114, 9, 183, 0.2);
+      border: 1px solid rgba(114, 9, 183, 0.4);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-family: var(--font-h);
+      font-size: clamp(13px, 1.3vw, 15px);
+      font-weight: 700;
+      color: var(--cream);
+      margin-bottom: 16px;
+    }
+
+    .s3a-method-badge span {
+      font-size: 1.2em;
+    }
+
+    .s3a-intro-text {
+      font-size: clamp(17px, 1.9vw, 20px);
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.88);
+      margin: 0 0 12px;
+    }
+
+    .s3a-intro-text:last-child {
+      margin-bottom: 0;
+    }
+
+    .s3a-intro-text strong {
+      color: var(--cream);
+      font-weight: 700;
+    }
+
+    .s3a-groups-summary {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .s3a-group-card {
+      border-radius: 16px;
+      padding: 20px 18px 18px;
+      font-size: clamp(15px, 1.6vw, 17px);
+      line-height: 1.5;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s3a-group-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .s3a-group-icon {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: clamp(32px, 3.5vw, 40px);
+      border-radius: 50%;
+      margin-bottom: 12px;
+      line-height: 1;
+    }
+
+    .s3a-group-card strong {
+      display: block;
+      font-family: var(--font-h);
+      font-size: clamp(18px, 1.9vw, 22px);
+      margin-bottom: 4px;
+    }
+
+    .s3a-group-sub {
+      display: block;
+      font-family: var(--font-h);
+      font-size: clamp(12px, 1.2vw, 14px);
+      font-weight: 600;
+      opacity: 0.75;
+      margin-bottom: 10px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .s3a-group-desc {
+      margin: 0;
+      font-size: clamp(14px, 1.45vw, 16px);
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.45;
+    }
+
+    .s3a-summary-pill--i .s3a-group-icon {
+      background: rgba(255, 193, 7, 0.15);
+      border: 1px solid rgba(255, 193, 7, 0.35);
+      box-shadow: 0 4px 20px rgba(255, 193, 7, 0.15);
+    }
+
+    .s3a-summary-pill--ii .s3a-group-icon {
+      background: rgba(100, 181, 246, 0.12);
+      border: 1px solid rgba(100, 181, 246, 0.35);
+      box-shadow: 0 4px 20px rgba(100, 181, 246, 0.12);
+    }
+
+    .s3a-summary-pill--iii .s3a-group-icon {
+      background: rgba(186, 104, 200, 0.15);
+      border: 1px solid rgba(186, 104, 200, 0.35);
+      box-shadow: 0 4px 20px rgba(186, 104, 200, 0.15);
+    }
+
+    .s3a-summary-pill {
+      border-radius: 14px;
+      padding: 16px 18px;
+      font-size: clamp(15px, 1.6vw, 17px);
+      line-height: 1.5;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .s3a-summary-pill strong {
+      display: block;
+      font-family: var(--font-h);
+      font-size: clamp(17px, 1.8vw, 20px);
+      margin-bottom: 6px;
+    }
+
+    .s3a-summary-pill--i {
+      background: linear-gradient(160deg, rgba(255, 193, 7, 0.14), rgba(255, 152, 0, 0.06));
+      border-color: rgba(255, 193, 7, 0.35);
+    }
+
+    .s3a-summary-pill--i strong { color: #ffc107; }
+
+    .s3a-summary-pill--ii {
+      background: linear-gradient(160deg, rgba(100, 181, 246, 0.12), rgba(66, 165, 245, 0.05));
+      border-color: rgba(100, 181, 246, 0.3);
+    }
+
+    .s3a-summary-pill--ii strong { color: #64b5f6; }
+
+    .s3a-summary-pill--iii {
+      background: linear-gradient(160deg, rgba(186, 104, 200, 0.14), rgba(114, 9, 183, 0.08));
+      border-color: rgba(186, 104, 200, 0.35);
+    }
+
+    .s3a-summary-pill--iii strong { color: #ce93d8; }
+
+    .s3a-groups-label {
+      font-family: var(--font-h);
+      font-size: clamp(12px, 1.2vw, 14px);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dk);
+      margin: 0 0 10px 2px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .s3a-groups-carousel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .s3a-groups-nav {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .s3a-groups-counter {
+      font-family: var(--font-h);
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--gold-lt);
+      letter-spacing: 0.06em;
+      min-width: 48px;
+      text-align: center;
+    }
+
+    .s3a-groups-btn {
+      background: var(--red);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(114, 9, 183, 0.4);
+      transition: transform 0.2s, opacity 0.2s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .s3a-groups-btn:active:not(:disabled) {
+      transform: scale(0.94);
+    }
+
+    .s3a-groups-btn:disabled {
+      opacity: 0.3;
+      cursor: default;
+    }
+
+    .s3a-groups-btn svg {
+      pointer-events: none;
+    }
+
+    .s3b-sub-head-short {
+      display: none;
+    }
+
+    .s3a-table-label {
+      font-family: var(--font-h);
+      font-size: clamp(12px, 1.2vw, 14px);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dk);
+      margin: 0 0 10px 2px;
+    }
+
+    .s3a-class-grid {
+      display: grid;
+      grid-template-columns: minmax(170px, 34%) 1fr;
+      grid-auto-rows: auto;
+      gap: 2px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    .s3a-class-head {
+      background: linear-gradient(135deg, rgba(100, 181, 246, 0.35), rgba(66, 165, 245, 0.2));
+      padding: clamp(10px, 1.8vh, 16px) clamp(12px, 2vw, 18px);
+      font-family: var(--font-h);
+      font-size: clamp(11px, 1.1vw, 14px);
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cream);
+      line-height: 1.35;
+    }
+
+    .s3a-grp-cell {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(10px, 1.8vh, 18px) clamp(12px, 2vw, 20px);
+      font-family: var(--font-h);
+      line-height: 1.3;
+    }
+
+    .s3a-grp-cell.s3a-rowspan-3 {
+      grid-row: span 3;
+    }
+
+    .s3a-grp-num {
+      font-size: clamp(16px, 1.6vh + 0.4vw, 22px);
+      font-weight: 900;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .s3a-grp-name {
+      font-size: clamp(13px, 1.3vh + 0.4vw, 17px);
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    .s3a-grp-i {
+      background: linear-gradient(160deg, rgba(255, 193, 7, 0.22), rgba(255, 152, 0, 0.12));
+      color: #ffe082;
+    }
+
+    .s3a-grp-ii {
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--cream);
+    }
+
+    .s3a-grp-iii {
+      background: linear-gradient(160deg, rgba(186, 104, 200, 0.22), rgba(114, 9, 183, 0.15));
+      color: #e1bee7;
+    }
+
+    .s3a-sub-cell {
+      display: flex;
+      align-items: center;
+      gap: clamp(10px, 1.2vw, 14px);
+      padding: clamp(10px, 1.6vh, 16px) clamp(12px, 2vw, 20px);
+      background: rgba(255, 255, 255, 0.04);
+      font-size: clamp(14px, 1.4vh + 0.5vw, 19px);
+      color: rgba(255, 255, 255, 0.92);
+      border-left: 3px solid transparent;
+    }
+
+    .s3a-sub-i { border-left-color: rgba(255, 193, 7, 0.55); }
+    .s3a-sub-ii { border-left-color: rgba(100, 181, 246, 0.5); }
+    .s3a-sub-iii { border-left-color: rgba(186, 104, 200, 0.55); }
+
+    .s3a-code {
+      flex-shrink: 0;
+      min-width: clamp(42px, 4vw, 50px);
+      padding: clamp(3px, 0.6vh, 5px) clamp(8px, 1vw, 12px);
+      border-radius: 8px;
+      background: rgba(114, 9, 183, 0.35);
+      border: 1px solid rgba(114, 9, 183, 0.5);
+      font-family: var(--font-h);
+      font-size: clamp(12px, 1.2vh + 0.3vw, 15px);
+      font-weight: 800;
+      color: var(--gold-lt);
+      text-align: center;
+    }
+
+    @media (max-height: 820px) {
+      #s3a .s3a-wrap {
+        gap: 14px;
+      }
+
+      #s3a .s3a-intro {
+        padding: 20px 24px;
+      }
+
+      #s3a .s3a-group-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 28px;
+        margin-bottom: 8px;
+      }
+
+      #s3a .s3a-group-card {
+        padding: 14px 12px;
+      }
+
+      #s3b .s3a-table-label {
+        margin-bottom: 6px;
+      }
+    }
+
+    @media (max-height: 680px) {
+      #s3a .s3a-intro-question {
+        font-size: clamp(17px, 2.2vh, 22px);
+        margin-bottom: 10px;
+      }
+
+      #s3a .s3a-intro-text {
+        font-size: clamp(14px, 1.8vh, 17px);
+        margin-bottom: 8px;
+      }
+
+      #s3a .s3a-method-badge {
+        margin-bottom: 10px;
+        padding: 6px 12px;
+      }
+
+      #s3b .s3a-class-grid,
+      #s3d .s3d-zones-grid {
+        border-radius: 12px;
+      }
+    }
+
+    /* ── Slide s3d — Zonas ATEX (Gases, Vapores e Névoas) ── */
+    .s3d-zones-grid {
+      display: grid;
+      grid-template-columns: minmax(88px, 13%) 1fr minmax(108px, 15%);
+      grid-auto-rows: auto;
+      gap: 2px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    .s3d-zones-head {
+      background: linear-gradient(135deg, rgba(100, 181, 246, 0.35), rgba(66, 165, 245, 0.2));
+      padding: clamp(10px, 1.8vh, 14px) clamp(12px, 1.5vw, 16px);
+      font-family: var(--font-h);
+      font-size: clamp(11px, 1.1vw, 13px);
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cream);
+      line-height: 1.35;
+    }
+
+    .s3d-zone-type {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(12px, 1.8vh, 16px) clamp(10px, 1.2vw, 14px);
+      font-family: var(--font-h);
+      font-size: clamp(14px, 1.4vh + 0.4vw, 17px);
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-align: center;
+    }
+
+    .s3d-zone-desc {
+      padding: clamp(12px, 1.8vh, 16px) clamp(14px, 1.8vw, 18px);
+      font-size: clamp(14px, 1.4vh + 0.45vw, 17px);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.04);
+      border-left: 3px solid transparent;
+    }
+
+    .s3d-zone-desc strong {
+      color: var(--cream);
+      font-weight: 700;
+    }
+
+    .s3d-zone-freq {
+      display: flex;
+      align-items: center;
+      padding: clamp(12px, 1.8vh, 16px) clamp(12px, 1.4vw, 16px);
+      font-family: var(--font-h);
+      font-size: clamp(14px, 1.4vh + 0.4vw, 16px);
+      font-weight: 800;
+      color: var(--cream);
+      background: rgba(255, 255, 255, 0.04);
+      border-left: 3px solid transparent;
+    }
+
+    /* Zona 0 — tema ouro (como Grupo I) */
+    .s3d-zone-type.s3d-row-0 {
+      background: linear-gradient(160deg, rgba(255, 193, 7, 0.22), rgba(255, 152, 0, 0.12));
+      color: #ffe082;
+    }
+
+    .s3d-zone-desc.s3d-row-0,
+    .s3d-zone-freq.s3d-row-0 {
+      border-left-color: rgba(255, 193, 7, 0.55);
+    }
+
+    /* Zona 1 — tema cinza/azul (como Grupo II) */
+    .s3d-zone-type.s3d-row-1 {
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--cream);
+    }
+
+    .s3d-zone-desc.s3d-row-1,
+    .s3d-zone-freq.s3d-row-1 {
+      border-left-color: rgba(100, 181, 246, 0.5);
+    }
+
+    /* Zona 2 — tema roxo (como Grupo III) */
+    .s3d-zone-type.s3d-row-2 {
+      background: linear-gradient(160deg, rgba(186, 104, 200, 0.22), rgba(114, 9, 183, 0.15));
+      color: #e1bee7;
+    }
+
+    .s3d-zone-desc.s3d-row-2,
+    .s3d-zone-freq.s3d-row-2 {
+      border-left-color: rgba(186, 104, 200, 0.55);
+    }
+
+    .s3d-zone-freq.s3d-row-2 {
+      font-weight: 700;
+    }
+
+    .s3d-zones-subhead {
+      grid-column: 1 / -1;
+      padding: clamp(10px, 1.5vh, 14px) clamp(14px, 1.8vw, 18px);
+      font-family: var(--font-h);
+      font-size: clamp(11px, 1.1vw, 13px);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold-dk);
+      background: rgba(114, 9, 183, 0.15);
+      border-top: 2px solid rgba(114, 9, 183, 0.35);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .s3d-group-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      background: rgba(114, 9, 183, 0.35);
+      color: var(--cream);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .s3d-group-gas .s3d-group-tag {
+      background: rgba(100, 181, 246, 0.25);
+      border-color: rgba(100, 181, 246, 0.4);
+      color: #bbdefb;
+    }
+
+    .s3d-group-dust .s3d-group-tag {
+      background: rgba(186, 104, 200, 0.28);
+      border-color: rgba(186, 104, 200, 0.45);
+      color: #e1bee7;
+    }
+
+    .s3d-group-label {
+      color: inherit;
+    }
+
+    /* Zona 20 — mesmo tema da Zona 0 */
+    .s3d-zone-type.s3d-row-3 {
+      background: linear-gradient(160deg, rgba(255, 193, 7, 0.22), rgba(255, 152, 0, 0.12));
+      color: #ffe082;
+    }
+
+    .s3d-zone-desc.s3d-row-3,
+    .s3d-zone-freq.s3d-row-3 {
+      border-left-color: rgba(255, 193, 7, 0.55);
+    }
+
+    /* Zona 21 — mesmo tema da Zona 1 */
+    .s3d-zone-type.s3d-row-4 {
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--cream);
+    }
+
+    .s3d-zone-desc.s3d-row-4,
+    .s3d-zone-freq.s3d-row-4 {
+      border-left-color: rgba(100, 181, 246, 0.5);
+    }
+
+    /* Zona 22 — mesmo tema da Zona 2 */
+    .s3d-zone-type.s3d-row-5 {
+      background: linear-gradient(160deg, rgba(186, 104, 200, 0.22), rgba(114, 9, 183, 0.15));
+      color: #e1bee7;
+    }
+
+    .s3d-zone-desc.s3d-row-5,
+    .s3d-zone-freq.s3d-row-5 {
+      border-left-color: rgba(186, 104, 200, 0.55);
+    }
+
+    .s3d-zone-freq.s3d-row-5 {
+      font-weight: 700;
+    }
+
+    /* s3d — carrossel mobile (setas circulares) */
+    .s3d-zones-carousel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .s3d-zones-nav {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+      padding: 2px 0 4px;
+      flex-shrink: 0;
+    }
+
+    .s3d-zones-counter {
+      font-family: var(--font-h);
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--gold-lt);
+      letter-spacing: 0.06em;
+      min-width: 52px;
+      text-align: center;
+    }
+
+    .s3d-zones-btn {
+      background: var(--red);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+      min-height: 48px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(114, 9, 183, 0.4);
+      transition: transform 0.2s, opacity 0.2s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .s3d-zones-btn:active:not(:disabled) {
+      transform: scale(0.94);
+    }
+
+    .s3d-zones-btn:disabled {
+      opacity: 0.3;
+      cursor: default;
+    }
+
+    .s3d-zones-btn svg {
+      pointer-events: none;
+    }
+
+    /* s3d — escala dinâmica da tabela (legível + sem scroll no desktop) */
+    @media (min-width: 769px) {
+      #s3d .s3d-zones-grid {
+        --s3d-fit: 1;
+      }
+
+      #s3d .s3d-zones-head {
+        padding: calc(11px * var(--s3d-fit)) calc(14px * var(--s3d-fit));
+        font-size: calc(12px * var(--s3d-fit));
+        line-height: 1.3;
+      }
+
+      #s3d .s3d-zone-type {
+        padding: calc(11px * var(--s3d-fit)) calc(11px * var(--s3d-fit));
+        font-size: calc(15px * var(--s3d-fit));
+      }
+
+      #s3d .s3d-zone-desc {
+        padding: calc(11px * var(--s3d-fit)) calc(14px * var(--s3d-fit));
+        font-size: calc(14.5px * var(--s3d-fit));
+        line-height: 1.46;
+      }
+
+      #s3d .s3d-zone-freq {
+        padding: calc(11px * var(--s3d-fit)) calc(12px * var(--s3d-fit));
+        font-size: calc(14px * var(--s3d-fit));
+      }
+
+      #s3d .s3d-zones-subhead {
+        padding: calc(9px * var(--s3d-fit)) calc(14px * var(--s3d-fit));
+        font-size: calc(12px * var(--s3d-fit));
+      }
+
+      #s3d .s3a-table-label {
+        font-size: calc(13px * var(--s3d-fit));
+        margin-bottom: calc(8px * var(--s3d-fit));
+      }
+
+      #s3d .s3a-wrap {
+        gap: calc(12px * var(--s3d-fit));
+      }
+
+      #s3d .content-area:not(.s3-scroll-mode) {
+        overflow-y: hidden;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #s3d {
+        min-height: 0;
+        height: 100%;
+      }
+
+      #s3d .wave {
+        display: none;
+      }
+
+      #s3d .content-area {
+        flex: 1 1 0;
+        min-height: 0;
+        overflow: hidden !important;
+        padding: 68px 12px 64px !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      #s3d .content-area.s3-scroll-mode {
+        overflow: hidden !important;
+        justify-content: center !important;
+      }
+
+      #s3d .s3a-wrap {
+        gap: 10px;
+        min-height: 0;
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+
+      #s3d .s3a-table-label {
+        font-size: 10px;
+        margin-bottom: 2px;
+        text-align: center;
+        letter-spacing: 0.12em;
+      }
+
+      #s3d .s3d-zones-carousel {
+        gap: 14px;
+        width: 100%;
+      }
+
+      #s3d .s3d-zones-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-height: 0;
+        gap: 0;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        box-shadow: 0 10px 36px rgba(0, 0, 0, 0.35);
+        background: rgba(12, 12, 14, 0.6);
+      }
+
+      #s3d .s3d-zones-head,
+      #s3d .s3d-zone-type,
+      #s3d .s3d-zone-desc,
+      #s3d .s3d-zone-freq,
+      #s3d .s3d-zones-subhead {
+        display: none !important;
+      }
+
+      #s3d .s3d-zones-subhead.s3d-zone-active {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        order: -1;
+        text-align: center;
+        font-size: 10px !important;
+        letter-spacing: 0.1em;
+        padding: 10px 14px !important;
+        margin: 0;
+        border-top: none;
+        border-bottom: 1px solid rgba(114, 9, 183, 0.35);
+        background: rgba(114, 9, 183, 0.2);
+        color: rgba(255, 255, 255, 0.75);
+        border-radius: 16px 16px 0 0;
+      }
+
+      #s3d .s3d-zones-subhead.s3d-zone-active .s3d-group-tag {
+        font-size: 11px;
+        padding: 4px 12px;
+      }
+
+      #s3d .s3d-zones-subhead.s3d-zone-active .s3d-group-label {
+        font-size: 9px;
+        letter-spacing: 0.1em;
+        color: rgba(255, 255, 255, 0.65);
+      }
+
+      #s3d .s3d-zone-type.s3d-zone-active {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: clamp(18px, 5vw, 22px) !important;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        padding: 14px 16px !important;
+        border-radius: 16px 16px 0 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      #s3d .s3d-zones-grid:has(.s3d-zones-subhead.s3d-zone-active) .s3d-zone-type.s3d-zone-active {
+        border-radius: 0;
+      }
+
+      #s3d .s3d-zone-desc.s3d-zone-active {
+        display: block !important;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: clamp(14px, 3.7vw, 16px) !important;
+        line-height: 1.58 !important;
+        padding: 14px 16px 12px !important;
+        border-left: none !important;
+        background: rgba(255, 255, 255, 0.03);
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      #s3d .s3d-zone-freq.s3d-zone-active {
+        display: block !important;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: clamp(15px, 4vw, 17px) !important;
+        font-weight: 800;
+        padding: 12px 16px 16px !important;
+        border-left: none !important;
+        background: rgba(255, 255, 255, 0.02);
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: 0 0 16px 16px;
+      }
+
+      #s3d .s3d-zone-desc::before,
+      #s3d .s3d-zone-freq::before {
+        display: block;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.42);
+        margin-bottom: 8px;
+        width: auto;
+      }
+
+      #s3d .s3d-zone-desc::before {
+        content: 'Descrição';
+      }
+
+      #s3d .s3d-zone-freq::before {
+        content: 'Frequência';
+      }
+
+      #s3d .s3d-zone-freq.s3d-zone-active::after {
+        content: none;
+      }
+
+      #s3d .s3d-zones-nav {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        padding: 4px 0;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+      }
+
+      #s3d .s3d-zones-btn {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
+        box-shadow: 0 4px 14px rgba(114, 9, 183, 0.45);
+      }
+
+      #s3d .s3d-zones-counter {
+        font-size: 14px;
+        font-weight: 800;
+        color: var(--cream);
+        min-width: 56px;
+        letter-spacing: 0.04em;
+      }
+
+      .s3d-zones-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .s3d-zones-head:nth-child(2),
+      .s3d-zones-head:nth-child(3) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      #s3a {
+        min-height: 0;
+        height: 100%;
+      }
+
+      #s3a .wave {
+        display: none;
+      }
+
+      #s3a .content-area {
+        flex: 1 1 0;
+        min-height: 0;
+        overflow: hidden !important;
+        padding: 72px 10px 68px !important;
+        justify-content: flex-start !important;
+      }
+
+      #s3a .content-area.s3-scroll-mode {
+        overflow: hidden !important;
+        justify-content: flex-start !important;
+      }
+
+      #s3a .s3a-wrap {
+        gap: 8px;
+        min-height: 0;
+      }
+
+      #s3a .s3a-intro {
+        padding: 10px 12px;
+      }
+
+      #s3a .s3a-intro::before {
+        display: none;
+      }
+
+      #s3a .s3a-intro-question {
+        font-size: clamp(14px, 3.8vw, 17px) !important;
+        margin-bottom: 6px;
+        line-height: 1.25;
+      }
+
+      #s3a .s3a-method-badge {
+        padding: 4px 10px;
+        font-size: 10px;
+        margin-bottom: 6px;
+        line-height: 1.3;
+      }
+
+      #s3a .s3a-intro-text {
+        font-size: clamp(12px, 3.1vw, 14px) !important;
+        line-height: 1.42;
+        margin-bottom: 5px;
+      }
+
+      #s3a .s3a-groups-label {
+        font-size: 10px;
+        margin-bottom: 5px;
+      }
+
+      #s3a .s3a-groups-carousel {
+        gap: 8px;
+      }
+
+      #s3a .s3a-groups-summary {
+        display: block;
+        width: 100%;
+        min-height: clamp(128px, 20vh, 158px);
+        position: relative;
+      }
+
+      #s3a .s3a-group-card {
+        display: none !important;
+        padding: 10px 12px;
+        min-height: clamp(128px, 20vh, 158px);
+        justify-content: center;
+      }
+
+      #s3a .s3a-group-card.s3a-group-active {
+        display: flex !important;
+      }
+
+      #s3a .s3a-group-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+
+      #s3a .s3a-group-card strong {
+        font-size: clamp(14px, 3.6vw, 16px) !important;
+        margin-bottom: 2px;
+      }
+
+      #s3a .s3a-group-sub {
+        font-size: 10px;
+        margin-bottom: 4px;
+      }
+
+      #s3a .s3a-group-desc {
+        font-size: clamp(11px, 2.9vw, 13px) !important;
+        line-height: 1.35;
+      }
+
+      #s3a .s3a-groups-nav {
+        display: flex !important;
+      }
+
+      #s3a .s3a-groups-btn {
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
+      }
+
+      #s3a .s3a-groups-counter {
+        font-size: 13px;
+      }
+
+      #s3b {
+        min-height: 0;
+        height: 100%;
+      }
+
+      #s3b .wave {
+        display: none;
+      }
+
+      #s3b .content-area {
+        flex: 1 1 0;
+        min-height: 0;
+        overflow: hidden !important;
+        padding: 64px 10px 62px !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      #s3b .content-area.s3-scroll-mode {
+        overflow: hidden !important;
+        justify-content: center !important;
+      }
+
+      #s3b .s3a-wrap {
+        gap: 4px;
+        min-height: 0;
+        width: 100%;
+      }
+
+      #s3b .s3b-table-block {
+        width: 100%;
+      }
+
+      #s3b .s3a-table-label {
+        font-size: calc(10px * var(--s3b-fit, 1));
+        margin-bottom: calc(3px * var(--s3b-fit, 1));
+        line-height: 1.2;
+      }
+
+      #s3b .s3a-class-grid {
+        --s3b-fit: 1;
+        grid-template-columns: minmax(74px, 26%) 1fr !important;
+        gap: 1px;
+        border-radius: 12px;
+        width: 100%;
+      }
+
+      #s3b .s3a-class-head {
+        padding: calc(7px * var(--s3b-fit)) calc(6px * var(--s3b-fit));
+        font-size: calc(11px * var(--s3b-fit));
+        line-height: 1.22;
+      }
+
+      #s3b .s3a-class-head:last-of-type {
+        display: block !important;
+      }
+
+      #s3b .s3b-sub-head-long {
+        display: none;
+      }
+
+      #s3b .s3b-sub-head-short {
+        display: inline;
+      }
+
+      #s3b .s3a-grp-cell.s3a-rowspan-3 {
+        grid-row: span 3 !important;
+      }
+
+      #s3b .s3a-grp-cell {
+        padding: calc(8px * var(--s3b-fit)) calc(6px * var(--s3b-fit));
+      }
+
+      #s3b .s3a-grp-num {
+        font-size: calc(15px * var(--s3b-fit));
+        margin-bottom: 2px;
+        line-height: 1.12;
+      }
+
+      #s3b .s3a-grp-name {
+        font-size: calc(12px * var(--s3b-fit));
+        line-height: 1.18;
+      }
+
+      #s3b .s3a-sub-cell {
+        padding: calc(7px * var(--s3b-fit)) calc(8px * var(--s3b-fit));
+        font-size: calc(13px * var(--s3b-fit));
+        gap: calc(7px * var(--s3b-fit));
+        border-left-width: 3px;
+        line-height: 1.28;
+      }
+
+      #s3b .s3a-sub-cell::before {
+        display: none !important;
+      }
+
+      #s3b .s3a-code {
+        min-width: calc(34px * var(--s3b-fit));
+        font-size: calc(11px * var(--s3b-fit));
+        padding: calc(3px * var(--s3b-fit)) calc(6px * var(--s3b-fit));
+      }
+
+      #s3b .slide-title {
+        font-size: clamp(17px, 4.2vw, 20px) !important;
+        line-height: 1.12 !important;
+        margin-top: 2px !important;
+      }
+
+      #s3d .content-area {
+        padding: 72px 12px 80px !important;
+        justify-content: center !important;
+      }
+
+      #s3a .top-bar,
+      #s3b .top-bar,
+      #s3d .top-bar {
+        padding: 14px 175px 6px 14px !important;
+      }
+
+      #s3b .top-bar {
+        padding: 12px 175px 2px 14px !important;
+      }
+
+      #s3b .section-tag {
+        font-size: 8px !important;
+        padding: 3px 8px !important;
+      }
+
+      .s3a-wrap {
+        gap: 12px;
+      }
+
+      .s3a-intro {
+        padding: 16px 18px;
+      }
+
+      .s3a-group-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 28px;
+        margin-bottom: 8px;
+      }
+
+      .s3a-group-card {
+        padding: 16px 14px;
+      }
+
+      .s3a-intro-question {
+        font-size: clamp(18px, 4.5vw, 22px) !important;
+      }
+
+      .s3a-intro-text {
+        font-size: clamp(15px, 3.8vw, 17px) !important;
+      }
+
+      .s3a-groups-summary {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .s3a-summary-pill {
+        font-size: clamp(14px, 3.6vw, 16px) !important;
+        padding: 12px 14px;
+      }
+
+      .s3a-summary-pill strong {
+        font-size: clamp(16px, 4vw, 18px) !important;
+      }
+
+      .s3a-class-grid {
+        grid-template-columns: 1fr;
+        border-radius: 14px;
+      }
+
+      .s3a-class-head:first-child {
+        border-radius: 14px 14px 0 0;
+      }
+
+      .s3a-class-head:last-of-type {
+        display: none;
+      }
+
+      .s3a-grp-cell.s3a-rowspan-3 {
+        grid-row: span 1;
+      }
+
+      .s3a-grp-cell {
+        padding: 12px 14px;
+      }
+
+      .s3a-sub-cell {
+        padding: 11px 14px;
+        border-left-width: 4px;
+      }
+
+      .s3a-sub-cell::before {
+        content: 'Subdivisão';
+        display: block;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.45);
+        margin-bottom: 4px;
+        width: 100%;
+      }
+
+      .s3a-sub-cell {
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (min-width: 769px) {
+      #s3a .s3a-groups-nav {
+        display: none;
+      }
+
+      #s3a .s3a-group-card.s3a-group-active {
+        display: flex;
+      }
+    }
+
     /* ── Desafio ATEX — Módulo 1 (s2e) ── */
     #s2e .content-area {
       padding-top: 12px !important;
-      justify-content: flex-start !important;
+      padding-bottom: 110px !important;
+      justify-content: center;
+      justify-content: safe center;
+      align-items: center;
       min-height: 0;
+      flex: 1 1 auto;
       overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    #s2e .content-area.mod1-state-play {
+      padding-top: 16px !important;
+      padding-bottom: 120px !important;
+    }
+
+    #s2e .content-area.mod1-state-result {
+      padding-bottom: 110px !important;
+    }
+
+    #s2e .content-area.mod1-scroll-mode {
+      justify-content: flex-start !important;
     }
 
     #s2e .top-bar {
@@ -5806,9 +7230,21 @@
     }
 
     #s2e .mod1-game-wrap {
+      flex-shrink: 0;
       width: 100%;
       max-width: 640px;
       margin: 0 auto;
+    }
+
+    @media screen and (max-width: 768px) {
+      #s2e .content-area {
+        padding-top: 8px !important;
+        padding-bottom: 96px !important;
+      }
+
+      #s2e .content-area.mod1-state-play {
+        padding-bottom: 110px !important;
+      }
     }
 
     #s2e .mod1-game-card {
@@ -5946,9 +7382,13 @@
 
     @media (min-width: 768px) {
       #s2e .content-area {
-        padding: 20px 48px 100px !important;
-        justify-content: flex-start !important;
+        padding: 20px 48px 130px !important;
         align-items: center;
+      }
+
+      #s2e .content-area.mod1-state-play {
+        padding-top: 16px !important;
+        padding-bottom: 140px !important;
       }
 
       #s2e .mod1-game-wrap {
@@ -5994,7 +7434,7 @@
       }
 
       #s2e #mod1-game-play .game-header {
-        margin-bottom: 28px !important;
+        margin-bottom: 20px !important;
       }
 
       #s2e .mod1-game-label {
@@ -6017,29 +7457,29 @@
       }
 
       #s2e .mod1-game-card {
-        min-height: 220px;
-        padding: 52px 56px;
+        min-height: 170px;
+        padding: 36px 44px;
         border-radius: 28px;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
       }
 
       #s2e .mod1-game-text {
-        font-size: 30px;
+        font-size: 26px;
         line-height: 1.45;
         max-width: 880px;
         margin: 0 auto;
       }
 
       #s2e .mod1-game-zones {
-        gap: 20px;
+        gap: 16px;
         grid-template-columns: repeat(4, 1fr);
       }
 
       #s2e .mod1-game-btn {
-        padding: 28px 14px;
-        font-size: 14px;
+        padding: 20px 10px;
+        font-size: 13px;
         border-radius: 20px;
-        min-height: 120px;
+        min-height: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -6543,7 +7983,14 @@
                       <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
                     </div>
                     <div class="atex-source-face atex-source-back">
-                      <p>Substâncias inflamáveis em estado gasoso ou vaporizado misturadas ao ar.</p>
+                      <p class="atex-source-back-def">Substâncias inflamáveis em estado gasoso ou vaporizado misturadas ao ar.</p>
+                      <div class="atex-source-examples">
+                        <span class="atex-ex-group-label">Exemplos</span>
+                        <div class="atex-ex-chips">
+                          <span class="atex-ex-chip">Vapor de gasolina</span>
+                          <span class="atex-ex-chip">Vapor de etanol</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -6555,7 +8002,15 @@
                       <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
                     </div>
                     <div class="atex-source-face atex-source-back">
-                      <p>Gotículas finas suspensas no ar capazes de formar atmosfera explosiva.</p>
+                      <p class="atex-source-back-def">Gotículas finas suspensas no ar capazes de formar atmosfera explosiva.</p>
+                      <div class="atex-source-examples">
+                        <span class="atex-ex-group-label">Exemplos</span>
+                        <div class="atex-ex-chips">
+                          <span class="atex-ex-chip">Névoa de diesel</span>
+                          <span class="atex-ex-chip">Névoa de querosene</span>
+                          <span class="atex-ex-chip">Névoa de solventes inflamáveis pulverizados</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -6567,7 +8022,23 @@
                       <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
                     </div>
                     <div class="atex-source-face atex-source-back">
-                      <p>Partículas sólidas combustíveis que, em concentração, podem explodir.</p>
+                      <p class="atex-source-back-def">Partículas sólidas combustíveis que, em concentração, podem explodir.</p>
+                      <div class="atex-source-examples">
+                        <div class="atex-ex-group">
+                          <span class="atex-ex-group-label">Poeiras</span>
+                          <div class="atex-ex-chips">
+                            <span class="atex-ex-chip">Poeira de farinha de trigo</span>
+                            <span class="atex-ex-chip">Poeira de açúcar</span>
+                          </div>
+                        </div>
+                        <div class="atex-ex-group">
+                          <span class="atex-ex-group-label">Fibras</span>
+                          <div class="atex-ex-chips">
+                            <span class="atex-ex-chip">Fibras de madeira</span>
+                            <span class="atex-ex-chip">Fibras de papel/celulose</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -6649,9 +8120,9 @@
       <section class="slide" id="s2e">
         <div class="top-bar">
           <span class="section-tag">🎮 DESAFIO</span>
-          <div class="slide-title" style="font-size: clamp(22px, 5vw, 40px);">Tetraedro do <span>Fogo</span></div>
+          <div class="slide-title" style="margin-top:6px">Tetraedro do <span>Fogo</span></div>
         </div>
-        <div class="content-area" style="justify-content: flex-start;">
+        <div class="content-area mod1-state-intro">
 
           <div id="mod1-game-intro" class="mod1-game-wrap" style="text-align:center; animation: fadeIn 0.8s ease;">
             <div class="ic-circle" style="margin: 0 auto 24px; width: 96px; height: 96px; font-size: 48px;">🔺</div>
@@ -6711,6 +8182,340 @@
           </svg></div>
       </section>
 
+      <!-- ── MÓDULO 2 INTRO ── -->
+      <section class="slide mod-intro-slide" id="s-mod2">
+        <div class="content-area mod-intro-area">
+          <div class="mod-intro-inner">
+            <div class="mod-intro-badge">Início do Módulo</div>
+            <div class="mod-intro-title">MÓDULO 2</div>
+            <div class="mod-intro-sub">Classificação e Mapeamento de Áreas</div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,65 C360,20 720,90 1080,40 C1260,15 1390,70 1440,60 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3a: Classificação Elétrica de Área (Módulo 2) ── -->
+      <section class="slide" id="s3a">
+        <div class="top-bar">
+          <span class="section-tag">📚 Classificação</span>
+          <div class="slide-title" style="margin-top:6px">Método de <span>Classificação Elétrica</span></div>
+        </div>
+        <div class="content-area s3a-content">
+          <div class="s3a-wrap">
+
+            <div class="s3a-intro">
+              <p class="s3a-intro-question">Como sabemos exatamente onde o perigo está?</p>
+              <div class="s3a-method-badge"><span aria-hidden="true">⚡</span> Método de Classificação Elétrica de Área</div>
+              <p class="s3a-intro-text">Para isso, utilizamos um <strong>processo racional</strong> que delimita os volumes de controle e nos ajuda a mitigar qualquer fonte de ignição elétrica.</p>
+              <p class="s3a-intro-text">Nesse processo, as substâncias são divididas em <strong>grupos principais</strong>:</p>
+            </div>
+
+            <div class="s3a-groups-block">
+              <p class="s3a-groups-label"><span aria-hidden="true">📋</span> Grupos de classificação ATEX</p>
+              <div class="s3a-groups-carousel" id="s3a-groups-carousel">
+                <div class="s3a-groups-summary" id="s3a-groups-container">
+                <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--i s3a-group-active">
+                  <div class="s3a-group-icon" aria-hidden="true">⛏️</div>
+                  <strong>Grupo I</strong>
+                  <span class="s3a-group-sub">Minas</span>
+                  <p class="s3a-group-desc">Minas subterrâneas com risco de grisu</p>
+                </div>
+                <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--ii">
+                  <div class="s3a-group-icon" aria-hidden="true">🔥</div>
+                  <strong>Grupo II</strong>
+                  <span class="s3a-group-sub">Gases Inflamáveis</span>
+                  <p class="s3a-group-desc">Gases e vapores inflamáveis — maioria das indústrias</p>
+                </div>
+                <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--iii">
+                  <div class="s3a-group-icon" aria-hidden="true">🌫️</div>
+                  <strong>Grupo III</strong>
+                  <span class="s3a-group-sub">Poeiras Combustíveis</span>
+                  <p class="s3a-group-desc">Poeiras e fibras combustíveis</p>
+                </div>
+                </div>
+                <div class="s3a-groups-nav">
+                  <button type="button" class="s3a-groups-btn" id="btn-s3a-groups-prev" aria-label="Grupo anterior">
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                      <polygon points="15,3 3,10 15,17" />
+                    </svg>
+                  </button>
+                  <div class="s3a-groups-counter" id="s3a-groups-counter">1 / 3</div>
+                  <button type="button" class="s3a-groups-btn" id="btn-s3a-groups-next" aria-label="Próximo grupo">
+                    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                      <polygon points="5,3 17,10 5,17" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,60 C360,20 720,90 1080,35 C1260,10 1380,70 1440,55 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3b: Tabela de Grupos (Módulo 2) ── -->
+      <section class="slide" id="s3b">
+        <div class="top-bar">
+          <span class="section-tag">📚 Classificação</span>
+          <div class="slide-title" style="margin-top:6px">Grupos e <span>Subdivisões</span></div>
+        </div>
+        <div class="content-area s3b-content">
+          <div class="s3a-wrap">
+
+            <div class="s3b-table-block">
+              <p class="s3a-table-label">Classificação de grupos — gás ou poeira</p>
+
+              <div class="s3a-class-grid" id="s3b-class-grid" role="table" aria-label="Classificação de grupos de áreas classificadas">
+                <div class="s3a-class-head" role="columnheader">Grupo</div>
+                <div class="s3a-class-head" role="columnheader">
+                  <span class="s3b-sub-head-long">Subdivisão da área classificada com gás ou poeira</span>
+                  <span class="s3b-sub-head-short">Subdivisão (gás ou poeira)</span>
+                </div>
+
+                <div class="s3a-grp-cell s3a-grp-i" role="cell">
+                  <span class="s3a-grp-num">Grupo I</span>
+                  <span class="s3a-grp-name">Minas</span>
+                </div>
+                <div class="s3a-sub-cell s3a-sub-i" role="cell">
+                  <span class="s3a-code">I</span>
+                  <span>Metano <em>(Grisu)</em></span>
+                </div>
+
+                <div class="s3a-grp-cell s3a-grp-ii s3a-rowspan-3" role="cell">
+                  <span class="s3a-grp-num">Grupo II</span>
+                  <span class="s3a-grp-name">Gases Inflamáveis</span>
+                </div>
+                <div class="s3a-sub-cell s3a-sub-ii" role="cell">
+                  <span class="s3a-code">IIA</span>
+                  <span>Propano</span>
+                </div>
+                <div class="s3a-sub-cell s3a-sub-ii" role="cell">
+                  <span class="s3a-code">IIB</span>
+                  <span>Etileno</span>
+                </div>
+                <div class="s3a-sub-cell s3a-sub-ii" role="cell">
+                  <span class="s3a-code">IIC</span>
+                  <span>Acetileno</span>
+                </div>
+
+                <div class="s3a-grp-cell s3a-grp-iii s3a-rowspan-3" role="cell">
+                  <span class="s3a-grp-num">Grupo III</span>
+                  <span class="s3a-grp-name">Poeiras Combustíveis</span>
+                </div>
+                <div class="s3a-sub-cell s3a-sub-iii" role="cell">
+                  <span class="s3a-code">IIIA</span>
+                  <span>Fibras combustíveis</span>
+                </div>
+                <div class="s3a-sub-cell s3a-sub-iii" role="cell">
+                  <span class="s3a-code">IIIB</span>
+                  <span>Poeiras não condutivas</span>
+                </div>
+                <div class="s3a-sub-cell s3a-sub-iii" role="cell">
+                  <span class="s3a-code">IIIC</span>
+                  <span>Poeiras condutivas</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,60 C360,20 720,90 1080,35 C1260,10 1380,70 1440,55 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3c: VÍDEO — Zonas para Gases e Vapores (Módulo 2) ── -->
+      <section class="slide video-slide" id="s3c">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Zonas para <span>Gases e Vapores</span></div>
+            <div class="slide-subtitle">Classificação e Mapeamento de Áreas</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1201542896?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Zonas para Gases e Vapores — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3e: VÍDEO — Zonas de Poeiras e Fibras (Módulo 2) ── -->
+      <section class="slide video-slide" id="s3e">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Zonas de <span>Poeiras e Fibras</span></div>
+            <div class="slide-subtitle">Classificação e Mapeamento de Áreas</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1202100016?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Zonas de Poeiras e Fibras — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3d: Zonas ATEX — Gases, Vapores e Névoas (Módulo 2) ── -->
+      <section class="slide" id="s3d">
+        <div class="top-bar">
+          <span class="section-tag">📚 Classificação</span>
+          <div class="slide-title" style="margin-top:6px">Zonas <span>ATEX</span></div>
+        </div>
+        <div class="content-area s3d-content">
+          <div class="s3a-wrap">
+            <p class="s3a-table-label">Classificação de zonas ATEX</p>
+            <div class="s3d-zones-carousel" id="s3d-zones-carousel">
+            <div class="s3d-zones-grid" role="table" aria-label="Zonas ATEX — gases, vapores, névoas, poeiras e fibras">
+              <div class="s3d-zones-head" role="columnheader">Tipo</div>
+              <div class="s3d-zones-head" role="columnheader">Descrição</div>
+              <div class="s3d-zones-head" role="columnheader">Frequência</div>
+
+              <div class="s3d-zones-subhead s3d-group-gas" role="row">
+                <span class="s3d-group-tag">Grupo II</span>
+                <span class="s3d-group-label">Gases, vapores e névoas</span>
+              </div>
+
+              <div class="s3d-zone-type s3d-row-0" role="cell">ZONA 0</div>
+              <div class="s3d-zone-desc s3d-row-0" role="cell">
+                Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa está <strong>presente de forma contínua</strong>, por longos períodos.
+              </div>
+              <div class="s3d-zone-freq s3d-row-0" role="cell">Frequente</div>
+
+              <div class="s3d-zone-type s3d-row-1" role="cell">ZONA 1</div>
+              <div class="s3d-zone-desc s3d-row-1" role="cell">
+                Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa <strong>pode ocorrer em condições normais</strong> de funcionamento.
+              </div>
+              <div class="s3d-zone-freq s3d-row-1" role="cell">Ocasional</div>
+
+              <div class="s3d-zone-type s3d-row-2" role="cell">ZONA 2</div>
+              <div class="s3d-zone-desc s3d-row-2" role="cell">
+                Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa <strong>não é provável</strong> de ocorrer em <strong>condições normais</strong> de funcionamento.
+              </div>
+              <div class="s3d-zone-freq s3d-row-2" role="cell">Esporádico</div>
+
+              <div class="s3d-zones-subhead s3d-group-dust" role="row">
+                <span class="s3d-group-tag">Grupo III</span>
+                <span class="s3d-group-label">Poeiras e fibras combustíveis</span>
+              </div>
+
+              <div class="s3d-zone-type s3d-row-3" role="cell">ZONA 20</div>
+              <div class="s3d-zone-desc s3d-row-3" role="cell">
+                Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível está <strong>presente de forma contínua</strong>, por longos períodos.
+              </div>
+              <div class="s3d-zone-freq s3d-row-3" role="cell">Frequente</div>
+
+              <div class="s3d-zone-type s3d-row-4" role="cell">ZONA 21</div>
+              <div class="s3d-zone-desc s3d-row-4" role="cell">
+                Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível <strong>pode ocorrer em condições normais</strong> de funcionamento.
+              </div>
+              <div class="s3d-zone-freq s3d-row-4" role="cell">Ocasional</div>
+
+              <div class="s3d-zone-type s3d-row-5" role="cell">ZONA 22</div>
+              <div class="s3d-zone-desc s3d-row-5" role="cell">
+                Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível <strong>não é provável</strong> de ocorrer em <strong>condições normais</strong> de funcionamento.
+              </div>
+              <div class="s3d-zone-freq s3d-row-5" role="cell">Esporádico</div>
+            </div>
+            <div class="s3d-zones-nav">
+              <button type="button" class="s3d-zones-btn" id="btn-s3d-zones-prev" aria-label="Zona anterior">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                  <polygon points="15,3 3,10 15,17" />
+                </svg>
+              </button>
+              <div class="s3d-zones-counter" id="s3d-zones-counter">1 / 6</div>
+              <button type="button" class="s3d-zones-btn" id="btn-s3d-zones-next" aria-label="Próxima zona">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                  <polygon points="5,3 17,10 5,17" />
+                </svg>
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,60 C360,20 720,90 1080,35 C1260,10 1380,70 1440,55 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3f: QUIZ — Módulo 2 (Classificação e Zonas ATEX) ── -->
+      <section class="slide" id="s3f">
+        <div class="top-bar">
+          <span class="section-tag">📝 Quiz</span>
+          <div class="slide-title" style="margin-top:6px">Quiz — <span>Módulo 2</span></div>
+        </div>
+        <div class="content-area">
+          <div id="mod2-quiz-intro" class="quiz-wrap" style="text-align:center; animation: fadeIn 0.8s ease;">
+            <div class="ic-circle" style="margin: 0 auto 24px; width: 96px; height: 96px; font-size: 48px;">📋</div>
+            <h3 style="font-family:var(--font-h); font-size:clamp(22px, 5vw, 28px); color:var(--white); margin-bottom:12px;">
+              Quiz ATEX — Módulo 2</h3>
+            <p style="color:rgba(255,255,255,0.72); font-size:15px; line-height:1.65; margin-bottom:28px; max-width:420px; margin-left:auto; margin-right:auto;">
+              Revise o que viu nos vídeos: <strong>grupos de classificação</strong>, <strong>zonas para gases</strong> e <strong>zonas para poeiras</strong>. São apenas <strong>5 perguntas</strong> objetivas.
+            </p>
+            <button class="btn-start" style="padding: 16px 40px; font-size: 15px; text-transform: uppercase;"
+              onclick="startMod2Quiz()">INICIAR QUIZ</button>
+          </div>
+
+          <div id="mod2-quiz-play" class="quiz-wrap" style="display:none;">
+            <div id="qm2-question-panel">
+              <div class="q-meta">
+                <span id="qm2-counter" class="q-lbl">Pergunta 1 de 5</span>
+                <div class="q-dots" id="qm2-dots">
+                  <div id="qm2dot0" class="qdot2 cur"></div>
+                  <div id="qm2dot1" class="qdot2"></div>
+                  <div id="qm2dot2" class="qdot2"></div>
+                  <div id="qm2dot3" class="qdot2"></div>
+                  <div id="qm2dot4" class="qdot2"></div>
+                </div>
+              </div>
+              <p id="qm2-text" class="q-text">...</p>
+              <div id="qm2-options" class="q-options"></div>
+              <div id="qm2-feedback" class="q-feedback"></div>
+              <button type="button" id="btn-next-qm2" class="btn-next-q" onclick="nextQuestionMod2()">PRÓXIMA PERGUNTA</button>
+            </div>
+
+            <div id="qm2-result-panel" style="display:none; text-align:center;">
+              <div id="qm2-pct" class="result-pct green">100%</div>
+              <div class="r-stars" id="qm2-stars">⭐⭐⭐</div>
+              <div id="qm2-status" class="r-status ap">✅ Módulo Concluído!</div>
+              <p id="qm2-sub" style="color:rgba(255,255,255,0.85); font-size:15px; line-height:1.55; margin:16px 0 24px;"></p>
+              <button type="button" class="btn-retry" onclick="resetQuizMod2()">TENTAR NOVAMENTE</button>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,60 C360,20 720,90 1080,35 C1260,10 1380,70 1440,55 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
     </div><!-- /slides -->
 
     <!-- NAV -->
@@ -6738,6 +8543,7 @@
   <audio id="game-sfx-wrong" src="sfx/game-wrong.mp3" preload="auto"></audio>
 
   <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="audios/audio-manifest.js"></script>
   <script>
     /* ══════════════════════════════════════════
        BACKGROUND MUSIC
@@ -6788,24 +8594,36 @@
     }
 
     /* ══════════════════════════════════════════
-       ACESSIBILIDADE — Narração pré-gerada
+       ACESSIBILIDADE — Narração ElevenLabs (MP3)
        ══════════════════════════════════════════ */
     let narrationActive = false;
+    let narrationPlaybackId = 0;
     const audioManifestById = new Map();
     let audioManifestLoaded = false;
 
+    function ingestAudioManifest(data) {
+      if (!data || !Array.isArray(data.slides)) return;
+      data.slides.forEach((entry) => audioManifestById.set(entry.id, entry));
+    }
+
     async function loadAudioManifest() {
       if (audioManifestLoaded) return;
-      try {
-        const res = await fetch('audios/manifest.json', { cache: 'no-cache' });
-        if (!res.ok) throw new Error('manifest unavailable');
-        const data = await res.json();
-        (data.slides || []).forEach(entry => audioManifestById.set(entry.id, entry));
-      } catch (err) {
-        console.log('Audio manifest load error:', err);
-      } finally {
-        audioManifestLoaded = true;
+
+      if (window.__AUDIO_NARRATION__) {
+        ingestAudioManifest(window.__AUDIO_NARRATION__);
       }
+
+      if (!audioManifestById.size) {
+        try {
+          const res = await fetch('audios/manifest.json', { cache: 'no-cache' });
+          if (!res.ok) throw new Error('manifest unavailable');
+          ingestAudioManifest(await res.json());
+        } catch (err) {
+          console.log('Audio manifest load error:', err);
+        }
+      }
+
+      audioManifestLoaded = true;
     }
 
     function getAccessibilityEntry(slide) {
@@ -6816,6 +8634,58 @@
     function pauseAccessibilityAudio() {
       const audio = document.getElementById('accessibility-audio');
       if (audio && !audio.paused) audio.pause();
+    }
+
+    function onNarrationStart() {
+      const bgMusic = document.getElementById('bg-music');
+      if (bgMusic && !bgMusic.paused) bgMusic.pause();
+      pauseAllVimeoVideos();
+    }
+
+    function showNarrationError(message) {
+      const n = document.getElementById('notification');
+      if (!n) return;
+      n.textContent = message;
+      n.classList.add('show');
+      setTimeout(() => n.classList.remove('show'), 3500);
+    }
+
+    function tryPlayMp3(audio, src, playbackId) {
+      return new Promise((resolve) => {
+        let settled = false;
+        const finish = (ok) => {
+          if (settled || playbackId !== narrationPlaybackId) return;
+          settled = true;
+          clearTimeout(timer);
+          audio.removeEventListener('error', onError);
+          audio.removeEventListener('canplay', onReady);
+          resolve(ok);
+        };
+
+        const onError = () => finish(false);
+        const onReady = async () => {
+          if (playbackId !== narrationPlaybackId) {
+            finish(false);
+            return;
+          }
+          try {
+            audio.currentTime = 0;
+            await audio.play();
+            finish(true);
+          } catch {
+            finish(false);
+          }
+        };
+
+        audio.addEventListener('error', onError);
+        audio.addEventListener('canplay', onReady);
+
+        audio.setAttribute('data-current-src', src);
+        audio.src = src;
+        audio.load();
+
+        const timer = setTimeout(() => finish(false), 10000);
+      });
     }
 
     function setNarrationButtonState(active) {
@@ -6834,56 +8704,59 @@
 
       const entry = getAccessibilityEntry(slide);
       if (!entry || !entry.file) {
-        console.log('Áudio não disponível para o slide:', slide.id);
+        console.log('Transcrição não disponível para o slide:', slide.id);
+        showNarrationError('Transcrição em áudio indisponível para este slide.');
         return false;
       }
 
-      if (audio.getAttribute('data-current-src') !== entry.file) {
-        audio.setAttribute('data-current-src', entry.file);
-        audio.src = entry.file;
-        audio.load();
+      if (entry.audioReady === false) {
+        showNarrationError('Áudio ainda não gerado. Execute: node generate-audios.js');
+        return false;
       }
 
+      const playbackId = ++narrationPlaybackId;
+
+      audio.pause();
+      audio.currentTime = 0;
+      audio.onended = null;
       audio.onplay = () => {
-        const bgMusic = document.getElementById('bg-music');
-        if (bgMusic && !bgMusic.paused) bgMusic.pause();
-        pauseAllVimeoVideos();
+        if (playbackId !== narrationPlaybackId) return;
+        onNarrationStart();
       };
 
-      try {
-        await audio.play();
-        return true;
-      } catch (err) {
-        console.log('Narração play error:', err);
-        return false;
-      }
+      const mp3Ok = await tryPlayMp3(audio, entry.file, playbackId);
+      if (playbackId !== narrationPlaybackId) return false;
+
+      if (mp3Ok) return true;
+
+      console.log('Não foi possível reproduzir o áudio ElevenLabs:', entry.file);
+      showNarrationError('Não foi possível reproduzir a narração. Verifique a pasta audios/.');
+      return false;
     }
 
     async function toggleAccessibilityNarration() {
-      const audio = document.getElementById('accessibility-audio');
-      if (!audio) return;
-
       if (narrationActive) {
         narrationActive = false;
+        narrationPlaybackId++;
         pauseAccessibilityAudio();
         setNarrationButtonState(false);
         return;
       }
 
-      const started = await playAccessibilityAudioForActiveSlide();
-      if (!started) return;
-
       narrationActive = true;
       setNarrationButtonState(true);
+
+      const started = await playAccessibilityAudioForActiveSlide();
+      if (!started && narrationActive) {
+        // Mantém o modo ligado mesmo se falhar neste slide; tenta de novo ao avançar
+        console.log('Transcrição ativa — aguardando próximo slide ou nova tentativa.');
+      }
     }
 
     async function handleSlideAccessibilityAudio() {
       if (!narrationActive) return;
-      const started = await playAccessibilityAudioForActiveSlide();
-      if (!started) {
-        narrationActive = false;
-        setNarrationButtonState(false);
-      }
+      pauseAccessibilityAudio();
+      await playAccessibilityAudioForActiveSlide();
     }
 
     /* ══════════════════════════════════════════
@@ -7058,6 +8931,7 @@
     }
 
     let currentAtexSource = 0;
+    let atexSourceTouchHandled = false;
 
     function isAtexSourcesMobile() {
       return window.matchMedia('(max-width: 768px)').matches;
@@ -7134,23 +9008,356 @@
       updateNextButton();
     }
 
+    let currentS3aGroup = 0;
+    let s3aGroupTouchHandled = false;
+
+    function isS3aGroupsMobile() {
+      return window.matchMedia('(max-width: 768px)').matches;
+    }
+
+    function updateS3aGroupsCarousel() {
+      const cards = document.querySelectorAll('#s3a .s3a-group-card');
+      if (!cards.length) return;
+
+      if (isS3aGroupsMobile()) {
+        cards.forEach((c, i) => {
+          const active = i === currentS3aGroup;
+          c.classList.toggle('s3a-group-active', active);
+          c.setAttribute('aria-hidden', active ? 'false' : 'true');
+        });
+        const counter = document.getElementById('s3a-groups-counter');
+        if (counter) counter.textContent = (currentS3aGroup + 1) + ' / ' + cards.length;
+        const prevBtn = document.getElementById('btn-s3a-groups-prev');
+        const nextBtn = document.getElementById('btn-s3a-groups-next');
+        if (prevBtn) prevBtn.disabled = currentS3aGroup === 0;
+        if (nextBtn) nextBtn.disabled = currentS3aGroup === cards.length - 1;
+      } else {
+        cards.forEach((c) => {
+          c.classList.add('s3a-group-active');
+          c.setAttribute('aria-hidden', 'false');
+        });
+      }
+    }
+
+    function nextS3aGroup() {
+      if (!isS3aGroupsMobile()) return;
+      const cards = document.querySelectorAll('#s3a .s3a-group-card');
+      if (!cards.length || currentS3aGroup >= cards.length - 1) return;
+      currentS3aGroup++;
+      playClickSound();
+      updateS3aGroupsCarousel();
+    }
+
+    function prevS3aGroup() {
+      if (!isS3aGroupsMobile()) return;
+      if (currentS3aGroup <= 0) return;
+      currentS3aGroup--;
+      playClickSound();
+      updateS3aGroupsCarousel();
+    }
+
+    function resetS3aGroupsCarousel() {
+      currentS3aGroup = 0;
+      updateS3aGroupsCarousel();
+    }
+
+    function initS3aGroupsCarousel() {
+      const prevBtn = document.getElementById('btn-s3a-groups-prev');
+      const nextBtn = document.getElementById('btn-s3a-groups-next');
+      const container = document.getElementById('s3a-groups-container');
+
+      if (prevBtn && nextBtn && prevBtn.dataset.init !== '1') {
+        prevBtn.dataset.init = '1';
+        const onPrev = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          prevS3aGroup();
+        };
+        const onNext = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          nextS3aGroup();
+        };
+        prevBtn.addEventListener('touchend', (e) => {
+          if (prevBtn.disabled) return;
+          s3aGroupTouchHandled = true;
+          setTimeout(() => { s3aGroupTouchHandled = false; }, 400);
+          onPrev(e);
+        }, { passive: false });
+        nextBtn.addEventListener('touchend', (e) => {
+          if (nextBtn.disabled) return;
+          s3aGroupTouchHandled = true;
+          setTimeout(() => { s3aGroupTouchHandled = false; }, 400);
+          onNext(e);
+        }, { passive: false });
+        prevBtn.addEventListener('click', (e) => {
+          if (s3aGroupTouchHandled) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+          }
+          onPrev(e);
+        });
+        nextBtn.addEventListener('click', (e) => {
+          if (s3aGroupTouchHandled) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+          }
+          onNext(e);
+        });
+      }
+
+      if (container && container.dataset.swipeInit !== '1') {
+        container.dataset.swipeInit = '1';
+        let touchStartX = null;
+        container.addEventListener('touchstart', (e) => {
+          if (!isS3aGroupsMobile() || e.touches.length !== 1) return;
+          touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        container.addEventListener('touchend', (e) => {
+          if (!isS3aGroupsMobile() || touchStartX === null || !e.changedTouches.length) return;
+          const dx = e.changedTouches[0].clientX - touchStartX;
+          touchStartX = null;
+          if (Math.abs(dx) < 40) return;
+          e.preventDefault();
+          if (dx < 0) nextS3aGroup();
+          else prevS3aGroup();
+        }, { passive: false });
+      }
+
+      if (!document.getElementById('s3a-groups-carousel')?.dataset.resizeInit) {
+        document.getElementById('s3a-groups-carousel').dataset.resizeInit = '1';
+        window.addEventListener('resize', updateS3aGroupsCarousel);
+      }
+
+      updateS3aGroupsCarousel();
+    }
+
+    let currentS3dZone = 0;
+    let s3dZoneTouchHandled = false;
+    const S3D_ZONE_COUNT = 6;
+
+    function isS3dZonesMobile() {
+      return window.matchMedia('(max-width: 768px)').matches;
+    }
+
+    function updateS3dZonesCarousel() {
+      if (!isS3dZonesMobile()) {
+        document.querySelectorAll('#s3d .s3d-zone-type, #s3d .s3d-zone-desc, #s3d .s3d-zone-freq, #s3d .s3d-zones-subhead').forEach((el) => {
+          el.classList.remove('s3d-zone-active');
+          el.removeAttribute('aria-hidden');
+        });
+        return;
+      }
+
+      for (let n = 0; n < S3D_ZONE_COUNT; n++) {
+        const active = n === currentS3dZone;
+        document.querySelectorAll('#s3d .s3d-row-' + n).forEach((el) => {
+          el.classList.toggle('s3d-zone-active', active);
+          el.setAttribute('aria-hidden', active ? 'false' : 'true');
+        });
+      }
+
+      document.querySelectorAll('#s3d .s3d-zones-subhead').forEach((sh, i) => {
+        const showSub = (i === 0 && currentS3dZone <= 2) || (i === 1 && currentS3dZone >= 3);
+        sh.classList.toggle('s3d-zone-active', showSub);
+        sh.setAttribute('aria-hidden', showSub ? 'false' : 'true');
+      });
+
+      const counter = document.getElementById('s3d-zones-counter');
+      if (counter) counter.textContent = (currentS3dZone + 1) + ' / ' + S3D_ZONE_COUNT;
+      const prevBtn = document.getElementById('btn-s3d-zones-prev');
+      const nextBtn = document.getElementById('btn-s3d-zones-next');
+      if (prevBtn) prevBtn.disabled = currentS3dZone === 0;
+      if (nextBtn) nextBtn.disabled = currentS3dZone === S3D_ZONE_COUNT - 1;
+    }
+
+    function nextS3dZone() {
+      if (!isS3dZonesMobile() || currentS3dZone >= S3D_ZONE_COUNT - 1) return;
+      currentS3dZone++;
+      playClickSound();
+      updateS3dZonesCarousel();
+    }
+
+    function prevS3dZone() {
+      if (!isS3dZonesMobile() || currentS3dZone <= 0) return;
+      currentS3dZone--;
+      playClickSound();
+      updateS3dZonesCarousel();
+    }
+
+    function resetS3dZonesCarousel() {
+      currentS3dZone = 0;
+      updateS3dZonesCarousel();
+    }
+
+    function initS3dZonesCarousel() {
+      const prevBtn = document.getElementById('btn-s3d-zones-prev');
+      const nextBtn = document.getElementById('btn-s3d-zones-next');
+      const grid = document.querySelector('#s3d .s3d-zones-grid');
+
+      if (prevBtn && nextBtn && prevBtn.dataset.init !== '1') {
+        prevBtn.dataset.init = '1';
+        const onPrev = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          prevS3dZone();
+        };
+        const onNext = (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          nextS3dZone();
+        };
+        prevBtn.addEventListener('touchend', (e) => {
+          if (prevBtn.disabled) return;
+          s3dZoneTouchHandled = true;
+          setTimeout(() => { s3dZoneTouchHandled = false; }, 400);
+          onPrev(e);
+        }, { passive: false });
+        nextBtn.addEventListener('touchend', (e) => {
+          if (nextBtn.disabled) return;
+          s3dZoneTouchHandled = true;
+          setTimeout(() => { s3dZoneTouchHandled = false; }, 400);
+          onNext(e);
+        }, { passive: false });
+        prevBtn.addEventListener('click', (e) => {
+          if (s3dZoneTouchHandled) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+          }
+          onPrev(e);
+        });
+        nextBtn.addEventListener('click', (e) => {
+          if (s3dZoneTouchHandled) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+          }
+          onNext(e);
+        });
+      }
+
+      if (grid && grid.dataset.swipeInit !== '1') {
+        grid.dataset.swipeInit = '1';
+        let touchStartX = null;
+        grid.addEventListener('touchstart', (e) => {
+          if (!isS3dZonesMobile() || e.touches.length !== 1) return;
+          touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        grid.addEventListener('touchend', (e) => {
+          if (!isS3dZonesMobile() || touchStartX === null || !e.changedTouches.length) return;
+          const dx = e.changedTouches[0].clientX - touchStartX;
+          touchStartX = null;
+          if (Math.abs(dx) < 40) return;
+          e.preventDefault();
+          if (dx < 0) nextS3dZone();
+          else prevS3dZone();
+        }, { passive: false });
+      }
+
+      if (!document.getElementById('s3d-zones-carousel')?.dataset.resizeInit) {
+        document.getElementById('s3d-zones-carousel').dataset.resizeInit = '1';
+        window.addEventListener('resize', updateS3dZonesCarousel);
+      }
+
+      updateS3dZonesCarousel();
+    }
+
+    function syncS3bTableFit(slide) {
+      const area = slide.querySelector('.content-area');
+      const wrap = slide.querySelector('.s3a-wrap');
+      const grid = slide.querySelector('.s3a-class-grid');
+      if (!area || !wrap || !grid) return;
+
+      area.classList.remove('s3-scroll-mode');
+      area.scrollTop = 0;
+
+      if (window.innerWidth > 768) {
+        grid.style.removeProperty('--s3b-fit');
+        return;
+      }
+
+      const fits = () => wrap.scrollHeight + 4 <= area.clientHeight;
+      const minFit = 0.84;
+      const step = 0.012;
+
+      grid.style.setProperty('--s3b-fit', '1');
+      if (fits()) return;
+
+      let fit = 1;
+      for (let f = 1 - step; f >= minFit; f -= step) {
+        fit = Math.round(f * 1000) / 1000;
+        grid.style.setProperty('--s3b-fit', String(fit));
+        if (fits()) break;
+      }
+    }
+
     function initAtexSourcesCarousel() {
       const prevBtn = document.getElementById('btn-atex-sources-prev');
       const nextBtn = document.getElementById('btn-atex-sources-next');
+      const container = document.getElementById('atex-sources-container');
       const cards = document.querySelectorAll('#s2b .atex-source-card');
 
       if (prevBtn && nextBtn && prevBtn.dataset.init !== '1') {
         prevBtn.dataset.init = '1';
-        prevBtn.addEventListener('click', (e) => {
+        const onPrev = (e) => {
           e.preventDefault();
           e.stopPropagation();
           prevAtexSource();
-        });
-        nextBtn.addEventListener('click', (e) => {
+        };
+        const onNext = (e) => {
           e.preventDefault();
           e.stopPropagation();
           nextAtexSource();
+        };
+        prevBtn.addEventListener('touchend', (e) => {
+          if (prevBtn.disabled) return;
+          atexSourceTouchHandled = true;
+          setTimeout(() => { atexSourceTouchHandled = false; }, 400);
+          onPrev(e);
+        }, { passive: false });
+        nextBtn.addEventListener('touchend', (e) => {
+          if (nextBtn.disabled) return;
+          atexSourceTouchHandled = true;
+          setTimeout(() => { atexSourceTouchHandled = false; }, 400);
+          onNext(e);
+        }, { passive: false });
+        prevBtn.addEventListener('click', (e) => {
+          if (atexSourceTouchHandled) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+          }
+          onPrev(e);
         });
+        nextBtn.addEventListener('click', (e) => {
+          if (atexSourceTouchHandled) {
+            e.preventDefault();
+            e.stopPropagation();
+            return;
+          }
+          onNext(e);
+        });
+      }
+
+      if (container && container.dataset.swipeInit !== '1') {
+        container.dataset.swipeInit = '1';
+        let touchStartX = null;
+        container.addEventListener('touchstart', (e) => {
+          if (!isAtexSourcesMobile() || e.touches.length !== 1) return;
+          touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        container.addEventListener('touchend', (e) => {
+          if (!isAtexSourcesMobile() || touchStartX === null || !e.changedTouches.length) return;
+          const dx = e.changedTouches[0].clientX - touchStartX;
+          touchStartX = null;
+          if (Math.abs(dx) < 40) return;
+          e.preventDefault();
+          if (dx < 0) nextAtexSource();
+          else prevAtexSource();
+        }, { passive: false });
       }
 
       if (cards.length && !document.getElementById('atex-sources-carousel')?.dataset.cardsInit) {
@@ -7289,6 +9496,9 @@
       if (slide.id === 's2e') { // Desafio ATEX — Módulo 1
         return mod1_game_done;
       }
+      if (slide.id === 's3f') { // Quiz — Módulo 2
+        return mod2_quiz_done;
+      }
       const reqs = slide.querySelectorAll('.req-item');
       for (let i = 0; i < reqs.length; i++) {
         if (!reqs[i].classList.contains('req-done')) return false;
@@ -7376,6 +9586,30 @@
       localStorage.setItem('nr17_current_slide', currentSlide);
 
       if (newSlide.id === 's2b') resetAtexSourcesCarousel();
+      if (newSlide.id === 's3a') resetS3aGroupsCarousel();
+      if (newSlide.id === 's3d') resetS3dZonesCarousel();
+      if (newSlide.id === 's3f') {
+        const intro = document.getElementById('mod2-quiz-intro');
+        const play = document.getElementById('mod2-quiz-play');
+        const qPanel = document.getElementById('qm2-question-panel');
+        const rPanel = document.getElementById('qm2-result-panel');
+        if (mod2_quiz_done && rPanel) {
+          if (intro) intro.style.display = 'none';
+          if (play) play.style.display = 'block';
+          if (qPanel) qPanel.style.display = 'none';
+          rPanel.style.display = 'block';
+        } else if (mod2_quiz_started && play) {
+          if (intro) intro.style.display = 'none';
+          play.style.display = 'block';
+        } else {
+          if (intro) intro.style.display = 'block';
+          if (play) play.style.display = 'none';
+        }
+      }
+      if (newSlide.id === 's2e') requestAnimationFrame(syncMod1GameVerticalLayout);
+      if (newSlide.id === 's3a' || newSlide.id === 's3b' || newSlide.id === 's3d') {
+        requestAnimationFrame(() => requestAnimationFrame(syncS3SlidesLayout));
+      }
       initVimeoOnActiveSlide(newSlide);
       handleSlideAccessibilityAudio();
     }
@@ -7383,6 +9617,7 @@
     // Keyboard nav
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape' && narrationActive) {
+        narrationPlaybackId++;
         narrationActive = false;
         pauseAccessibilityAudio();
         setNarrationButtonState(false);
@@ -7423,17 +9658,17 @@
 
     const mod1GameDeck = [
       {
-        text: 'A substância inflamável que vai queimar — vapores, gases ou materiais presentes na reação.',
+        text: 'A substância inflamável que irá queimar pode estar presente na forma de gases, vapores, névoas ou poeiras combustíveis.',
         zone: 'fuel',
         tip: 'É o Combustível: tudo aquilo que pode queimar.'
       },
       {
-        text: 'Geralmente o oxigênio do ar, que alimenta e sustenta a queima.',
+        text: 'Geralmente, é o oxigênio do ar que alimenta e sustenta a combustão.',
         zone: 'oxidizer',
         tip: 'É o Comburente: o agente que possibilita a combustão.'
       },
       {
-        text: 'O calor ou o centelhamento necessário para iniciar a reação.',
+        text: 'O calor ou o centelhamento são necessários para iniciar a reação.',
         zone: 'energy',
         tip: 'É a Energia de Ativação: o gatilho que desencadeia a explosão.'
       },
@@ -7464,6 +9699,107 @@
       return z ? z.icon + ' ' + z.label : item.zone;
     }
 
+    function setMod1GameLayout(state) {
+      const area = document.querySelector('#s2e .content-area');
+      if (!area) return;
+      area.classList.remove('mod1-state-intro', 'mod1-state-play', 'mod1-state-result', 'mod1-scroll-mode');
+      area.classList.add('mod1-state-' + state);
+      if (state === 'play') area.scrollTop = 0;
+      requestAnimationFrame(syncMod1GameVerticalLayout);
+    }
+
+    function syncMod1GameVerticalLayout() {
+      const area = document.querySelector('#s2e .content-area');
+      const play = document.getElementById('mod1-game-play');
+      if (!area || !play || play.style.display === 'none') {
+        if (area) area.classList.remove('mod1-scroll-mode');
+        return;
+      }
+      area.classList.remove('mod1-scroll-mode');
+      if (play.scrollHeight + 8 > area.clientHeight) {
+        area.classList.add('mod1-scroll-mode');
+        area.scrollTop = 0;
+      }
+    }
+
+    function syncS3dTableFit(slide) {
+      const area = slide.querySelector('.content-area');
+      const wrap = slide.querySelector('.s3a-wrap');
+      const grid = slide.querySelector('.s3d-zones-grid');
+      if (!area || !wrap || !grid) return;
+
+      const isDesktop = window.innerWidth > 768;
+      area.classList.remove('s3-scroll-mode');
+      area.scrollTop = 0;
+
+      if (!isDesktop) {
+        grid.style.removeProperty('--s3d-fit');
+        area.classList.remove('s3-scroll-mode');
+        return;
+      }
+
+      const fits = () => wrap.scrollHeight + 8 <= area.clientHeight;
+      const minFit = 0.82;
+      const step = 0.015;
+
+      grid.style.setProperty('--s3d-fit', '1');
+      if (fits()) return;
+
+      let fit = 1;
+      for (let f = 1 - step; f >= minFit; f -= step) {
+        fit = Math.round(f * 1000) / 1000;
+        grid.style.setProperty('--s3d-fit', String(fit));
+        if (fits()) break;
+      }
+
+      if (!fits()) {
+        area.classList.add('s3-scroll-mode');
+      }
+    }
+
+    function syncS3SlidesLayout() {
+      const s3dSlide = document.getElementById('s3d');
+      const s3dGrid = s3dSlide?.querySelector('.s3d-zones-grid');
+      if (s3dGrid && !s3dSlide.classList.contains('active')) {
+        s3dGrid.style.removeProperty('--s3d-fit');
+      }
+
+      const s3bSlide = document.getElementById('s3b');
+      const s3bGrid = s3bSlide?.querySelector('.s3a-class-grid');
+      if (s3bGrid && !s3bSlide.classList.contains('active')) {
+        s3bGrid.style.removeProperty('--s3b-fit');
+      }
+
+      ['s3a', 's3b', 's3d'].forEach((id) => {
+        const slide = document.getElementById(id);
+        if (!slide || !slide.classList.contains('active')) return;
+        const area = slide.querySelector('.content-area');
+        const wrap = slide.querySelector('.s3a-wrap');
+        if (!area || !wrap) return;
+
+        if (id === 's3d') {
+          syncS3dTableFit(slide);
+          return;
+        }
+
+        if (id === 's3b') {
+          syncS3bTableFit(slide);
+          return;
+        }
+
+        if (id === 's3a' && window.innerWidth <= 768) {
+          area.classList.remove('s3-scroll-mode');
+          return;
+        }
+
+        area.classList.remove('s3-scroll-mode');
+        if (wrap.scrollHeight + 12 > area.clientHeight) {
+          area.classList.add('s3-scroll-mode');
+          area.scrollTop = 0;
+        }
+      });
+    }
+
     function startMod1Game() {
       mod1GameIdx = 0;
       mod1GameMistakes = 0;
@@ -7472,6 +9808,7 @@
       document.getElementById('mod1-game-intro').style.display = 'none';
       document.getElementById('mod1-game-play').style.display = 'block';
       document.getElementById('mod1-game-result').style.display = 'none';
+      setMod1GameLayout('play');
       renderMod1GameCard();
       updateNextButton();
     }
@@ -7499,6 +9836,7 @@
         card.style.animation = 'fadeIn 0.35s ease';
       }
       mod1GameBusy = false;
+      requestAnimationFrame(syncMod1GameVerticalLayout);
     }
 
     function handleMod1GameChoice(zone) {
@@ -7547,6 +9885,7 @@
       document.getElementById('mod1-game-bar').style.width = '100%';
       document.getElementById('mod1-game-play').style.display = 'none';
       document.getElementById('mod1-game-result').style.display = 'block';
+      setMod1GameLayout('result');
       const msg = document.getElementById('mod1-game-result-msg');
       if (msg) {
         msg.textContent = mod1GameMistakes === 0
@@ -7564,6 +9903,7 @@
       document.getElementById('mod1-game-intro').style.display = 'block';
       document.getElementById('mod1-game-play').style.display = 'none';
       document.getElementById('mod1-game-result').style.display = 'none';
+      setMod1GameLayout('intro');
       updateNextButton();
     }
 
@@ -7863,6 +10203,208 @@
       const panel2 = document.getElementById('q5-result-panel');
       if (panel2) panel2.style.display = 'none';
       renderQuestion5();
+      updateNextButton();
+    }
+
+    /* ══════════════════════════════════════════
+       QUIZ MÓDULO 2 — Classificação e Zonas ATEX
+       ══════════════════════════════════════════ */
+    let mod2_quiz_done = false;
+    let mod2_quiz_started = false;
+
+    const qm2_questions = [
+      {
+        q: 'Para que serve o Método de Classificação Elétrica de Área?',
+        opts: [
+          'Delimitar volumes de controle e reduzir fontes de ignição elétrica',
+          'Substituir equipamentos de proteção individual',
+          'Medir somente a temperatura dos motores',
+          'Eliminar todos os gases da fábrica'
+        ],
+        correct: 0,
+        feedback_ok: '✅ Correto! O método ajuda a saber onde está o perigo e a mitigar ignição elétrica.',
+        feedback_nok: '❌ Lembre: o método delimita volumes de controle e ajuda a mitigar ignição elétrica.'
+      },
+      {
+        q: 'O Grupo III da classificação ATEX engloba:',
+        opts: [
+          'Poeiras e fibras combustíveis',
+          'Minas subterrâneas com risco de grisu',
+          'Gases e vapores inflamáveis',
+          'Apenas névoas e vapores de água'
+        ],
+        correct: 0,
+        feedback_ok: '✅ Isso mesmo! Grupo III = poeiras e fibras combustíveis.',
+        feedback_nok: '❌ O Grupo III é para poeiras e fibras combustíveis. Grisu é Grupo I; gases são Grupo II.'
+      },
+      {
+        q: 'Para gases e vapores, a Zona 0 é:',
+        opts: [
+          'O local mais crítico — atmosfera explosiva contínua ou frequente',
+          'Risco apenas esporádico no dia a dia',
+          'Onde o perigo ocorre só ocasionalmente no funcionamento normal',
+          'Zona usada somente para poeiras e fibras'
+        ],
+        correct: 0,
+        feedback_ok: '✅ Correto! Zona 0 = presença contínua ou frequente da mistura explosiva.',
+        feedback_nok: '❌ A Zona 0 é a mais crítica: atmosfera explosiva presente de forma contínua ou frequente.'
+      },
+      {
+        q: 'A Zona 2 (gases e vapores) significa:',
+        opts: [
+          'Risco esporádico — a mistura não é provável no dia a dia',
+          'Atmosfera explosiva presente o tempo todo',
+          'Perigo ocasional durante o funcionamento normal',
+          'Poeira explosiva presente de forma contínua'
+        ],
+        correct: 0,
+        feedback_ok: '✅ Correto! Zona 2 = risco esporádico, pouco provável no funcionamento normal.',
+        feedback_nok: '❌ Zona 2 é esporádica. Contínua = Zona 0; ocasional no normal = Zona 1.'
+      },
+      {
+        q: 'Para poeiras e fibras, a Zona 21 indica:',
+        opts: [
+          'A nuvem perigosa pode ocorrer ocasionalmente nas condições normais',
+          'Poeira explosiva presente de forma contínua e frequente',
+          'Risco esporádico — nuvem improvável no funcionamento normal',
+          'Área totalmente livre de qualquer risco ATEX'
+        ],
+        correct: 0,
+        feedback_ok: '✅ Correto! Zona 21 = risco ocasional em condições normais (como a Zona 1 para gases).',
+        feedback_nok: '❌ Zona 21 = ocasional no normal. Contínua = Zona 20; esporádica = Zona 22.'
+      }
+    ];
+
+    let qm2_idx = 0;
+    let qm2_ans = false;
+    let qm2_score = 0;
+
+    function startMod2Quiz() {
+      mod2_quiz_started = true;
+      qm2_idx = 0;
+      qm2_score = 0;
+      qm2_ans = false;
+      document.getElementById('mod2-quiz-intro').style.display = 'none';
+      document.getElementById('mod2-quiz-play').style.display = 'block';
+      const panel1 = document.getElementById('qm2-question-panel');
+      const panel2 = document.getElementById('qm2-result-panel');
+      if (panel1) panel1.style.display = 'block';
+      if (panel2) panel2.style.display = 'none';
+      renderQuestionMod2();
+      playClickSound();
+    }
+
+    function renderQuestionMod2() {
+      const q = qm2_questions[qm2_idx];
+      const c = document.getElementById('qm2-counter');
+      if (c) c.textContent = `Pergunta ${qm2_idx + 1} de ${qm2_questions.length}`;
+      const txt = document.getElementById('qm2-text');
+      if (txt) txt.textContent = q.q;
+
+      const opts = document.getElementById('qm2-options');
+      if (opts) {
+        opts.innerHTML = '';
+        const letters = ['A', 'B', 'C', 'D'];
+        q.opts.forEach((opt, i) => {
+          const el = document.createElement('div');
+          el.className = 'q-opt';
+          el.innerHTML = `<div class="opt-l">${letters[i]}</div><span>${opt}</span>`;
+          el.onclick = () => selectAnswerMod2(i, el);
+          opts.appendChild(el);
+        });
+      }
+
+      const fb = document.getElementById('qm2-feedback');
+      if (fb) { fb.className = 'q-feedback'; fb.textContent = ''; }
+      const btn = document.getElementById('btn-next-qm2');
+      if (btn) {
+        btn.className = 'btn-next-q';
+        btn.textContent = qm2_idx < qm2_questions.length - 1 ? 'PRÓXIMA PERGUNTA' : 'VER RESULTADO';
+      }
+      qm2_ans = false;
+
+      for (let i = 0; i < qm2_questions.length; i++) {
+        const d = document.getElementById('qm2dot' + i);
+        if (!d) continue;
+        d.className = 'qdot2' + (i < qm2_idx ? ' done' : '') + (i === qm2_idx ? ' cur' : '');
+      }
+    }
+
+    function selectAnswerMod2(idx, el) {
+      if (qm2_ans) return;
+      qm2_ans = true;
+      const q = qm2_questions[qm2_idx];
+      const allOpts = document.querySelectorAll('#qm2-options .q-opt');
+      allOpts.forEach(o => { o.style.pointerEvents = 'none'; o.classList.add('answered'); });
+
+      const fb = document.getElementById('qm2-feedback');
+      if (idx === q.correct) {
+        el.classList.add('correct');
+        if (fb) { fb.textContent = q.feedback_ok; fb.className = 'q-feedback ok'; }
+        qm2_score++;
+        playGameFeedback('ok');
+      } else {
+        el.classList.add('wrong');
+        if (allOpts[q.correct]) allOpts[q.correct].classList.add('correct');
+        if (fb) { fb.textContent = q.feedback_nok; fb.className = 'q-feedback nok'; }
+        playGameFeedback('nok');
+      }
+      const btn = document.getElementById('btn-next-qm2');
+      if (btn) btn.className = 'btn-next-q show';
+    }
+
+    function nextQuestionMod2() {
+      if (!qm2_ans) return;
+      qm2_idx++;
+      if (qm2_idx < qm2_questions.length) {
+        renderQuestionMod2();
+      } else {
+        showResultMod2();
+      }
+    }
+
+    function showResultMod2() {
+      const panel1 = document.getElementById('qm2-question-panel');
+      if (panel1) panel1.style.display = 'none';
+      const panel2 = document.getElementById('qm2-result-panel');
+      if (panel2) panel2.style.display = 'block';
+
+      const pct = qm2_score / qm2_questions.length;
+      const approved = pct >= 0.6;
+      mod2_quiz_done = approved;
+
+      const pctEl = document.getElementById('qm2-pct');
+      if (pctEl) {
+        pctEl.textContent = Math.round(pct * 100) + '%';
+        pctEl.className = 'result-pct ' + (approved ? 'green' : 'red-c');
+      }
+      const stars = document.getElementById('qm2-stars');
+      if (stars) {
+        stars.textContent = pct >= 1 ? '⭐⭐⭐' : pct >= 0.8 ? '⭐⭐' : pct >= 0.6 ? '⭐' : '💪';
+      }
+      const status = document.getElementById('qm2-status');
+      if (status) {
+        status.textContent = approved ? '✅ Módulo 2 Concluído!' : '❌ Refazer o Quiz';
+        status.className = 'r-status ' + (approved ? 'ap' : 'ref');
+      }
+      const sub = document.getElementById('qm2-sub');
+      if (sub) {
+        sub.textContent = `Você acertou ${qm2_score} de ${qm2_questions.length} questões.` +
+          (approved ? ' Parabéns! Você pode avançar.' : ' Estude o conteúdo do Módulo 2 e tente novamente.');
+      }
+      updateNextButton();
+    }
+
+    function resetQuizMod2() {
+      mod2_quiz_done = false;
+      qm2_idx = 0;
+      qm2_score = 0;
+      qm2_ans = false;
+      const panel1 = document.getElementById('qm2-question-panel');
+      if (panel1) panel1.style.display = 'block';
+      const panel2 = document.getElementById('qm2-result-panel');
+      if (panel2) panel2.style.display = 'none';
+      renderQuestionMod2();
       updateNextButton();
     }
 
@@ -8306,6 +10848,18 @@
     document.addEventListener('DOMContentLoaded', () => {
       loadAudioManifest();
       initAtexSourcesCarousel();
+      initS3aGroupsCarousel();
+      initS3dZonesCarousel();
+      window.addEventListener('resize', () => {
+        syncMod1GameVerticalLayout();
+        syncS3SlidesLayout();
+        updateS3aGroupsCarousel();
+        updateS3dZonesCarousel();
+      });
+      requestAnimationFrame(() => {
+        syncMod1GameVerticalLayout();
+        syncS3SlidesLayout();
+      });
       const interactives = document.querySelectorAll('.risk-card, .check-item, .vplay, .c-badge, .icon-card, .card');
       interactives.forEach(el => {
         // Apenas elementos vplay (vídeos simulados) são obrigatórios por aqui

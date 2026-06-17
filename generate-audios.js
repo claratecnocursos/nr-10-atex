@@ -155,6 +155,7 @@ async function main() {
   }
 
   if (!process.exitCode) {
+    writeManifest(manifest, MANIFEST_PATH);
     console.log('Concluído.');
   }
 }

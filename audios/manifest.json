@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "generatedAt": "2026-06-17T11:20:11.817Z",
+  "source": "index.html",
+  "audioDir": "audios",
+  "slides": [
+    {
+      "index": 0,
+      "id": "s1",
+      "title": "NR-10 — ATEX —Áreas Classificadas",
+      "file": "audios/s1.mp3",
+      "text": "Módulo de Treinamento. Segurança do Trabalho. NR-10 — ATEX — Áreas Classificadas. Capacitação em segurança nas Áreas Classificadas conforme NR-10 e ATEX.",
+      "audioReady": true
+    },
+    {
+      "index": 1,
+      "id": "s2",
+      "title": "Bem-vindo ao Treinamento",
+      "file": "audios/s2.mp3",
+      "text": "Apresentação. Bem-vindo ao Treinamento. NR-10 — ATEX — Áreas Classificadas. Assista ao vídeo de introdução e avance quando concluir.",
+      "audioReady": true
+    },
+    {
+      "index": 2,
+      "id": "s6",
+      "title": "Conteúdo Programático",
+      "file": "audios/s6.mp3",
+      "text": "Sumário. Conteúdo Programático. Módulo 1: Fundamentos de Atmosferas Explosivas, ATEX. Módulo 2: Classificação e Mapeamento de Áreas. Módulo 3: Equipamentos de Proteção, Temperaturas e Rotulagem. Módulo 4: Riscos Inerentes e Identificação de Produtos Químicos. Módulo 5: Prevenção Contra Poeiras Combustíveis e Incêndios. Módulo 6: Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10.",
+      "audioReady": true
+    },
+    {
+      "index": 3,
+      "id": "s-mod1",
+      "title": "MÓDULO 1",
+      "file": "audios/s-mod1.mp3",
+      "text": "Início do Módulo 1. Fundamentos de Atmosferas Explosivas, ATEX.",
+      "audioReady": true
+    },
+    {
+      "index": 4,
+      "id": "s2b",
+      "title": "O que é uma Área Classificada?",
+      "file": "audios/s2b.mp3",
+      "text": "Fundamentos. O que é uma Área Classificada? Área Classificada e Atmosfera Explosiva. Uma área classificada é qualquer local no ambiente de trabalho que apresente ou possa apresentar uma mistura perigosa de substâncias inflamáveis com o ar. Essa mistura, chamada de Atmosfera Explosiva, pode se formar devido à presença de gases, vapores, névoas, poeiras ou fibras combustíveis. Sinal EX. Toque em cada card para revelar os tipos de fontes de atmosfera explosiva. Gases e Vapores: substâncias inflamáveis em estado gasoso ou vaporizado misturadas ao ar. Névoas: gotículas finas suspensas no ar capazes de formar atmosfera explosiva. Poeiras e Fibras: partículas sólidas combustíveis que, em concentração, podem explodir. Toque em todos os cards para avançar.",
+      "audioReady": true
+    },
+    {
+      "index": 5,
+      "id": "s2c",
+      "title": "Tetraedro do Fogo",
+      "file": "audios/s2c.mp3",
+      "text": "Vídeo. Tetraedro do Fogo. Fundamentos de Atmosferas Explosivas, ATEX. Assista ao vídeo sobre a concepção moderna do fogo: Combustível, Comburente, Energia de Ativação e Reação em Cadeia. Avance quando concluir.",
+      "audioReady": true
+    },
+    {
+      "index": 6,
+      "id": "s2d",
+      "title": "Atmosfera Explosiva",
+      "file": "audios/s2d.mp3",
+      "text": "Vídeo. Atmosfera Explosiva. Fundamentos de Atmosferas Explosivas, ATEX. Assista ao vídeo sobre atmosferas potencialmente explosivas no dia a dia industrial — gases, vapores, poeiras e o reconhecimento de áreas classificadas. Avance quando concluir.",
+      "audioReady": true
+    },
+    {
+      "index": 7,
+      "id": "s2e",
+      "title": "Tetraedro do Fogo",
+      "file": "audios/s2e.mp3",
+      "text": "Desafio. Tetraedro do Fogo. Desafio ATEX — Módulo 1. Classifique quatro situações nos elementos do Tetraedro do Fogo: Combustível, Comburente, Energia de Ativação e Reação em Cadeia. Toque na opção correta para avançar. Conclua o desafio para validar o módulo. Situação 1: A substância inflamável que irá queimar pode estar presente na forma de gases, vapores, névoas ou poeiras combustíveis. Resposta correta: Combustível. É o Combustível: tudo aquilo que pode queimar. Situação 2: Geralmente, é o oxigênio do ar que alimenta e sustenta a combustão. Resposta correta: Comburente. É o Comburente: o agente que possibilita a combustão. Situação 3: O calor ou o centelhamento são necessários para iniciar a reação. Resposta correta: Energia de Ativação. É a Energia de Ativação: o gatilho que desencadeia a explosão. Situação 4: O que permite que a queima prossiga de forma contínua e incontrolável. Resposta correta: Reação em Cadeia. É a Reação em Cadeia: propaga a queima molécula a molécula.",
+      "audioReady": true
+    },
+    {
+      "index": 8,
+      "id": "s-mod2",
+      "title": "MÓDULO 2",
+      "file": "audios/s-mod2.mp3",
+      "text": "Início do Módulo 2. Classificação e Mapeamento de Áreas.",
+      "audioReady": true
+    },
+    {
+      "index": 9,
+      "id": "s3a",
+      "title": "Método de Classificação Elétrica",
+      "file": "audios/s3a.mp3",
+      "text": "Classificação. Método de Classificação Elétrica de Área. Como sabemos exatamente onde o perigo está? Para isso, utilizamos o Método de Classificação Elétrica de Área. Ele é um processo racional que delimita os volumes de controle e nos ajuda a mitigar qualquer fonte de ignição elétrica. Nesse processo, as substâncias são divididas em grupos principais. Grupo I — Minas: destinado a minas subterrâneas com risco de grisu. Grupo II — Gases Inflamáveis: abrange a maioria das indústrias, focado em gases e vapores inflamáveis. Grupo III — Poeiras Combustíveis: engloba poeiras e fibras combustíveis.",
+      "audioReady": true
+    },
+    {
+      "index": 10,
+      "id": "s3b",
+      "title": "Grupos e Subdivisões",
+      "file": "audios/s3b.mp3",
+      "text": "Classificação. Grupos e Subdivisões. Classificação de grupos — gás ou poeira. Grupo I — Minas. Subdivisão I: Metano, Grisu. Grupo II — Gases Inflamáveis. Subdivisão IIA: Propano. IIB: Etileno. IIC: Acetileno. Grupo III — Poeiras Combustíveis. Subdivisão IIIA: Fibras combustíveis. IIIB: Poeiras não condutivas. IIIC: Poeiras condutivas.",
+      "audioReady": true
+    },
+    {
+      "index": 11,
+      "id": "s3c",
+      "title": "Zonas para Gases e Vapores",
+      "file": "audios/s3c.mp3",
+      "text": "Vídeo. Zonas para Gases e Vapores. Classificação e Mapeamento de Áreas. Assista ao vídeo sobre zonas de áreas classificadas para gases e vapores. Avance quando concluir.",
+      "audioReady": true
+    },
+    {
+      "index": 12,
+      "id": "s3d",
+      "title": "Zonas ATEX",
+      "file": "audios/s3d.mp3",
+      "text": "Classificação. Zonas ATEX. Gases, vapores e névoas. Zona 0: Atmosfera Explosiva presente de forma contínua, por longos períodos. Frequência: Frequente. Zona 1: pode ocorrer em condições normais de funcionamento. Frequência: Ocasional. Zona 2: não é provável em condições normais. Frequência: Esporádico. Poeiras e fibras combustíveis. Zona 20: Nuvem de Poeira ou Fibra Combustível presente de forma contínua, por longos períodos. Frequência: Frequente. Zona 21: pode ocorrer em condições normais de funcionamento. Frequência: Ocasional. Zona 22: não é provável em condições normais. Frequência: Esporádico.",
+      "audioReady": false
+    },
+    {
+      "index": 13,
+      "id": "s3e",
+      "title": "Zonas de Poeiras e Fibras",
+      "file": "audios/s3e.mp3",
+      "text": "Vídeo. Zonas de Poeiras e Fibras. Classificação e Mapeamento de Áreas. Assista ao vídeo sobre zonas de áreas classificadas para poeiras e fibras combustíveis. Avance quando concluir.",
+      "audioReady": false
+    }
+  ]
+}
