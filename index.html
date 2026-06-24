@@ -82,7 +82,7 @@
         min-width: 0;
       }
 
-      .top-bar > div {
+      .top-bar>div {
         width: 100%;
         max-width: 100%;
         min-width: 0;
@@ -157,12 +157,10 @@
       /* Nav */
       #nav {
         padding: 10px 10px max(14px, env(safe-area-inset-bottom));
-        background: linear-gradient(
-          to top,
-          rgba(5, 5, 5, 0.97) 0%,
-          rgba(5, 5, 5, 0.7) 50%,
-          transparent 100%
-        );
+        background: linear-gradient(to top,
+            rgba(5, 5, 5, 0.97) 0%,
+            rgba(5, 5, 5, 0.7) 50%,
+            transparent 100%);
         gap: 8px;
         width: 100%;
         max-width: 100vw;
@@ -385,7 +383,7 @@
         padding: 0 4px;
       }
 
-      #s14b .pemt-fc-stack > .atencao {
+      #s14b .pemt-fc-stack>.atencao {
         width: 100%;
         margin: 0 0 8px 0 !important;
         padding: 8px 12px !important;
@@ -645,7 +643,7 @@
         line-height: 1.52 !important;
       }
 
-      #s2b .atex-intro-lead + .atex-intro-lead {
+      #s2b .atex-intro-lead+.atex-intro-lead {
         margin-top: 6px !important;
       }
 
@@ -848,13 +846,11 @@
       height: 160px;
       pointer-events: none;
       z-index: 0;
-      background: linear-gradient(
-        to top,
-        rgba(114, 9, 183, 0.22) 0%,
-        rgba(114, 9, 183, 0.1) 35%,
-        rgba(114, 9, 183, 0.03) 60%,
-        transparent 100%
-      );
+      background: linear-gradient(to top,
+          rgba(114, 9, 183, 0.22) 0%,
+          rgba(114, 9, 183, 0.1) 35%,
+          rgba(114, 9, 183, 0.03) 60%,
+          transparent 100%);
     }
 
     /* ── PROGRESS BAR ── */
@@ -880,13 +876,9 @@
       top: 14px;
       right: 16px;
       z-index: 901;
-      background: var(--white);
-      border-radius: 10px;
-      padding: 6px 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 20px rgba(114, 9, 183, 0.25);
     }
 
     #logo img {
@@ -967,12 +959,10 @@
       justify-content: space-between;
       z-index: 900;
       isolation: isolate;
-      background: linear-gradient(
-        to top,
-        rgba(5, 5, 5, 0.97) 0%,
-        rgba(5, 5, 5, 0.75) 45%,
-        transparent 100%
-      );
+      background: linear-gradient(to top,
+          rgba(5, 5, 5, 0.97) 0%,
+          rgba(5, 5, 5, 0.75) 45%,
+          transparent 100%);
       transition: opacity 0.3s ease, visibility 0.3s ease;
     }
 
@@ -985,14 +975,12 @@
       height: 2px;
       pointer-events: none;
       border-radius: 2px;
-      background: linear-gradient(
-        90deg,
-        transparent 0%,
-        rgba(114, 9, 183, 0.55) 25%,
-        rgba(114, 9, 183, 0.95) 50%,
-        rgba(114, 9, 183, 0.55) 75%,
-        transparent 100%
-      );
+      background: linear-gradient(90deg,
+          transparent 0%,
+          rgba(114, 9, 183, 0.55) 25%,
+          rgba(114, 9, 183, 0.95) 50%,
+          rgba(114, 9, 183, 0.55) 75%,
+          transparent 100%);
       box-shadow:
         0 0 18px 2px rgba(114, 9, 183, 0.45),
         0 0 48px 10px rgba(114, 9, 183, 0.18);
@@ -1007,12 +995,10 @@
       height: 100%;
       pointer-events: none;
       z-index: -1;
-      background: linear-gradient(
-        to top,
-        rgba(114, 9, 183, 0.14) 0%,
-        rgba(114, 9, 183, 0.05) 40%,
-        transparent 85%
-      );
+      background: linear-gradient(to top,
+          rgba(114, 9, 183, 0.14) 0%,
+          rgba(114, 9, 183, 0.05) 40%,
+          transparent 85%);
     }
 
     .nav-hidden {
@@ -1182,7 +1168,6 @@
       #logo {
         top: 5px;
         right: 5px;
-        padding: 2px 8px;
       }
 
       #logo img {
@@ -1495,7 +1480,7 @@
       line-height: 1.62;
     }
 
-    #s2b .atex-intro-lead + .atex-intro-lead {
+    #s2b .atex-intro-lead+.atex-intro-lead {
       margin-top: 10px !important;
     }
 
@@ -1627,8 +1612,17 @@
     }
 
     @keyframes atexTouchPulse {
-      0%, 100% { transform: translateY(0); opacity: 0.7; }
-      50% { transform: translateY(-3px); opacity: 1; }
+
+      0%,
+      100% {
+        transform: translateY(0);
+        opacity: 0.7;
+      }
+
+      50% {
+        transform: translateY(-3px);
+        opacity: 1;
+      }
     }
 
     .atex-source-back {
@@ -1960,7 +1954,7 @@
       flex-shrink: 0;
     }
 
-    #s14b .pemt-fc-stack > .atencao {
+    #s14b .pemt-fc-stack>.atencao {
       width: 100%;
       text-align: center;
       margin: 0 0 12px 0;
@@ -2830,8 +2824,15 @@
     }
 
     @keyframes elecPulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(114, 9, 183, 0.45); }
-      50% { box-shadow: 0 0 0 8px rgba(114, 9, 183, 0); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(114, 9, 183, 0.45);
+      }
+
+      50% {
+        box-shadow: 0 0 0 8px rgba(114, 9, 183, 0);
+      }
     }
 
     .elec-alert-main {
@@ -3461,6 +3462,7 @@
     }
 
     @media (max-height: 760px) {
+
       #s26 .mod3-hub-wrap,
       #s26 .mod3-shell {
         max-height: calc(100dvh - 185px);
@@ -3587,7 +3589,7 @@
       color: rgba(255, 255, 255, 0.88);
     }
 
-    #s34b .epi-harness-text-block p + p {
+    #s34b .epi-harness-text-block p+p {
       margin-top: 12px;
     }
 
@@ -3637,13 +3639,11 @@
       }
     }
 
-    /* ── Slide s4a / s4b — Módulo 4 ── */
-    #s4a,
+    /* ── Slide s4b — Módulo 4 ── */
     #s4b {
       min-height: 0;
     }
 
-    #s4a .content-area,
     #s4b .content-area {
       flex: 1 1 auto;
       min-height: 0;
@@ -3655,7 +3655,6 @@
       align-items: center;
     }
 
-    #s4a .s3a-wrap,
     #s4b .s3a-wrap {
       width: 100%;
       max-width: 760px;
@@ -3663,13 +3662,11 @@
     }
 
     @media (max-width: 768px) {
-      #s4a .content-area,
       #s4b .content-area {
         padding: 72px 10px 68px !important;
         justify-content: flex-start !important;
       }
 
-      #s4a .s3a-groups-nav,
       #s4b .atex-sources-nav {
         display: flex !important;
       }
@@ -3722,8 +3719,12 @@
       }
     }
 
-    /* ── Slide s4s — Tabela GHS / Sinalizações (Módulo 4) ── */
-    #s4s .content-area {
+    /* ── Slide s4s, s4s3, s3v4, s3v5 & s3v6 — Tabela GHS / Sinalizações / Painel de Segurança / Tipos de Proteção ── */
+    #s4s .content-area,
+    #s4s3 .content-area,
+    #s3v4 .content-area,
+    #s3v5 .content-area,
+    #s3v6 .content-area {
       flex: 1 1 auto;
       min-height: 0;
       overflow-y: auto;
@@ -3734,14 +3735,22 @@
       align-items: center;
     }
 
-    #s4s .s4s-wrap {
+    #s4s .s4s-wrap,
+    #s4s3 .s4s-wrap,
+    #s3v4 .s4s-wrap,
+    #s3v5 .s4s-wrap,
+    #s3v6 .s4s-wrap {
       width: fit-content;
       max-width: min(980px, 96vw);
       margin: 0 auto;
       text-align: center;
     }
 
-    #s4s .s4s-label {
+    #s4s .s4s-label,
+    #s4s3 .s4s-label,
+    #s3v4 .s4s-label,
+    #s3v5 .s4s-label,
+    #s3v6 .s4s-label {
       font-family: var(--font-h);
       font-size: clamp(12px, 1.8vw, 14px);
       font-weight: 700;
@@ -3751,7 +3760,11 @@
       margin-bottom: 12px;
     }
 
-    #s4s .s4s-table-card {
+    #s4s .s4s-table-card,
+    #s4s3 .s4s-table-card,
+    #s3v4 .s4s-table-card,
+    #s3v5 .s4s-table-card,
+    #s3v6 .s4s-table-card {
       display: inline-block;
       width: fit-content;
       max-width: 100%;
@@ -3762,7 +3775,11 @@
       box-shadow: none;
     }
 
-    #s4s .s4s-table-card .img-zoom-wrap {
+    #s4s .s4s-table-card .img-zoom-wrap,
+    #s4s3 .s4s-table-card .img-zoom-wrap,
+    #s3v4 .s4s-table-card .img-zoom-wrap,
+    #s3v5 .s4s-table-card .img-zoom-wrap,
+    #s3v6 .s4s-table-card .img-zoom-wrap {
       display: inline-block;
       width: fit-content;
       max-width: 100%;
@@ -3771,7 +3788,11 @@
       line-height: 0;
     }
 
-    #s4s .s4s-table-card img {
+    #s4s .s4s-table-card img,
+    #s4s3 .s4s-table-card img,
+    #s3v4 .s4s-table-card img,
+    #s3v5 .s4s-table-card img,
+    #s3v6 .s4s-table-card img {
       width: auto;
       max-width: 100%;
       height: auto;
@@ -3782,33 +3803,158 @@
     }
 
     @media (max-width: 768px) {
-      #s4s .content-area {
+
+      #s4s .content-area,
+      #s4s3 .content-area,
+      #s3v4 .content-area,
+      #s3v5 .content-area,
+      #s3v6 .content-area {
         padding: 72px 8px 68px !important;
         justify-content: flex-start !important;
       }
 
-      #s4s .s4s-table-card img {
+      #s4s .s4s-table-card img,
+      #s4s3 .s4s-table-card img,
+      #s3v4 .s4s-table-card img,
+      #s3v5 .s4s-table-card img,
+      #s3v6 .s4s-table-card img {
         max-height: min(58vh, 480px);
       }
     }
 
-    /* ── Desafio Módulo 4 (s4f) ── */
-    #s4f {
+    /* ── Slide s4s5 & s4s6 — Riscos, Reatividade, Inflamabilidade e Risco Específico (Módulo 4) ── */
+    #s4s5 .content-area,
+    #s4s6 .content-area {
+      flex: 1 1 auto;
+      min-height: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      padding: 8px clamp(12px, 2vw, 24px) 96px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #s4s5 .s4s5-wrap,
+    #s4s6 .s4s5-wrap {
+      width: 100%;
+      max-width: min(1080px, 96vw);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #s4s5 .s4s5-grid,
+    #s4s6 .s4s5-grid {
+      display: flex;
+      flex-direction: row;
+      gap: clamp(16px, 2.5vw, 32px);
+      justify-content: center;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    #s4s5 .s4s5-card,
+    #s4s6 .s4s5-card {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: clamp(12px, 1.8vw, 20px);
+      padding: clamp(12px, 1.8vw, 24px);
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+    }
+
+    #s4s5 .s4s5-card-title,
+    #s4s6 .s4s5-card-title {
+      font-family: var(--font-h);
+      font-size: clamp(14px, 1.6vw, 18px);
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    #s4s5 .img-zoom-wrap,
+    #s4s6 .img-zoom-wrap {
+      position: relative;
+      display: block;
+      width: 100%;
+      border-radius: clamp(8px, 1.2vw, 12px);
+      overflow: hidden;
+      line-height: 0;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    }
+
+    #s4s5 img,
+    #s4s6 img {
+      width: 100%;
+      height: auto;
+      max-height: min(48vh, 360px);
+      object-fit: contain;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+
+      #s4s5 .content-area,
+      #s4s6 .content-area {
+        padding: 72px 8px 68px !important;
+        justify-content: center !important;
+      }
+
+      #s4s5 .s4s5-grid,
+      #s4s6 .s4s5-grid {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+
+      #s4s5 .s4s5-card,
+      #s4s6 .s4s5-card {
+        padding: 6px 8px;
+        width: fit-content;
+        max-width: 90%;
+      }
+
+      #s4s5 .s4s5-card-title,
+      #s4s6 .s4s5-card-title {
+        font-size: 13px;
+        margin-bottom: 6px;
+      }
+
+      #s4s5 img,
+      #s4s6 img {
+        max-height: min(22vh, 150px);
+      }
+    }
+
+    /* ── Desafio Módulo 3 & Módulo 4 (s3g & s4f) ── */
+    #s4f,
+    #s3g {
       overflow: hidden;
     }
 
-    #s4f .top-bar {
+    #s4f .top-bar,
+    #s3g .top-bar {
       flex-shrink: 0;
       padding: 22px 120px 0 28px;
     }
 
-    #s4f .slide-title {
+    #s4f .slide-title,
+    #s3g .slide-title {
       font-size: clamp(18px, 2.6vw, 24px);
       margin-top: 8px;
       margin-bottom: 0;
     }
 
-    #s4f .content-area {
+    #s4f .content-area,
+    #s3g .content-area {
       flex: 1;
       min-height: 0;
       overflow: hidden;
@@ -3817,14 +3963,16 @@
       align-items: center;
     }
 
-    #s4f .mod4-risk-wrap {
+    #s4f .mod4-risk-wrap,
+    #s3g .mod4-risk-wrap {
       width: 100%;
       max-width: min(720px, 94vw);
       margin: 0 auto;
       height: auto;
     }
 
-    #s4f .mod4-risk-shell {
+    #s4f .mod4-risk-shell,
+    #s3g .mod4-risk-shell {
       background:
         radial-gradient(ellipse at 50% 0%, rgba(114, 9, 183, 0.12), transparent 55%),
         linear-gradient(160deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
@@ -3840,7 +3988,8 @@
       box-sizing: border-box;
     }
 
-    #s4f .mod4-risk-icon {
+    #s4f .mod4-risk-icon,
+    #s3g .mod4-risk-icon {
       width: clamp(56px, 10vw, 72px);
       height: clamp(56px, 10vw, 72px);
       margin: 0 auto 16px;
@@ -3853,7 +4002,8 @@
       box-shadow: 0 8px 24px rgba(114, 9, 183, 0.35);
     }
 
-    #s4f .mod4-risk-intro-title {
+    #s4f .mod4-risk-intro-title,
+    #s3g .mod4-risk-intro-title {
       font-family: var(--font-h);
       font-size: clamp(22px, 3.8vw, 28px);
       font-weight: 900;
@@ -3861,7 +4011,8 @@
       margin-bottom: 12px;
     }
 
-    #s4f .mod4-risk-intro-desc {
+    #s4f .mod4-risk-intro-desc,
+    #s3g .mod4-risk-intro-desc {
       font-size: clamp(15px, 2vw, 17px);
       color: rgba(255, 255, 255, 0.82);
       line-height: 1.65;
@@ -3869,29 +4020,34 @@
       margin: 0 auto 24px;
     }
 
-    #s4f .mod4-risk-steps {
+    #s4f .mod4-risk-steps,
+    #s3g .mod4-risk-steps {
       display: flex;
       gap: 8px;
       margin-bottom: 18px;
     }
 
-    #s4f .mod4-risk-step {
+    #s4f .mod4-risk-step,
+    #s3g .mod4-risk-step {
       flex: 1;
       height: 6px;
       border-radius: 99px;
       background: rgba(255, 255, 255, 0.14);
     }
 
-    #s4f .mod4-risk-step.cur {
+    #s4f .mod4-risk-step.cur,
+    #s3g .mod4-risk-step.cur {
       background: var(--red);
       box-shadow: 0 0 10px rgba(114, 9, 183, 0.45);
     }
 
-    #s4f .mod4-risk-step.done {
+    #s4f .mod4-risk-step.done,
+    #s3g .mod4-risk-step.done {
       background: #2ecc71;
     }
 
-    #s4f .mod4-risk-head {
+    #s4f .mod4-risk-head,
+    #s3g .mod4-risk-head {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -3899,7 +4055,8 @@
       margin-bottom: 16px;
     }
 
-    #s4f .mod4-risk-tag {
+    #s4f .mod4-risk-tag,
+    #s3g .mod4-risk-tag {
       font-family: var(--font-h);
       font-size: clamp(12px, 1.5vw, 14px);
       font-weight: 800;
@@ -3908,7 +4065,8 @@
       color: var(--red-lt);
     }
 
-    #s4f .mod4-risk-counter {
+    #s4f .mod4-risk-counter,
+    #s3g .mod4-risk-counter {
       font-family: var(--font-h);
       font-size: clamp(14px, 1.8vw, 16px);
       font-weight: 800;
@@ -3919,7 +4077,8 @@
       border: 1px solid rgba(255, 255, 255, 0.12);
     }
 
-    #s4f .mod4-risk-card {
+    #s4f .mod4-risk-card,
+    #s3g .mod4-risk-card {
       background: rgba(0, 0, 0, 0.28);
       border: 1px solid rgba(255, 255, 255, 0.14);
       border-radius: 20px;
@@ -3934,12 +4093,14 @@
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
     }
 
-    #s4f .mod4-risk-card.mod4-risk-ok {
+    #s4f .mod4-risk-card.mod4-risk-ok,
+    #s3g .mod4-risk-card.mod4-risk-ok {
       border-color: rgba(39, 174, 96, 0.55);
       transform: scale(1.01);
     }
 
-    #s4f .mod4-risk-text {
+    #s4f .mod4-risk-text,
+    #s3g .mod4-risk-text {
       font-family: var(--font-h);
       font-size: clamp(19px, 3.2vw, 24px);
       font-weight: 800;
@@ -3948,13 +4109,15 @@
       max-width: 36ch;
     }
 
-    #s4f .mod4-risk-zones {
+    #s4f .mod4-risk-zones,
+    #s3g .mod4-risk-zones {
       display: grid;
       grid-template-columns: 1fr;
       gap: 12px;
     }
 
-    #s4f .mod4-risk-btn {
+    #s4f .mod4-risk-btn,
+    #s3g .mod4-risk-btn {
       border: none;
       border-radius: clamp(14px, 1.8vw, 18px);
       padding: clamp(16px, 2.5vh, 20px) clamp(18px, 2.5vw, 24px);
@@ -3977,7 +4140,8 @@
       overflow: hidden;
     }
 
-    #s4f .mod4-risk-btn::after {
+    #s4f .mod4-risk-btn::after,
+    #s3g .mod4-risk-btn::after {
       content: '';
       position: absolute;
       inset: 0;
@@ -3985,7 +4149,8 @@
       pointer-events: none;
     }
 
-    #s4f .mod4-risk-btn > span:first-child {
+    #s4f .mod4-risk-btn>span:first-child,
+    #s3g .mod4-risk-btn>span:first-child {
       flex-shrink: 0;
       font-size: clamp(28px, 4.5vw, 36px);
       line-height: 1;
@@ -3993,38 +4158,45 @@
       z-index: 1;
     }
 
-    #s4f .mod4-risk-btn-label {
+    #s4f .mod4-risk-btn-label,
+    #s3g .mod4-risk-btn-label {
       position: relative;
       z-index: 1;
       font-size: inherit;
       line-height: 1.25;
     }
 
-    #s4f .mod4-risk-btn:hover {
+    #s4f .mod4-risk-btn:hover,
+    #s3g .mod4-risk-btn:hover {
       filter: brightness(1.07);
     }
 
-    #s4f .mod4-risk-btn:active {
+    #s4f .mod4-risk-btn:active,
+    #s3g .mod4-risk-btn:active {
       transform: scale(0.98);
     }
 
-    #s4f .mod4-risk-btn.zone-ignicao {
+    #s4f .mod4-risk-btn.zone-ignicao,
+    #s3g .mod4-risk-btn.zone-risco {
       background: linear-gradient(145deg, #b8860b, #f4c430);
       box-shadow: 0 8px 22px rgba(244, 196, 48, 0.28);
       color: #1a1200;
     }
 
-    #s4f .mod4-risk-btn.zone-quimico {
+    #s4f .mod4-risk-btn.zone-quimico,
+    #s3g .mod4-risk-btn.zone-gas {
       background: linear-gradient(145deg, #1e8449, #2ecc71);
       box-shadow: 0 8px 22px rgba(46, 204, 113, 0.28);
     }
 
-    #s4f .mod4-risk-btn.zone-procedimento {
+    #s4f .mod4-risk-btn.zone-procedimento,
+    #s3g .mod4-risk-btn.zone-poeira {
       background: linear-gradient(145deg, #c0392b, #e74c3c);
       box-shadow: 0 8px 22px rgba(231, 76, 60, 0.3);
     }
 
-    #s4f .mod4-risk-hint {
+    #s4f .mod4-risk-hint,
+    #s3g .mod4-risk-hint {
       text-align: center;
       font-size: clamp(13px, 1.6vw, 15px);
       color: rgba(255, 255, 255, 0.55);
@@ -4032,7 +4204,8 @@
       line-height: 1.45;
     }
 
-    #s4f .mod4-risk-feedback {
+    #s4f .mod4-risk-feedback,
+    #s3g .mod4-risk-feedback {
       min-height: 0;
       text-align: center;
       font-family: var(--font-h);
@@ -4046,16 +4219,20 @@
     }
 
     @media (min-width: 768px) {
-      #s4f .mod4-risk-wrap {
+
+      #s4f .mod4-risk-wrap,
+      #s3g .mod4-risk-wrap {
         max-width: min(820px, 92vw);
       }
 
-      #s4f .mod4-risk-zones {
+      #s4f .mod4-risk-zones,
+      #s3g .mod4-risk-zones {
         grid-template-columns: repeat(3, 1fr);
         gap: 14px;
       }
 
-      #s4f .mod4-risk-btn {
+      #s4f .mod4-risk-btn,
+      #s3g .mod4-risk-btn {
         flex-direction: column;
         justify-content: center;
         text-align: center;
@@ -4065,43 +4242,52 @@
         font-size: clamp(12px, 1.2vw, 14px);
       }
 
-      #s4f .mod4-risk-btn > span:first-child {
+      #s4f .mod4-risk-btn>span:first-child,
+      #s3g .mod4-risk-btn>span:first-child {
         margin-bottom: 2px;
       }
     }
 
     @media (min-width: 1024px) {
-      #s4f .mod4-risk-btn {
+
+      #s4f .mod4-risk-btn,
+      #s3g .mod4-risk-btn {
         font-size: clamp(13px, 1.1vw, 15px);
         min-height: 120px;
       }
     }
 
     @media (max-width: 768px) {
-      #s4f .top-bar {
+
+      #s4f .top-bar,
+      #s3g .top-bar {
         padding: 10px 175px 0 14px !important;
       }
 
-      #s4f .slide-title {
+      #s4f .slide-title,
+      #s3g .slide-title {
         font-size: 17px;
         margin-top: 4px;
         line-height: 1.15;
       }
 
-      #s4f .content-area {
+      #s4f .content-area,
+      #s3g .content-area {
         padding: 8px 14px 80px;
         overflow: hidden;
         justify-content: center;
         align-items: center;
       }
 
-      #s4f .mod4-risk-wrap {
+      #s4f .mod4-risk-wrap,
+      #s3g .mod4-risk-wrap {
         max-width: min(100%, 94vw);
         height: auto;
         flex: 0 0 auto;
       }
 
-      #s4f .mod4-risk-shell {
+      #s4f .mod4-risk-shell,
+      #s3g .mod4-risk-shell {
         padding: 18px 16px;
         height: auto;
         max-height: calc(100dvh - 170px);
@@ -4109,12 +4295,14 @@
         overflow-x: hidden;
       }
 
-      #s4f .mod4-risk-zones {
+      #s4f .mod4-risk-zones,
+      #s3g .mod4-risk-zones {
         grid-template-columns: 1fr;
         gap: 10px;
       }
 
-      #s4f .mod4-risk-btn {
+      #s4f .mod4-risk-btn,
+      #s3g .mod4-risk-btn {
         flex-direction: row;
         justify-content: flex-start;
         text-align: left;
@@ -4124,51 +4312,61 @@
         gap: 12px;
       }
 
-      #s4f .mod4-risk-btn > span:first-child {
+      #s4f .mod4-risk-btn>span:first-child,
+      #s3g .mod4-risk-btn>span:first-child {
         font-size: clamp(22px, 5.5vw, 26px);
       }
 
-      #s4f .mod4-risk-card {
+      #s4f .mod4-risk-card,
+      #s3g .mod4-risk-card {
         padding: 16px 14px;
         margin-bottom: 12px;
       }
 
-      #s4f .mod4-risk-text {
+      #s4f .mod4-risk-text,
+      #s3g .mod4-risk-text {
         font-size: clamp(16px, 4.2vw, 18px);
         line-height: 1.4;
       }
 
-      #s4f .mod4-risk-head {
+      #s4f .mod4-risk-head,
+      #s3g .mod4-risk-head {
         margin-bottom: 12px;
       }
 
-      #s4f .mod4-risk-steps {
+      #s4f .mod4-risk-steps,
+      #s3g .mod4-risk-steps {
         margin-bottom: 12px;
       }
 
-      #s4f .mod4-risk-hint {
+      #s4f .mod4-risk-hint,
+      #s3g .mod4-risk-hint {
         font-size: 12px;
         margin-top: 10px;
       }
 
-      #s4f .mod4-risk-feedback {
+      #s4f .mod4-risk-feedback,
+      #s3g .mod4-risk-feedback {
         min-height: 0;
         font-size: 12px;
         margin-top: 8px;
       }
 
-      #s4f .mod4-risk-intro-title {
+      #s4f .mod4-risk-intro-title,
+      #s3g .mod4-risk-intro-title {
         font-size: 20px;
         margin-bottom: 8px;
       }
 
-      #s4f .mod4-risk-intro-desc {
+      #s4f .mod4-risk-intro-desc,
+      #s3g .mod4-risk-intro-desc {
         font-size: 14px;
         margin-bottom: 18px;
         line-height: 1.5;
       }
 
-      #s4f .mod4-risk-icon {
+      #s4f .mod4-risk-icon,
+      #s3g .mod4-risk-icon {
         width: 52px;
         height: 52px;
         font-size: 26px;
@@ -4285,7 +4483,7 @@
       background: var(--white);
       padding: 1.5rem;
       border-radius: 20px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.1);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.1);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -5296,7 +5494,7 @@
         box-sizing: border-box;
       }
 
-      .top-bar > div {
+      .top-bar>div {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
@@ -5838,6 +6036,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
+
       .mod-intro-slide.active .mod-intro-badge,
       .mod-intro-slide.active .mod-intro-title,
       .mod-intro-slide.active .mod-intro-sub {
@@ -6290,21 +6489,27 @@
       border-color: rgba(255, 193, 7, 0.35);
     }
 
-    .s3a-summary-pill--i strong { color: #ffc107; }
+    .s3a-summary-pill--i strong {
+      color: #ffc107;
+    }
 
     .s3a-summary-pill--ii {
       background: linear-gradient(160deg, rgba(100, 181, 246, 0.12), rgba(66, 165, 245, 0.05));
       border-color: rgba(100, 181, 246, 0.3);
     }
 
-    .s3a-summary-pill--ii strong { color: #64b5f6; }
+    .s3a-summary-pill--ii strong {
+      color: #64b5f6;
+    }
 
     .s3a-summary-pill--iii {
       background: linear-gradient(160deg, rgba(186, 104, 200, 0.14), rgba(114, 9, 183, 0.08));
       border-color: rgba(186, 104, 200, 0.35);
     }
 
-    .s3a-summary-pill--iii strong { color: #ce93d8; }
+    .s3a-summary-pill--iii strong {
+      color: #ce93d8;
+    }
 
     .s3a-groups-label {
       font-family: var(--font-h);
@@ -6466,9 +6671,17 @@
       border-left: 3px solid transparent;
     }
 
-    .s3a-sub-i { border-left-color: rgba(255, 193, 7, 0.55); }
-    .s3a-sub-ii { border-left-color: rgba(100, 181, 246, 0.5); }
-    .s3a-sub-iii { border-left-color: rgba(186, 104, 200, 0.55); }
+    .s3a-sub-i {
+      border-left-color: rgba(255, 193, 7, 0.55);
+    }
+
+    .s3a-sub-ii {
+      border-left-color: rgba(100, 181, 246, 0.5);
+    }
+
+    .s3a-sub-iii {
+      border-left-color: rgba(186, 104, 200, 0.55);
+    }
 
     .s3a-code {
       flex-shrink: 0;
@@ -7485,14 +7698,47 @@
       cursor: not-allowed;
     }
 
-    #s2e .mod1-game-btn.zone-fuel { background: linear-gradient(145deg, #c0392b, #e74c3c); box-shadow: 0 8px 20px rgba(231, 76, 60, 0.25); }
-    #s2e .mod1-game-btn.zone-oxidizer { background: linear-gradient(145deg, #2471a3, #3498db); box-shadow: 0 8px 20px rgba(52, 152, 219, 0.25); }
-    #s2e .mod1-game-btn.zone-energy { background: linear-gradient(145deg, #d68910, #f1c40f); box-shadow: 0 8px 20px rgba(241, 196, 15, 0.25); color: #1a1a1a; }
-    #s2e .mod1-game-btn.zone-chain { background: linear-gradient(145deg, var(--red-dk), var(--red)); box-shadow: 0 8px 20px rgba(114, 9, 183, 0.3); }
-    #s2e .mod1-game-btn.zone-gas { background: linear-gradient(145deg, #1a5276, #5dade2); box-shadow: 0 8px 20px rgba(93, 173, 226, 0.25); }
-    #s2e .mod1-game-btn.zone-mist { background: linear-gradient(145deg, #566573, #95a5a6); box-shadow: 0 8px 20px rgba(149, 165, 166, 0.25); }
-    #s2e .mod1-game-btn.zone-dust { background: linear-gradient(145deg, #784212, #dc7633); box-shadow: 0 8px 20px rgba(220, 118, 51, 0.25); }
-    #s2e .mod1-game-btn.zone-prevention { background: linear-gradient(145deg, #9a7d0a, #f4d03f); box-shadow: 0 8px 20px rgba(244, 208, 63, 0.25); color: #1a1a1a; }
+    #s2e .mod1-game-btn.zone-fuel {
+      background: linear-gradient(145deg, #c0392b, #e74c3c);
+      box-shadow: 0 8px 20px rgba(231, 76, 60, 0.25);
+    }
+
+    #s2e .mod1-game-btn.zone-oxidizer {
+      background: linear-gradient(145deg, #2471a3, #3498db);
+      box-shadow: 0 8px 20px rgba(52, 152, 219, 0.25);
+    }
+
+    #s2e .mod1-game-btn.zone-energy {
+      background: linear-gradient(145deg, #d68910, #f1c40f);
+      box-shadow: 0 8px 20px rgba(241, 196, 15, 0.25);
+      color: #1a1a1a;
+    }
+
+    #s2e .mod1-game-btn.zone-chain {
+      background: linear-gradient(145deg, var(--red-dk), var(--red));
+      box-shadow: 0 8px 20px rgba(114, 9, 183, 0.3);
+    }
+
+    #s2e .mod1-game-btn.zone-gas {
+      background: linear-gradient(145deg, #1a5276, #5dade2);
+      box-shadow: 0 8px 20px rgba(93, 173, 226, 0.25);
+    }
+
+    #s2e .mod1-game-btn.zone-mist {
+      background: linear-gradient(145deg, #566573, #95a5a6);
+      box-shadow: 0 8px 20px rgba(149, 165, 166, 0.25);
+    }
+
+    #s2e .mod1-game-btn.zone-dust {
+      background: linear-gradient(145deg, #784212, #dc7633);
+      box-shadow: 0 8px 20px rgba(220, 118, 51, 0.25);
+    }
+
+    #s2e .mod1-game-btn.zone-prevention {
+      background: linear-gradient(145deg, #9a7d0a, #f4d03f);
+      box-shadow: 0 8px 20px rgba(244, 208, 63, 0.25);
+      color: #1a1a1a;
+    }
 
     #s2e .mod1-game-hint {
       text-align: center;
@@ -8035,9 +8281,122 @@
         border: 1px solid rgba(255, 255, 255, 0.2);
         text-align: center;
       }
+    }
 
-      #notification.show {
-        transform: translateX(-50%) translateY(0);
+    /* ── Slide s3t — Classes de Temperatura (Módulo 3) ── */
+    .s3t-tables-container {
+      display: flex;
+      flex-direction: row;
+      gap: clamp(16px, 2vw, 24px);
+      justify-content: center;
+      width: 100%;
+      max-width: 1020px;
+      margin: 0 auto;
+    }
+
+    .s3t-temp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.2fr;
+      grid-auto-rows: auto;
+      gap: 2px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      flex: 1;
+      min-width: 0;
+    }
+
+    .s3t-temp-head {
+      background: linear-gradient(135deg, rgba(100, 181, 246, 0.35), rgba(66, 165, 245, 0.2));
+      padding: clamp(8px, 1.4vh, 12px) clamp(10px, 1.2vw, 14px);
+      font-family: var(--font-h);
+      font-size: clamp(10px, 1vw, 12px);
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cream);
+      line-height: 1.35;
+      text-align: center;
+    }
+
+    .s3t-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(8px, 1.2vh, 11px) clamp(10px, 1.2vw, 14px);
+      font-size: clamp(11px, 1.2vh + 0.3vw, 14px);
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.92);
+      border-left: 3px solid transparent;
+      text-align: center;
+    }
+
+    .s3t-row-odd {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .s3t-row-even {
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .s3t-col-tcode {
+      font-family: var(--font-h);
+      font-weight: 900;
+      letter-spacing: 0.04em;
+    }
+
+    /* Color borders on left of column 1 to group T-classes and match premium aesthetic */
+    /* T1 & T2 group (gold accent) */
+    .s3t-group-gold {
+      border-left-color: rgba(255, 193, 7, 0.55);
+    }
+
+    .s3t-group-gold.s3t-col-tcode {
+      color: #ffe082;
+      background: linear-gradient(160deg, rgba(255, 193, 7, 0.15), rgba(255, 152, 0, 0.08));
+    }
+
+    /* T3 group (blue accent) */
+    .s3t-group-blue {
+      border-left-color: rgba(100, 181, 246, 0.5);
+    }
+
+    .s3t-group-blue.s3t-col-tcode {
+      color: #bbdefb;
+      background: rgba(100, 181, 246, 0.08);
+    }
+
+    /* T4, T5, T6 group (purple accent) */
+    .s3t-group-purple {
+      border-left-color: rgba(186, 104, 200, 0.55);
+    }
+
+    .s3t-group-purple.s3t-col-tcode {
+      color: #e1bee7;
+      background: linear-gradient(160deg, rgba(186, 104, 200, 0.15), rgba(114, 9, 183, 0.08));
+    }
+
+    @media (max-width: 768px) {
+      .s3t-tables-container {
+        flex-direction: column;
+        gap: 12px;
+        max-width: 440px;
+      }
+
+      .s3t-temp-grid {
+        grid-template-columns: 1fr 1fr 1.1fr;
+        border-radius: 12px;
+      }
+
+      .s3t-cell {
+        padding: 8px 6px;
+        font-size: 11px;
+      }
+
+      .s3t-temp-head {
+        padding: 8px 6px;
+        font-size: 9px;
       }
     }
   </style>
@@ -8063,8 +8422,7 @@
     </div>
     <div class="top-control-item">
       <button id="btn-accessibility" onclick="toggleAccessibilityNarration()" class="btn-accessibility-toggle"
-        title="Transcrição em áudio" aria-pressed="false"
-        aria-label="Ouvir transcrição em áudio do slide">
+        title="Transcrição em áudio" aria-pressed="false" aria-label="Ouvir transcrição em áudio do slide">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path
             d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3zm7 9a1 1 0 0 0-2 0 5 5 0 0 1-10 0 1 1 0 0 0-2 0 7 7 0 0 0 6 6.92V21H9a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-2v-3.08A7 7 0 0 0 19 11z" />
@@ -8078,7 +8436,8 @@
         title="Modo simulação — avançar sem concluir vídeos, jogos ou quizzes" aria-pressed="false"
         aria-label="Ativar modo simulação">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.76-.5 2.54l2.6 1.53c.63-1.24 1-2.65 1-4.15 0-5.16-3.99-9.41-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z" />
+          <path
+            d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.76-.5 2.54l2.6 1.53c.63-1.24 1-2.65 1-4.15 0-5.16-3.99-9.41-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z" />
         </svg>
         <span class="control-btn-text simulation-text">Simulação: OFF</span>
       </button>
@@ -8088,8 +8447,7 @@
       <button id="btn-tutorial" type="button" onclick="openTutorialModal()" class="btn-tutorial-toggle"
         title="Abrir tutorial do curso" aria-label="Abrir tutorial do curso">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path
-            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" />
         </svg>
         <span class="control-btn-text tutorial-text">Tutorial</span>
       </button>
@@ -8107,9 +8465,7 @@
 
     <!-- LOGO -->
     <div id="logo">
-      <img
-        src="img/NOVA LOGO TECNOCURSOS 1.png"
-        alt="Tecno-Cursos Logo">
+      <img src="img/NOVA LOGO TECNOCURSOS BRANCO SEM SLOGAN 1.png" alt="Tecno-Cursos Logo">
     </div>
 
     <div id="slide-counter">1 / 13</div>
@@ -8164,7 +8520,8 @@
               <iframe
                 src="https://player.vimeo.com/video/1202814059?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Introdução — NR-10 ATEX Áreas Classificadas">
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Introdução — NR-10 ATEX Áreas Classificadas">
               </iframe>
             </div>
           </div>
@@ -8242,8 +8599,11 @@
                     <div class="ic-circle">⚠️</div>
                     <h4>Área Classificada e Atmosfera Explosiva</h4>
                   </div>
-                  <p class="atex-intro-lead">Uma <strong>área classificada</strong> é qualquer local no ambiente de trabalho que apresente ou possa apresentar uma <strong>mistura perigosa de substâncias inflamáveis com o ar</strong>.</p>
-                  <p class="atex-intro-lead">Essa mistura, chamada de <strong>Atmosfera Explosiva</strong>, pode se formar devido à presença de gases, vapores, névoas, poeiras ou fibras combustíveis.</p>
+                  <p class="atex-intro-lead">Uma <strong>área classificada</strong> é qualquer local no ambiente de
+                    trabalho que apresente ou possa apresentar uma <strong>mistura perigosa de substâncias inflamáveis
+                      com o ar</strong>.</p>
+                  <p class="atex-intro-lead">Essa mistura, chamada de <strong>Atmosfera Explosiva</strong>, pode se
+                    formar devido à presença de gases, vapores, névoas, poeiras ou fibras combustíveis.</p>
                 </div>
                 <figure class="atex-symbol-figure">
                   <img src="img/simbolo.png" alt="Símbolo ATEX — triângulo amarelo EX">
@@ -8254,15 +8614,18 @@
 
             <div class="atex-sources-carousel" id="atex-sources-carousel">
               <div class="atex-sources-container" id="atex-sources-container">
-                <div class="atex-source-card atex-source-active req-item" role="button" tabindex="0" aria-expanded="false">
+                <div class="atex-source-card atex-source-active req-item" role="button" tabindex="0"
+                  aria-expanded="false">
                   <div class="atex-source-flip">
                     <div class="atex-source-face atex-source-front">
                       <div class="atex-source-icon">💨</div>
                       <h4>Gases e Vapores</h4>
-                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
+                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span>
+                        Toque para revelar</span>
                     </div>
                     <div class="atex-source-face atex-source-back">
-                      <p class="atex-source-back-def">Substâncias inflamáveis em estado gasoso ou vaporizado misturadas ao ar.</p>
+                      <p class="atex-source-back-def">Substâncias inflamáveis em estado gasoso ou vaporizado misturadas
+                        ao ar.</p>
                       <div class="atex-source-examples">
                         <span class="atex-ex-group-label">Exemplos</span>
                         <div class="atex-ex-chips">
@@ -8278,10 +8641,12 @@
                     <div class="atex-source-face atex-source-front">
                       <div class="atex-source-icon">🌫️</div>
                       <h4>Névoas</h4>
-                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
+                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span>
+                        Toque para revelar</span>
                     </div>
                     <div class="atex-source-face atex-source-back">
-                      <p class="atex-source-back-def">Gotículas finas suspensas no ar capazes de formar atmosfera explosiva.</p>
+                      <p class="atex-source-back-def">Gotículas finas suspensas no ar capazes de formar atmosfera
+                        explosiva.</p>
                       <div class="atex-source-examples">
                         <span class="atex-ex-group-label">Exemplos</span>
                         <div class="atex-ex-chips">
@@ -8298,10 +8663,12 @@
                     <div class="atex-source-face atex-source-front">
                       <div class="atex-source-icon">🧱</div>
                       <h4>Poeiras e Fibras</h4>
-                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
+                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span>
+                        Toque para revelar</span>
                     </div>
                     <div class="atex-source-face atex-source-back">
-                      <p class="atex-source-back-def">Partículas sólidas combustíveis que, em concentração, podem explodir.</p>
+                      <p class="atex-source-back-def">Partículas sólidas combustíveis que, em concentração, podem
+                        explodir.</p>
                       <div class="atex-source-examples">
                         <div class="atex-ex-group">
                           <span class="atex-ex-group-label">Poeiras</span>
@@ -8417,12 +8784,16 @@
 
           <div id="mod1-game-play" class="mod1-game-wrap" style="display:none;">
             <div class="game-header" style="margin-bottom: 18px;">
-              <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
+              <div
+                style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:8px; flex-wrap:wrap; gap:8px;">
                 <div>
                   <div class="mod1-phase-badge" id="mod1-game-phase-tag">Tetraedro do Fogo</div>
-                  <span class="mod1-game-label" style="font-family:var(--font-h); font-size:11px; font-weight:700; color:var(--red); letter-spacing:1px; text-transform:uppercase; display:block;">Classifique a situação</span>
+                  <span class="mod1-game-label"
+                    style="font-family:var(--font-h); font-size:11px; font-weight:700; color:var(--red); letter-spacing:1px; text-transform:uppercase; display:block;">Classifique
+                    a situação</span>
                 </div>
-                <span id="mod1-game-counter" class="mod1-game-counter" style="font-family:var(--font-h); font-size:14px; font-weight:700; color:var(--white);">1 / 4</span>
+                <span id="mod1-game-counter" class="mod1-game-counter"
+                  style="font-family:var(--font-h); font-size:14px; font-weight:700; color:var(--white);">1 / 4</span>
               </div>
               <div class="game-progress"
                 style="height: 8px; background: rgba(255,255,255,0.05); border-radius: 4px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
@@ -8444,12 +8815,15 @@
           <div id="mod1-game-result" class="mod1-game-wrap"
             style="display:none; text-align:center; padding: 24px 20px; background: rgba(255,255,255,0.03); border-radius: 28px; border: 1px solid rgba(255,255,255,0.1); animation: slideUp 0.6s ease;">
             <div class="r-icon" style="font-size: 56px; margin-bottom: 12px;">🏅</div>
-            <h3 style="font-family:var(--font-h); font-size: clamp(24px, 5vw, 30px); color:var(--gold); margin-bottom:8px; font-weight:900;">
+            <h3
+              style="font-family:var(--font-h); font-size: clamp(24px, 5vw, 30px); color:var(--gold); margin-bottom:8px; font-weight:900;">
               Desafio Concluído!</h3>
-            <div class="r-status ap" style="display:inline-block; padding: 6px 18px; font-size: 13px; margin-bottom:12px; font-weight:700;">
+            <div class="r-status ap"
+              style="display:inline-block; padding: 6px 18px; font-size: 13px; margin-bottom:12px; font-weight:700;">
               Módulo 1 — Fundamentos Validados
             </div>
-            <p id="mod1-game-result-msg" class="mod1-game-result-msg" style="color:rgba(255,255,255,0.88); font-size:15px; line-height:1.55; margin-bottom:20px;"></p>
+            <p id="mod1-game-result-msg" class="mod1-game-result-msg"
+              style="color:rgba(255,255,255,0.88); font-size:15px; line-height:1.55; margin-bottom:20px;"></p>
             <button class="btn-retry"
               style="background: var(--white); color: var(--black); font-weight: 800; border-radius: 99px; padding: 12px 32px;"
               onclick="resetMod1Game()">JOGAR NOVAMENTE</button>
@@ -8487,33 +8861,36 @@
 
             <div class="s3a-intro">
               <p class="s3a-intro-question">Como sabemos exatamente onde o perigo está?</p>
-              <div class="s3a-method-badge"><span aria-hidden="true">⚡</span> Método de Classificação Elétrica de Área</div>
-              <p class="s3a-intro-text">Para isso, utilizamos um <strong>processo racional</strong> que delimita os volumes de controle e nos ajuda a mitigar qualquer fonte de ignição elétrica.</p>
-              <p class="s3a-intro-text">Nesse processo, as substâncias são divididas em <strong>grupos principais</strong>:</p>
+              <div class="s3a-method-badge"><span aria-hidden="true">⚡</span> Método de Classificação Elétrica de Área
+              </div>
+              <p class="s3a-intro-text">Para isso, utilizamos um <strong>processo racional</strong> que delimita os
+                volumes de controle e nos ajuda a mitigar qualquer fonte de ignição elétrica.</p>
+              <p class="s3a-intro-text">Nesse processo, as substâncias são divididas em <strong>grupos
+                  principais</strong>:</p>
             </div>
 
             <div class="s3a-groups-block">
               <p class="s3a-groups-label"><span aria-hidden="true">📋</span> Grupos de classificação ATEX</p>
               <div class="s3a-groups-carousel" id="s3a-groups-carousel">
                 <div class="s3a-groups-summary" id="s3a-groups-container">
-                <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--i s3a-group-active">
-                  <div class="s3a-group-icon" aria-hidden="true">⛏️</div>
-                  <strong>Grupo I</strong>
-                  <span class="s3a-group-sub">Minas</span>
-                  <p class="s3a-group-desc">Minas subterrâneas com risco de grisu</p>
-                </div>
-                <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--ii">
-                  <div class="s3a-group-icon" aria-hidden="true">🔥</div>
-                  <strong>Grupo II</strong>
-                  <span class="s3a-group-sub">Gases Inflamáveis</span>
-                  <p class="s3a-group-desc">Gases e vapores inflamáveis — maioria das indústrias</p>
-                </div>
-                <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--iii">
-                  <div class="s3a-group-icon" aria-hidden="true">🌫️</div>
-                  <strong>Grupo III</strong>
-                  <span class="s3a-group-sub">Poeiras Combustíveis</span>
-                  <p class="s3a-group-desc">Poeiras e fibras combustíveis</p>
-                </div>
+                  <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--i s3a-group-active">
+                    <div class="s3a-group-icon" aria-hidden="true">⛏️</div>
+                    <strong>Grupo I</strong>
+                    <span class="s3a-group-sub">Minas</span>
+                    <p class="s3a-group-desc">Minas subterrâneas com risco de grisu</p>
+                  </div>
+                  <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--ii">
+                    <div class="s3a-group-icon" aria-hidden="true">🔥</div>
+                    <strong>Grupo II</strong>
+                    <span class="s3a-group-sub">Gases Inflamáveis</span>
+                    <p class="s3a-group-desc">Gases e vapores inflamáveis — maioria das indústrias</p>
+                  </div>
+                  <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--iii">
+                    <div class="s3a-group-icon" aria-hidden="true">🌫️</div>
+                    <strong>Grupo III</strong>
+                    <span class="s3a-group-sub">Poeiras Combustíveis</span>
+                    <p class="s3a-group-desc">Poeiras e fibras combustíveis</p>
+                  </div>
                 </div>
                 <div class="s3a-groups-nav">
                   <button type="button" class="s3a-groups-btn" id="btn-s3a-groups-prev" aria-label="Grupo anterior">
@@ -8551,7 +8928,8 @@
             <div class="s3b-table-block">
               <p class="s3a-table-label">Classificação de grupos — gás ou poeira</p>
 
-              <div class="s3a-class-grid" id="s3b-class-grid" role="table" aria-label="Classificação de grupos de áreas classificadas">
+              <div class="s3a-class-grid" id="s3b-class-grid" role="table"
+                aria-label="Classificação de grupos de áreas classificadas">
                 <div class="s3a-class-head" role="columnheader">Grupo</div>
                 <div class="s3a-class-head" role="columnheader">
                   <span class="s3b-sub-head-long">Subdivisão da área classificada com gás ou poeira</span>
@@ -8623,7 +9001,7 @@
           <div class="video-wrap">
             <div class="video-box">
               <iframe
-                src="https://player.vimeo.com/video/1201542896?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                src="https://player.vimeo.com/video/1203454839?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                 style="position:absolute;top:0;left:0;width:100%;height:100%;"
                 title="Zonas para Gases e Vapores — NR-10 ATEX Áreas Classificadas">
@@ -8648,7 +9026,7 @@
           <div class="video-wrap">
             <div class="video-box">
               <iframe
-                src="https://player.vimeo.com/video/1202100016?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                src="https://player.vimeo.com/video/1203486065?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                 style="position:absolute;top:0;left:0;width:100%;height:100%;"
                 title="Zonas de Poeiras e Fibras — NR-10 ATEX Áreas Classificadas">
@@ -8671,70 +9049,77 @@
           <div class="s3a-wrap">
             <p class="s3a-table-label">Classificação de zonas ATEX</p>
             <div class="s3d-zones-carousel" id="s3d-zones-carousel">
-            <div class="s3d-zones-grid" role="table" aria-label="Zonas ATEX — gases, vapores, névoas, poeiras e fibras">
-              <div class="s3d-zones-head" role="columnheader">Tipo</div>
-              <div class="s3d-zones-head" role="columnheader">Descrição</div>
-              <div class="s3d-zones-head" role="columnheader">Frequência</div>
+              <div class="s3d-zones-grid" role="table"
+                aria-label="Zonas ATEX — gases, vapores, névoas, poeiras e fibras">
+                <div class="s3d-zones-head" role="columnheader">Tipo</div>
+                <div class="s3d-zones-head" role="columnheader">Descrição</div>
+                <div class="s3d-zones-head" role="columnheader">Frequência</div>
 
-              <div class="s3d-zones-subhead s3d-group-gas" role="row">
-                <span class="s3d-group-tag">Grupo II</span>
-                <span class="s3d-group-label">Gases, vapores e névoas</span>
-              </div>
+                <div class="s3d-zones-subhead s3d-group-gas" role="row">
+                  <span class="s3d-group-tag">Grupo II</span>
+                  <span class="s3d-group-label">Gases, vapores e névoas</span>
+                </div>
 
-              <div class="s3d-zone-type s3d-row-0" role="cell">ZONA 0</div>
-              <div class="s3d-zone-desc s3d-row-0" role="cell">
-                Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa está <strong>presente de forma contínua</strong>, por longos períodos.
-              </div>
-              <div class="s3d-zone-freq s3d-row-0" role="cell">Frequente</div>
+                <div class="s3d-zone-type s3d-row-0" role="cell">ZONA 0</div>
+                <div class="s3d-zone-desc s3d-row-0" role="cell">
+                  Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa está <strong>presente de forma
+                    contínua</strong>, por longos períodos.
+                </div>
+                <div class="s3d-zone-freq s3d-row-0" role="cell">Frequente</div>
 
-              <div class="s3d-zone-type s3d-row-1" role="cell">ZONA 1</div>
-              <div class="s3d-zone-desc s3d-row-1" role="cell">
-                Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa <strong>pode ocorrer em condições normais</strong> de funcionamento.
-              </div>
-              <div class="s3d-zone-freq s3d-row-1" role="cell">Ocasional</div>
+                <div class="s3d-zone-type s3d-row-1" role="cell">ZONA 1</div>
+                <div class="s3d-zone-desc s3d-row-1" role="cell">
+                  Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa <strong>pode ocorrer em condições
+                    normais</strong> de funcionamento.
+                </div>
+                <div class="s3d-zone-freq s3d-row-1" role="cell">Ocasional</div>
 
-              <div class="s3d-zone-type s3d-row-2" role="cell">ZONA 2</div>
-              <div class="s3d-zone-desc s3d-row-2" role="cell">
-                Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa <strong>não é provável</strong> de ocorrer em <strong>condições normais</strong> de funcionamento.
-              </div>
-              <div class="s3d-zone-freq s3d-row-2" role="cell">Esporádico</div>
+                <div class="s3d-zone-type s3d-row-2" role="cell">ZONA 2</div>
+                <div class="s3d-zone-desc s3d-row-2" role="cell">
+                  Local onde uma Atmosfera Explosiva (ATEX): Gás, Vapor ou Névoa <strong>não é provável</strong> de
+                  ocorrer em <strong>condições normais</strong> de funcionamento.
+                </div>
+                <div class="s3d-zone-freq s3d-row-2" role="cell">Esporádico</div>
 
-              <div class="s3d-zones-subhead s3d-group-dust" role="row">
-                <span class="s3d-group-tag">Grupo III</span>
-                <span class="s3d-group-label">Poeiras e fibras combustíveis</span>
-              </div>
+                <div class="s3d-zones-subhead s3d-group-dust" role="row">
+                  <span class="s3d-group-tag">Grupo III</span>
+                  <span class="s3d-group-label">Poeiras e fibras combustíveis</span>
+                </div>
 
-              <div class="s3d-zone-type s3d-row-3" role="cell">ZONA 20</div>
-              <div class="s3d-zone-desc s3d-row-3" role="cell">
-                Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível está <strong>presente de forma contínua</strong>, por longos períodos.
-              </div>
-              <div class="s3d-zone-freq s3d-row-3" role="cell">Frequente</div>
+                <div class="s3d-zone-type s3d-row-3" role="cell">ZONA 20</div>
+                <div class="s3d-zone-desc s3d-row-3" role="cell">
+                  Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível está <strong>presente
+                    de forma contínua</strong>, por longos períodos.
+                </div>
+                <div class="s3d-zone-freq s3d-row-3" role="cell">Frequente</div>
 
-              <div class="s3d-zone-type s3d-row-4" role="cell">ZONA 21</div>
-              <div class="s3d-zone-desc s3d-row-4" role="cell">
-                Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível <strong>pode ocorrer em condições normais</strong> de funcionamento.
-              </div>
-              <div class="s3d-zone-freq s3d-row-4" role="cell">Ocasional</div>
+                <div class="s3d-zone-type s3d-row-4" role="cell">ZONA 21</div>
+                <div class="s3d-zone-desc s3d-row-4" role="cell">
+                  Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível <strong>pode ocorrer
+                    em condições normais</strong> de funcionamento.
+                </div>
+                <div class="s3d-zone-freq s3d-row-4" role="cell">Ocasional</div>
 
-              <div class="s3d-zone-type s3d-row-5" role="cell">ZONA 22</div>
-              <div class="s3d-zone-desc s3d-row-5" role="cell">
-                Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível <strong>não é provável</strong> de ocorrer em <strong>condições normais</strong> de funcionamento.
+                <div class="s3d-zone-type s3d-row-5" role="cell">ZONA 22</div>
+                <div class="s3d-zone-desc s3d-row-5" role="cell">
+                  Local onde uma Atmosfera Explosiva (ATEX): Nuvem de Poeira ou Fibra Combustível <strong>não é
+                    provável</strong> de ocorrer em <strong>condições normais</strong> de funcionamento.
+                </div>
+                <div class="s3d-zone-freq s3d-row-5" role="cell">Esporádico</div>
               </div>
-              <div class="s3d-zone-freq s3d-row-5" role="cell">Esporádico</div>
-            </div>
-            <div class="s3d-zones-nav">
-              <button type="button" class="s3d-zones-btn" id="btn-s3d-zones-prev" aria-label="Zona anterior">
-                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
-                  <polygon points="15,3 3,10 15,17" />
-                </svg>
-              </button>
-              <div class="s3d-zones-counter" id="s3d-zones-counter">1 / 6</div>
-              <button type="button" class="s3d-zones-btn" id="btn-s3d-zones-next" aria-label="Próxima zona">
-                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
-                  <polygon points="5,3 17,10 5,17" />
-                </svg>
-              </button>
-            </div>
+              <div class="s3d-zones-nav">
+                <button type="button" class="s3d-zones-btn" id="btn-s3d-zones-prev" aria-label="Zona anterior">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                    <polygon points="15,3 3,10 15,17" />
+                  </svg>
+                </button>
+                <div class="s3d-zones-counter" id="s3d-zones-counter">1 / 6</div>
+                <button type="button" class="s3d-zones-btn" id="btn-s3d-zones-next" aria-label="Próxima zona">
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                    <polygon points="5,3 17,10 5,17" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -8778,14 +9163,16 @@
               <p id="qm2-text" class="q-text">...</p>
               <div id="qm2-options" class="q-options"></div>
               <div id="qm2-feedback" class="q-feedback"></div>
-              <button type="button" id="btn-next-qm2" class="btn-next-q" onclick="nextQuestionMod2()">PRÓXIMA PERGUNTA</button>
+              <button type="button" id="btn-next-qm2" class="btn-next-q" onclick="nextQuestionMod2()">PRÓXIMA
+                PERGUNTA</button>
             </div>
 
             <div id="qm2-result-panel" style="display:none; text-align:center;">
               <div id="qm2-pct" class="result-pct green">100%</div>
               <div class="r-stars" id="qm2-stars">⭐⭐⭐</div>
               <div id="qm2-status" class="r-status ap">✅ Módulo Concluído!</div>
-              <p id="qm2-sub" style="color:rgba(255,255,255,0.85); font-size:15px; line-height:1.55; margin:16px 0 24px;"></p>
+              <p id="qm2-sub"
+                style="color:rgba(255,255,255,0.85); font-size:15px; line-height:1.55; margin:16px 0 24px;"></p>
               <button type="button" class="btn-retry" onclick="resetQuizMod2()">TENTAR NOVAMENTE</button>
             </div>
           </div>
@@ -8793,6 +9180,385 @@
         <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
             <path d="M0,60 C360,20 720,90 1080,35 C1260,10 1380,70 1440,55 L1440,100 L0,100 Z"
               fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── MÓDULO 3 INTRO ── -->
+      <section class="slide mod-intro-slide" id="s-mod3">
+        <div class="content-area mod-intro-area">
+          <div class="mod-intro-inner">
+            <div class="mod-intro-badge">Início do Módulo</div>
+            <div class="mod-intro-title">MÓDULO 3</div>
+            <div class="mod-intro-sub">Equipamentos de Proteção, Temperaturas e Rotulagem</div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,65 C360,20 720,90 1080,40 C1260,15 1390,70 1440,60 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3v: VÍDEO — Equipamentos, Temperaturas e Rotulagem (Módulo 3) ── -->
+      <section class="slide video-slide" id="s3v">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Riscos Elétricos e <span>Fontes de Ignição</span></div>
+            <div class="slide-subtitle">Riscos Elétricos e Fontes de Ignição</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1203798138?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Riscos Elétricos e Fontes de Ignição — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3v2: VÍDEO — Classe de Temperatura (Módulo 3) ── -->
+      <section class="slide video-slide" id="s3v2">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Classe de <span>Temperatura</span></div>
+            <div class="slide-subtitle">Equipamentos de Proteção, Temperaturas e Rotulagem</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204287609?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Classe de Temperatura — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3t: TABELA — Classes de Temperatura (Módulo 3) ── -->
+      <section class="slide" id="s3t">
+        <div class="top-bar">
+          <span class="section-tag">🌡️ Temperatura</span>
+          <div class="slide-title" style="margin-top:6px">Classes de <span>Temperatura</span></div>
+        </div>
+        <div class="content-area"
+          style="display:flex; flex-direction:column; align-items:center; justify-content:flex-start; overflow-y:auto; padding: 20px 24px 80px;">
+          <div class="s3t-wrap" style="width:100%; max-width:800px; margin: auto;">
+            <p class="s3t-table-label"
+              style="font-family:var(--font-h); font-size:clamp(13px, 1.2vw, 16px); font-weight:800; color:var(--gold-lt); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:12px; text-align:center;">
+              Classificação de Temperatura Máxima de Superfície (NEC 500.8(C))
+            </p>
+            <div class="s3t-tables-container">
+              <!-- Sub-tabela 1: T1 até T3 -->
+              <div class="s3t-temp-grid" role="table"
+                aria-label="Classificação de Temperatura Máxima de Superfície - Parte 1">
+                <div class="s3t-temp-head" role="columnheader">Temp. (°C)</div>
+                <div class="s3t-temp-head" role="columnheader">Temp. (°F)</div>
+                <div class="s3t-temp-head" role="columnheader">Classe (Código T)</div>
+
+                <!-- T1 -->
+                <div class="s3t-cell s3t-row-odd s3t-group-gold" role="cell">450 °C</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-gold" role="cell">842 °F</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-gold s3t-col-tcode" role="cell">T1</div>
+
+                <!-- T2 -->
+                <div class="s3t-cell s3t-row-even s3t-group-gold" role="cell">300 °C</div>
+                <div class="s3t-cell s3t-row-even s3t-group-gold" role="cell">572 °F</div>
+                <div class="s3t-cell s3t-row-even s3t-group-gold s3t-col-tcode" role="cell">T2</div>
+
+                <!-- T2A -->
+                <div class="s3t-cell s3t-row-odd s3t-group-gold" role="cell">280 °C</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-gold" role="cell">536 °F</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-gold s3t-col-tcode" role="cell">T2A</div>
+
+                <!-- T2B -->
+                <div class="s3t-cell s3t-row-even s3t-group-gold" role="cell">260 °C</div>
+                <div class="s3t-cell s3t-row-even s3t-group-gold" role="cell">500 °F</div>
+                <div class="s3t-cell s3t-row-even s3t-group-gold s3t-col-tcode" role="cell">T2B</div>
+
+                <!-- T2C -->
+                <div class="s3t-cell s3t-row-odd s3t-group-gold" role="cell">230 °C</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-gold" role="cell">446 °F</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-gold s3t-col-tcode" role="cell">T2C</div>
+
+                <!-- T2D -->
+                <div class="s3t-cell s3t-row-even s3t-group-gold" role="cell">215 °C</div>
+                <div class="s3t-cell s3t-row-even s3t-group-gold" role="cell">419 °F</div>
+                <div class="s3t-cell s3t-row-even s3t-group-gold s3t-col-tcode" role="cell">T2D</div>
+
+                <!-- T3 -->
+                <div class="s3t-cell s3t-row-odd s3t-group-blue" role="cell">200 °C</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-blue" role="cell">392 °F</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-blue s3t-col-tcode" role="cell">T3</div>
+              </div>
+
+              <!-- Sub-tabela 2: T3A até T6 -->
+              <div class="s3t-temp-grid" role="table"
+                aria-label="Classificação de Temperatura Máxima de Superfície - Parte 2">
+                <div class="s3t-temp-head" role="columnheader">Temp. (°C)</div>
+                <div class="s3t-temp-head" role="columnheader">Temp. (°F)</div>
+                <div class="s3t-temp-head" role="columnheader">Classe (Código T)</div>
+
+                <!-- T3A -->
+                <div class="s3t-cell s3t-row-odd s3t-group-blue" role="cell">180 °C</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-blue" role="cell">356 °F</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-blue s3t-col-tcode" role="cell">T3A</div>
+
+                <!-- T3B -->
+                <div class="s3t-cell s3t-row-even s3t-group-blue" role="cell">165 °C</div>
+                <div class="s3t-cell s3t-row-even s3t-group-blue" role="cell">329 °F</div>
+                <div class="s3t-cell s3t-row-even s3t-group-blue s3t-col-tcode" role="cell">T3B</div>
+
+                <!-- T3C -->
+                <div class="s3t-cell s3t-row-odd s3t-group-blue" role="cell">160 °C</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-blue" role="cell">320 °F</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-blue s3t-col-tcode" role="cell">T3C</div>
+
+                <!-- T4 -->
+                <div class="s3t-cell s3t-row-even s3t-group-purple" role="cell">135 °C</div>
+                <div class="s3t-cell s3t-row-even s3t-group-purple" role="cell">275 °F</div>
+                <div class="s3t-cell s3t-row-even s3t-group-purple s3t-col-tcode" role="cell">T4</div>
+
+                <!-- T4A -->
+                <div class="s3t-cell s3t-row-odd s3t-group-purple" role="cell">120 °C</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-purple" role="cell">248 °F</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-purple s3t-col-tcode" role="cell">T4A</div>
+
+                <!-- T5 -->
+                <div class="s3t-cell s3t-row-even s3t-group-purple" role="cell">100 °C</div>
+                <div class="s3t-cell s3t-row-even s3t-group-purple" role="cell">212 °F</div>
+                <div class="s3t-cell s3t-row-even s3t-group-purple s3t-col-tcode" role="cell">T5</div>
+
+                <!-- T6 -->
+                <div class="s3t-cell s3t-row-odd s3t-group-purple" role="cell">85 °C</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-purple" role="cell">185 °F</div>
+                <div class="s3t-cell s3t-row-odd s3t-group-purple s3t-col-tcode" role="cell">T6</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,60 C360,20 720,90 1080,35 C1260,10 1380,70 1440,55 L1440,100 L0,100 Z"
+              fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3v3: VÍDEO — Tipos e Modos de Proteção Ex (Gases e Vapores) (Módulo 3) ── -->
+      <section class="slide video-slide" id="s3v3">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Modos de <span>Proteção Ex</span></div>
+            <div class="slide-subtitle">Tipos e Modos de Proteção Ex (Gases e Vapores)</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204182700?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Tipos e Modos de Proteção Ex (Gases e Vapores) — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3v4: IMAGEM — Tipos de Proteção Ex (Módulo 3) ── -->
+      <section class="slide" id="s3v4">
+        <div class="top-bar">
+          <span class="section-tag">🏷️ Sinalização</span>
+          <div class="slide-title" style="margin-top:6px">Tipos de <span>Proteção Ex</span></div>
+        </div>
+        <div class="content-area s4s-content">
+          <div class="s4s-wrap">
+            <p class="s4s-label">Tipos de Proteção Ex para Gases e Vapores</p>
+            <div class="s4s-table-card">
+              <div class="img-zoom-wrap" onclick="openImgModal('img/tipo de protecao.png')">
+                <img src="img/tipo de protecao.png" alt="Tipos de Proteção Ex para Gases e Vapores">
+                <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                  onclick="event.stopPropagation(); openImgModal('img/tipo de protecao.png')">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path
+                      d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3v4_video: VÍDEO — Tipos e Modos de Proteção Ex (Poeiras e Fibras) (Módulo 3) ── -->
+      <section class="slide video-slide" id="s3v4_video">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Modos de <span>Proteção Ex</span></div>
+            <div class="slide-subtitle">Tipos e Modos de Proteção Ex (Poeiras e Fibras)</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204263590?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Tipos e Modos de Proteção Ex (Poeiras e Fibras) — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3v5: IMAGEM — Modos de Proteção para Poeiras e Fibras Combustíveis (Módulo 3) ── -->
+      <section class="slide" id="s3v5">
+        <div class="top-bar">
+          <span class="section-tag">🏷️ Sinalização</span>
+          <div class="slide-title" style="margin-top:6px">Modos de <span>Proteção Ex</span></div>
+        </div>
+        <div class="content-area s4s-content">
+          <div class="s4s-wrap">
+            <p class="s4s-label">Modos de Proteção para Poeiras e Fibras Combustíveis</p>
+            <div class="s4s-table-card">
+              <div class="img-zoom-wrap" onclick="openImgModal('img/modos protecao.png')">
+                <img src="img/modos protecao.png" alt="Modos de Proteção para Poeiras e Fibras Combustíveis">
+                <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                  onclick="event.stopPropagation(); openImgModal('img/modos protecao.png')">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path
+                      d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3v6: IMAGEM — Rotulagem de Equipamentos Ex (Módulo 3) ── -->
+      <section class="slide" id="s3v6">
+        <div class="top-bar">
+          <span class="section-tag">🏷️ Sinalização</span>
+          <div class="slide-title" style="margin-top:6px">Rotulagem de <span>Equipamentos Ex</span></div>
+        </div>
+        <div class="content-area s4s-content">
+          <div class="s4s-wrap">
+            <p class="s4s-label">Rotulagem de Equipamentos Ex</p>
+            <div class="s4s-table-card">
+              <div class="img-zoom-wrap" onclick="openImgModal('img/rotulagem de quipamentos.png')">
+                <img src="img/rotulagem de quipamentos.png" alt="Rotulagem de Equipamentos Ex">
+                <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                  onclick="event.stopPropagation(); openImgModal('img/rotulagem de quipamentos.png')">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path
+                      d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S3g: DESAFIO — Módulo 3 (Equipamentos e Modos de Proteção) ── -->
+      <section class="slide" id="s3g">
+        <div class="top-bar">
+          <span class="section-tag">🎮 DESAFIO</span>
+          <div class="slide-title">Classifique o <span>Conceito</span></div>
+        </div>
+        <div class="content-area">
+
+          <div id="mod3-game-intro" class="mod4-risk-wrap mod4-risk-shell"
+            style="text-align:center; animation: fadeIn 0.8s ease;">
+            <div class="mod4-risk-icon">⚙️</div>
+            <h3 class="mod4-risk-intro-title">Desafio ATEX — Módulo 3</h3>
+            <p class="mod4-risk-intro-desc">
+              Classifique cada conceito ou equipamento de proteção no grupo adequado:
+              <strong>Gases e Vapores</strong>, <strong>Poeiras e Fibras</strong> ou
+              <strong>Riscos e Temperaturas</strong>. São <strong>3 conceitos</strong> para testar seu aprendizado.
+            </p>
+            <button class="btn-start" style="padding: 14px 36px; font-size: 14px; text-transform: uppercase;"
+              onclick="startMod3Game()">INICIAR DESAFIO</button>
+          </div>
+
+          <div id="mod3-game-play" class="mod4-risk-wrap mod4-risk-shell" style="display:none;">
+            <div class="mod4-risk-steps" id="mod3-game-progress" aria-hidden="true"></div>
+            <div class="mod4-risk-head">
+              <span class="mod4-risk-tag">⚙️ Classifique a Proteção</span>
+              <span class="mod4-risk-counter" id="mod3-game-counter">1 / 3</span>
+            </div>
+            <div id="mod3-game-card" class="mod4-risk-card">
+              <p id="mod3-game-text" class="mod4-risk-text">...</p>
+            </div>
+            <div class="mod4-risk-zones">
+              <button type="button" class="mod4-risk-btn zone-gas" onclick="handleMod3GameChoice('gases')">
+                <span>💨</span>
+                <span class="mod4-risk-btn-label">Gases e Vapores</span>
+              </button>
+              <button type="button" class="mod4-risk-btn zone-poeira" onclick="handleMod3GameChoice('poeiras')">
+                <span>🌾</span>
+                <span class="mod4-risk-btn-label">Poeiras e Fibras</span>
+              </button>
+              <button type="button" class="mod4-risk-btn zone-risco" onclick="handleMod3GameChoice('riscos')">
+                <span>🌡️</span>
+                <span class="mod4-risk-btn-label">Riscos e Temp.</span>
+              </button>
+            </div>
+            <p class="mod4-risk-hint">Toque na categoria correta para avançar</p>
+            <div id="mod3-game-feedback" class="mod4-risk-feedback"></div>
+          </div>
+
+          <div id="mod3-game-result" class="mod4-risk-wrap mod4-risk-shell mod3-result-panel"
+            style="display:none; animation: slideUp 0.6s ease; text-align:center;">
+            <div class="r-icon">🏆</div>
+            <h3
+              style="font-family:var(--font-h); font-size: clamp(26px, 4vw, 34px); color:var(--gold); margin-bottom:10px; font-weight:900;">
+              Desafio Concluído!</h3>
+            <div class="r-status ap"
+              style="display:inline-block; padding: 8px 22px; font-size: 14px; margin-bottom:16px; font-weight:700;">
+              Módulo 3 Validado
+            </div>
+            <p id="mod3-game-result-msg"
+              style="color:rgba(255,255,255,0.88); font-size:clamp(15px,2vw,17px); line-height:1.6; margin-bottom:24px; max-width:520px; margin-left:auto; margin-right:auto;">
+            </p>
+            <button class="btn-retry"
+              style="background: var(--white); color: var(--black); font-weight: 800; border-radius: 99px; padding: 12px 32px;"
+              onclick="resetMod3Game()">TENTAR NOVAMENTE</button>
+          </div>
+
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,50 C480,10 960,85 1440,30 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
           </svg></div>
       </section>
 
@@ -8823,7 +9589,7 @@
           <div class="video-wrap">
             <div class="video-box">
               <iframe
-                src="https://player.vimeo.com/video/1202496568?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                src="https://player.vimeo.com/video/1203548837?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                 style="position:absolute;top:0;left:0;width:100%;height:100%;"
                 title="Riscos Químicos — NR-10 ATEX Áreas Classificadas">
@@ -8849,9 +9615,11 @@
               <div class="img-zoom-wrap" onclick="openImgModal('img/sinalizacoes.jpg')">
                 <img src="img/sinalizacoes.jpg"
                   alt="Tabela GHS — classes de perigo: oxidantes, toxidade aguda, carcinogênico, inflamáveis, corrosivos, irritante, explosivos, gases sob pressão e perigo ambiental">
-                <button type="button" class="zoom-btn" title="Ver em tela cheia" onclick="event.stopPropagation(); openImgModal('img/sinalizacoes.jpg')">
+                <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                  onclick="event.stopPropagation(); openImgModal('img/sinalizacoes.jpg')">
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
+                    <path
+                      d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
                   </svg>
                 </button>
               </div>
@@ -8863,51 +9631,115 @@
           </svg></div>
       </section>
 
-      <!-- ── S4a: Riscos Inerentes (Módulo 4) ── -->
-      <section class="slide" id="s4a">
+      <!-- ── S4s2: VÍDEO — Sinalização no Transporte e Painel de Segurança (Módulo 4) ── -->
+      <section class="slide video-slide" id="s4s2">
         <div class="top-bar">
-          <span class="section-tag">⚠️ Riscos</span>
-          <div class="slide-title" style="margin-top:6px">Riscos <span>Inerentes</span></div>
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Sinalização no <span>Transporte</span></div>
+            <div class="slide-subtitle">Sinalização no Transporte e Painel de Segurança</div>
+          </div>
         </div>
-        <div class="content-area s3a-content">
-          <div class="s3a-wrap">
-            <div class="s3a-intro">
-              <p class="s3a-intro-question">O que torna uma área classificada perigosa no dia a dia?</p>
-              <p class="s3a-intro-text">Além da classificação de zonas, existem <strong>riscos inerentes</strong> — perigos que podem estar presentes mesmo quando seguimos procedimentos. Conhecê-los é o primeiro passo para evitar ignição de uma atmosfera explosiva.</p>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1203808435?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Sinalização no Transporte e Painel de Segurança — NR-10 ATEX Áreas Classificadas">
+              </iframe>
             </div>
-            <div class="s3a-groups-block">
-              <p class="s3a-groups-label"><span aria-hidden="true">📋</span> Principais riscos em áreas ATEX</p>
-              <div class="s3a-groups-carousel" id="s4a-risks-carousel">
-                <div class="s3a-groups-summary" id="s4a-risks-container">
-                  <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--ii s3a-group-active">
-                    <div class="s3a-group-icon" aria-hidden="true">⚡</div>
-                    <strong>Fontes de Ignição</strong>
-                    <span class="s3a-group-sub">Energia de ativação</span>
-                    <p class="s3a-group-desc">Faíscas, superfícies quentes, descargas eletrostáticas e equipamentos elétricos não certificados Ex podem acender uma mistura inflamável.</p>
-                  </div>
-                  <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--iii">
-                    <div class="s3a-group-icon" aria-hidden="true">💨</div>
-                    <strong>Formação de AE</strong>
-                    <span class="s3a-group-sub">Atmosfera explosiva</span>
-                    <p class="s3a-group-desc">Vazamentos, evaporação, acúmulo de poeiras e névoas aumentam a concentração de substâncias inflamáveis no ar.</p>
-                  </div>
-                  <div class="s3a-group-card s3a-summary-pill s3a-summary-pill--i">
-                    <div class="s3a-group-icon" aria-hidden="true">🔧</div>
-                    <strong>Equipamento Inadequado</strong>
-                    <span class="s3a-group-sub">Certificação Ex</span>
-                    <p class="s3a-group-desc">Usar material sem certificação Ex, temperatura superficial incorreta ou categoria de proteção inadequada para a zona é risco inerente grave.</p>
-                  </div>
-                </div>
-                <div class="s3a-groups-nav">
-                  <button type="button" class="s3a-groups-btn" id="btn-s4a-risks-prev" aria-label="Risco anterior">
-                    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
-                      <polygon points="15,3 3,10 15,17" />
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S4s3: IMAGEM — Painel de Segurança (Módulo 4) ── -->
+      <section class="slide" id="s4s3">
+        <div class="top-bar">
+          <span class="section-tag">🏷️ Sinalização</span>
+          <div class="slide-title" style="margin-top:6px">Painel de <span>Segurança</span></div>
+        </div>
+        <div class="content-area s4s-content">
+          <div class="s4s-wrap">
+            <p class="s4s-label">Painel de Segurança e Ficha de Emergência</p>
+            <div class="s4s-table-card">
+              <div class="img-zoom-wrap" onclick="openImgModal('img/painel de segurança.png')">
+                <img src="img/painel de segurança.png" alt="Painel de Segurança e Ficha de Emergência">
+                <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                  onclick="event.stopPropagation(); openImgModal('img/painel de segurança.png')">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path
+                      d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S4s4: VÍDEO — Diamante de Hommel (Módulo 4) ── -->
+      <section class="slide video-slide" id="s4s4">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Diamante de <span>Hommel</span></div>
+            <div class="slide-subtitle">Entendendo o Diamante de Hommel</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1203955238?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Diamante de Hommel — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S4s5: IMAGENS — Riscos à Saúde e Reatividade (Módulo 4) ── -->
+      <section class="slide" id="s4s5">
+        <div class="top-bar">
+          <span class="section-tag">🏷️ Sinalização</span>
+          <div class="slide-title" style="margin-top:6px">Riscos à Saúde e <span>Reatividade</span></div>
+        </div>
+        <div class="content-area s4s5-content">
+          <div class="s4s5-wrap">
+            <div class="s4s5-grid">
+              <div class="s4s5-card">
+                <p class="s4s5-card-title">Riscos à Saúde</p>
+                <div class="img-zoom-wrap" onclick="openImgModal('img/riscos a saude 1.png')">
+                  <img src="img/riscos a saude 1.png" alt="Riscos à Saúde — Classificação do Diamante de Hommel">
+                  <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                    onclick="event.stopPropagation(); openImgModal('img/riscos a saude 1.png')">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
                     </svg>
                   </button>
-                  <div class="s3a-groups-counter" id="s4a-risks-counter">1 / 3</div>
-                  <button type="button" class="s3a-groups-btn" id="btn-s4a-risks-next" aria-label="Próximo risco">
-                    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
-                      <polygon points="5,3 17,10 5,17" />
+                </div>
+              </div>
+              <div class="s4s5-card">
+                <p class="s4s5-card-title">Reatividade</p>
+                <div class="img-zoom-wrap" onclick="openImgModal('img/reatividade 2.png')">
+                  <img src="img/reatividade 2.png" alt="Reatividade — Classificação do Diamante de Hommel">
+                  <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                    onclick="event.stopPropagation(); openImgModal('img/reatividade 2.png')">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
                     </svg>
                   </button>
                 </div>
@@ -8916,177 +9748,123 @@
           </div>
         </div>
         <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-            <path d="M0,60 C360,20 720,90 1080,35 C1260,10 1380,70 1440,55 L1440,100 L0,100 Z"
-              fill="rgba(114,9,183,0.07)" />
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
           </svg></div>
       </section>
 
-      <!-- ── S4b: Identificação de Produtos Químicos (Módulo 4) ── -->
-      <section class="slide" id="s4b">
-        <div class="top-bar"><span class="section-tag">🧪 Químicos</span>
-          <div class="slide-title" style="margin-top:6px">Identificação de <span>Produtos Químicos</span></div>
+      <!-- ── S4s6: IMAGENS — Inflamabilidade e Risco Específico (Módulo 4) ── -->
+      <section class="slide" id="s4s6">
+        <div class="top-bar">
+          <span class="section-tag">🏷️ Sinalização</span>
+          <div class="slide-title" style="margin-top:6px">Inflamabilidade e <span>Risco Específico</span></div>
         </div>
-        <div class="content-area s3-gap-fix pemt-intro-content">
-          <div class="pemt-intro-wrap">
-            <div class="icon-card pemt-intro-card atex-hero-card">
-              <div class="atex-hero-inner">
-                <div class="atex-hero-text">
-                  <div class="atex-hero-head">
-                    <div class="ic-circle">🧪</div>
-                    <h4>FDS, Rotulagem e Compatibilidade</h4>
-                  </div>
-                  <p class="atex-intro-lead">Em áreas classificadas, o manuseio de <strong>produtos químicos inflamáveis</strong> exige identificação correta antes de qualquer operação.</p>
-                  <p class="atex-intro-lead">A <strong>Ficha de Dados de Segurança (FDS)</strong>, a rotulagem GHS e a verificação de compatibilidade química são ferramentas essenciais para prevenir ignição e reações perigosas.</p>
+        <div class="content-area s4s5-content">
+          <div class="s4s5-wrap">
+            <div class="s4s5-grid">
+              <div class="s4s5-card">
+                <p class="s4s5-card-title">Inflamabilidade</p>
+                <div class="img-zoom-wrap" onclick="openImgModal('img/inflamabilidade 3.png')">
+                  <img src="img/inflamabilidade 3.png" alt="Inflamabilidade — Classificação do Diamante de Hommel">
+                  <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                    onclick="event.stopPropagation(); openImgModal('img/inflamabilidade 3.png')">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="s4s5-card">
+                <p class="s4s5-card-title">Risco Específico</p>
+                <div class="img-zoom-wrap" onclick="openImgModal('img/risco especifico 4.png')">
+                  <img src="img/risco especifico 4.png" alt="Risco Específico — Classificação do Diamante de Hommel">
+                  <button type="button" class="zoom-btn" title="Ver em tela cheia"
+                    onclick="event.stopPropagation(); openImgModal('img/risco especifico 4.png')">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                      <path
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM10 7H9v2H7v1h2v2h1v-2h2V9h-2V7z" />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
-
-            <div class="atex-sources-carousel" id="s4b-chem-carousel">
-              <div class="atex-sources-container" id="s4b-chem-container">
-                <div class="atex-source-card atex-source-active req-item" role="button" tabindex="0" aria-expanded="false">
-                  <div class="atex-source-flip">
-                    <div class="atex-source-face atex-source-front">
-                      <div class="atex-source-icon">📄</div>
-                      <h4>FDS — Ficha de Dados de Segurança</h4>
-                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
-                    </div>
-                    <div class="atex-source-face atex-source-back">
-                      <p class="atex-source-back-def">Documento obrigatório com informações sobre perigos, manuseio, armazenamento, EPIs e procedimentos de emergência do produto.</p>
-                      <div class="atex-source-examples">
-                        <span class="atex-ex-group-label">Consulte sempre</span>
-                        <div class="atex-ex-chips">
-                          <span class="atex-ex-chip">Ponto de fulgor</span>
-                          <span class="atex-ex-chip">Limites de explosividade</span>
-                          <span class="atex-ex-chip">Incompatibilidades</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="atex-source-card req-item" role="button" tabindex="0" aria-expanded="false">
-                  <div class="atex-source-flip">
-                    <div class="atex-source-face atex-source-front">
-                      <div class="atex-source-icon">🏷️</div>
-                      <h4>Rotulagem GHS / CLP</h4>
-                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
-                    </div>
-                    <div class="atex-source-face atex-source-back">
-                      <p class="atex-source-back-def">Pictogramas, frases de perigo (H) e de precaução (P) identificam inflamabilidade, toxicidade e reatividade do produto.</p>
-                      <div class="atex-source-examples">
-                        <span class="atex-ex-group-label">Sinais de alerta</span>
-                        <div class="atex-ex-chips">
-                          <span class="atex-ex-chip">Chama (inflamável)</span>
-                          <span class="atex-ex-chip">Explosão</span>
-                          <span class="atex-ex-chip">Corrosão</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="atex-source-card req-item" role="button" tabindex="0" aria-expanded="false">
-                  <div class="atex-source-flip">
-                    <div class="atex-source-face atex-source-front">
-                      <div class="atex-source-icon">⚗️</div>
-                      <h4>Compatibilidade Química</h4>
-                      <span class="atex-source-touch-hint"><span class="atex-touch-icon" aria-hidden="true">👆</span> Toque para revelar</span>
-                    </div>
-                    <div class="atex-source-face atex-source-back">
-                      <p class="atex-source-back-def">Misturar produtos incompatíveis pode gerar reação violenta, calor, gases tóxicos ou inflamáveis — risco direto de atmosfera explosiva.</p>
-                      <div class="atex-source-examples">
-                        <span class="atex-ex-group-label">Antes de misturar</span>
-                        <div class="atex-ex-chips">
-                          <span class="atex-ex-chip">Consulte a FDS</span>
-                          <span class="atex-ex-chip">Separe incompatíveis</span>
-                          <span class="atex-ex-chip">Use recipientes adequados</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="atex-sources-nav">
-                <button type="button" class="atex-sources-btn" id="btn-s4b-chem-prev" aria-label="Item anterior">
-                  <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
-                    <polygon points="15,3 3,10 15,17" />
-                  </svg>
-                </button>
-                <div class="atex-sources-counter" id="s4b-chem-counter">1 / 3</div>
-                <button type="button" class="atex-sources-btn" id="btn-s4b-chem-next" aria-label="Próximo item">
-                  <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
-                    <polygon points="5,3 17,10 5,17" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-
           </div>
         </div>
         <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-            <path d="M0,60 C360,20 720,90 1080,35 C1260,10 1380,70 1440,55 L1440,100 L0,100 Z"
-              fill="rgba(114,9,183,0.07)" />
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
           </svg></div>
       </section>
 
-      <!-- ── S4f: DESAFIO — Módulo 4 (Riscos e Produtos Químicos) ── -->
+      <!-- ── S4a: VÍDEO — Riscos Inerentes (Módulo 4) ── -->
+      <section class="slide video-slide" id="s4a">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Riscos <span>Inerentes</span></div>
+            <div class="slide-subtitle">Riscos Inerentes no Dia a Dia</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204196024?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;title=0&amp;byline=0&amp;portrait=0&amp;dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Riscos Inerentes — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S4f: QUIZ — Módulo 4 (GHS, Transporte, Diamante, FISPQ) ── -->
       <section class="slide" id="s4f">
         <div class="top-bar">
           <span class="section-tag">🎮 DESAFIO</span>
-          <div class="slide-title">Identifique o <span>Risco</span></div>
+          <div class="slide-title">Quiz: Segurança <span>Química</span></div>
         </div>
-        <div class="content-area">
-
-          <div id="mod4-risk-intro" class="mod4-risk-wrap mod4-risk-shell" style="text-align:center; animation: fadeIn 0.8s ease;">
-            <div class="mod4-risk-icon">⚠️</div>
+        <div class="content-area mod4-state-intro">
+          <div id="mod4-quiz-intro" class="mod4-risk-wrap mod4-risk-shell" style="text-align:center; animation: fadeIn 0.8s ease;">
+            <div class="mod4-risk-icon">🧪</div>
             <h3 class="mod4-risk-intro-title">Desafio ATEX — Módulo 4</h3>
             <p class="mod4-risk-intro-desc">
-              Classifique cada situação como <strong>Fonte de Ignição</strong>, risco de <strong>Produto Químico</strong> ou
-              <strong>Procedimento Inseguro</strong>. <strong>3 cenários</strong> sobre riscos inerentes e manuseio de químicos em área classificada.
+              Responda <strong>4 perguntas</strong> sobre <strong>GHS</strong>,
+              <strong>Sinalização no Transporte</strong>, <strong>Diamante de Hommel</strong> e <strong>FISPQ</strong>.
             </p>
             <button class="btn-start" style="padding: 14px 36px; font-size: 14px; text-transform: uppercase;"
-              onclick="startMod4RiskGame()">INICIAR DESAFIO</button>
+              onclick="startMod4Quiz()">INICIAR DESAFIO</button>
           </div>
 
-          <div id="mod4-risk-play" class="mod4-risk-wrap mod4-risk-shell" style="display:none;">
-            <div class="mod4-risk-steps" id="mod4-risk-progress" aria-hidden="true"></div>
-            <div class="mod4-risk-head">
-              <span class="mod4-risk-tag">⚠️ Identifique o Risco</span>
-              <span class="mod4-risk-counter" id="mod4-risk-counter">1 / 3</span>
+          <div id="mod4-quiz-play" class="mod1-game-wrap quiz-wrap" style="display:none;">
+            <div id="qm4-question-panel">
+              <div class="q-meta">
+                <span id="qm4-counter" class="q-lbl">Pergunta 1 de 4</span>
+                <div class="q-dots" id="qm4-dots">
+                  <div id="qm4dot0" class="qdot2 cur"></div>
+                  <div id="qm4dot1" class="qdot2"></div>
+                  <div id="qm4dot2" class="qdot2"></div>
+                  <div id="qm4dot3" class="qdot2"></div>
+                </div>
+              </div>
+              <p id="qm4-text" class="q-text">...</p>
+              <div id="qm4-options" class="q-options"></div>
+              <div id="qm4-feedback" class="q-feedback"></div>
+              <button type="button" id="btn-next-qm4" class="btn-next-q" onclick="nextQuestionMod4()">PRÓXIMA
+                PERGUNTA</button>
             </div>
-            <div id="mod4-risk-card" class="mod4-risk-card">
-              <p id="mod4-risk-text" class="mod4-risk-text">...</p>
-            </div>
-            <div class="mod4-risk-zones">
-              <button type="button" class="mod4-risk-btn zone-ignicao" onclick="handleMod4RiskChoice('ignicao')">
-                <span>⚡</span>
-                <span class="mod4-risk-btn-label">Fonte de Ignição</span>
-              </button>
-              <button type="button" class="mod4-risk-btn zone-quimico" onclick="handleMod4RiskChoice('quimico')">
-                <span>🧪</span>
-                <span class="mod4-risk-btn-label">Produto Químico</span>
-              </button>
-              <button type="button" class="mod4-risk-btn zone-procedimento" onclick="handleMod4RiskChoice('procedimento')">
-                <span>🚫</span>
-                <span class="mod4-risk-btn-label">Procedimento Inseguro</span>
-              </button>
-            </div>
-            <p class="mod4-risk-hint">Toque na categoria correta para avançar</p>
-            <div id="mod4-risk-feedback" class="mod4-risk-feedback"></div>
-          </div>
 
-          <div id="mod4-risk-result" class="mod4-risk-wrap mod4-risk-shell mod3-result-panel"
-            style="display:none; animation: slideUp 0.6s ease; text-align:center;">
-            <div class="r-icon">🏆</div>
-            <h3 style="font-family:var(--font-h); font-size: clamp(26px, 4vw, 34px); color:var(--gold); margin-bottom:10px; font-weight:900;">
-              Desafio Concluído!</h3>
-            <div class="r-status ap" style="display:inline-block; padding: 8px 22px; font-size: 14px; margin-bottom:16px; font-weight:700;">
-              Módulo 4 Validado
+            <div id="qm4-result-panel" style="display:none; text-align:center;">
+              <div id="qm4-pct" class="result-pct green">100%</div>
+              <div class="r-stars" id="qm4-stars">⭐⭐⭐</div>
+              <div id="qm4-status" class="r-status ap">✅ Módulo Concluído!</div>
+              <p id="qm4-sub"
+                style="color:rgba(255,255,255,0.85); font-size:15px; line-height:1.55; margin:16px 0 24px;"></p>
+              <button type="button" class="btn-retry" onclick="resetQuizMod4()">TENTAR NOVAMENTE</button>
             </div>
-            <p id="mod4-risk-result-msg" style="color:rgba(255,255,255,0.88); font-size:clamp(15px,2vw,17px); line-height:1.6; margin-bottom:24px; max-width:520px; margin-left:auto; margin-right:auto;"></p>
-            <button class="btn-retry"
-              style="background: var(--white); color: var(--black); font-weight: 800; border-radius: 99px; padding: 12px 32px;"
-              onclick="resetMod4RiskGame()">TENTAR NOVAMENTE</button>
           </div>
-
         </div>
         <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
             <path d="M0,50 C480,10 960,85 1440,30 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
@@ -9345,7 +10123,7 @@
 
     function pauseAllVimeoVideos() {
       vimeoPlayers.forEach((player) => {
-        player.pause().catch(() => {});
+        player.pause().catch(() => { });
       });
     }
 
@@ -9368,10 +10146,10 @@
       markVideoComplete(box);
       box.classList.add('video-end-mask');
 
-      player.pause().catch(() => {})
+      player.pause().catch(() => { })
         .then(() => player.setCurrentTime(0))
         .then(() => player.pause())
-        .catch(() => player.unload().catch(() => {}))
+        .catch(() => player.unload().catch(() => { }))
         .finally(() => {
           box.classList.remove('video-end-mask');
           delete box.dataset.vimeoResetting;
@@ -9386,7 +10164,7 @@
     function resizeVimeoPlayer(player) {
       if (!player) return;
       requestAnimationFrame(() => {
-        player.resize().catch(() => {});
+        player.resize().catch(() => { });
       });
     }
 
@@ -9434,7 +10212,7 @@
           if (duration > 0 && data.seconds >= duration - 0.5) {
             resetVimeoAfterEnd(player, box);
           }
-        }).catch(() => {});
+        }).catch(() => { });
       });
 
       return player;
@@ -10325,6 +11103,9 @@
       if (slide.id === 's3f') { // Quiz — Módulo 2
         return mod2_quiz_done;
       }
+      if (slide.id === 's3g') { // Desafio — Módulo 3
+        return mod3_game_done;
+      }
       if (slide.id === 's4f') { // Desafio — Módulo 4
         return mod4_done;
       }
@@ -10442,11 +11223,11 @@
       }
       if (newSlide.id === 's4f') {
         if (mod4_done) {
-          showMod4RiskPanel('mod4-risk-result');
-        } else if (mod4RiskIdx > 0 || document.getElementById('mod4-risk-play')?.style.display === 'block') {
-          showMod4RiskPanel('mod4-risk-play');
+          showMod4Panel('result');
+        } else if (qm4_index > 0 || document.getElementById('mod4-quiz-play')?.style.display === 'block') {
+          showMod4Panel('play');
         } else {
-          showMod4RiskPanel('mod4-risk-intro');
+          showMod4Panel('intro');
         }
       }
       if (newSlide.id === 's2e') requestAnimationFrame(syncMod1GameVerticalLayout);
@@ -11521,107 +12302,107 @@
     }
 
     /* ══════════════════════════════════════════
-       JOGO MÓDULO 4 — Identifique o Risco
+       JOGO MÓDULO 3 — Classifique o Conceito
        ══════════════════════════════════════════ */
-    let mod4_done = false;
-    let mod4RiskIdx = 0;
-    let mod4RiskBusy = false;
-    let mod4RiskMistakes = 0;
+    let mod3_game_done = false;
+    let mod3GameIdx = 0;
+    let mod3GameBusy = false;
+    let mod3GameMistakes = 0;
 
-    const mod4RiskDeck = [
+    const mod3GameDeck = [
       {
-        text: 'Usar celular ou lanterna comum (não intrínseco seguro) dentro de uma Zona 0 com vapores inflamáveis.',
-        zone: 'ignicao',
-        tip: 'Aparelhos não certificados Ex são fontes de ignição — proibidos em zonas críticas.'
+        text: 'Motor elétrico cuja carcaça externa possui temperatura máxima limitada a 85 °C pela classe T6.',
+        zone: 'riscos',
+        tip: 'A classe de temperatura T6 limita estritamente a temperatura de superfície externa a 85 °C.'
       },
       {
-        text: 'Descartar resíduo químico no mesmo recipiente de outro produto sem consultar a FDS de compatibilidade.',
-        zone: 'quimico',
-        tip: 'Misturas incompatíveis podem gerar gases inflamáveis ou reações violentas — consulte sempre a FDS.'
+        text: 'Invólucro à prova de explosão "d" ou segurança aumentada "e" em atmosferas de gases inflamáveis.',
+        zone: 'gases',
+        tip: 'Equipamentos protegidos por "d" e "e" são adequados para conter e proteger contra gases e vapores.'
       },
       {
-        text: 'Manter tampa aberta de tanque de solvente inflamável durante operação rotineira em área classificada.',
-        zone: 'procedimento',
-        tip: 'Procedimento inseguro — evaporação descontrolada forma atmosfera explosiva no ambiente.'
+        text: 'Painel com invólucro estanque "tD" para evitar a entrada de partículas inflamáveis.',
+        zone: 'poeiras',
+        tip: 'A marcação "tD" sinaliza invólucro estanque, ideal para reter poeiras e fibras nas zonas 20, 21 e 22.'
       }
     ];
 
-    const mod4RiskZoneLabels = {
-      ignicao: '⚡ Fonte de Ignição',
-      quimico: '🧪 Produto Químico',
-      procedimento: '🚫 Procedimento Inseguro'
+    const mod3GameZoneLabels = {
+      gases: '💨 Gases e Vapores',
+      poeiras: '🌾 Poeiras e Fibras',
+      riscos: '🌡️ Riscos e Temp.'
     };
 
-    function showMod4RiskPanel(id) {
-      ['mod4-risk-intro', 'mod4-risk-play', 'mod4-risk-result'].forEach((panelId) => {
+    function showMod3GamePanel(id) {
+      ['mod3-game-intro', 'mod3-game-play', 'mod3-game-result'].forEach((panelId) => {
         const el = document.getElementById(panelId);
         if (el) el.style.display = panelId === id ? 'block' : 'none';
       });
     }
 
-    function updateMod4RiskProgress() {
-      const container = document.getElementById('mod4-risk-progress');
+    function updateMod3GameProgress() {
+      const container = document.getElementById('mod3-game-progress');
       if (!container) return;
       container.innerHTML = '';
-      for (let i = 0; i < mod4RiskDeck.length; i++) {
+      for (let i = 0; i < mod3GameDeck.length; i++) {
         const step = document.createElement('div');
         step.className = 'mod4-risk-step';
-        if (i < mod4RiskIdx) step.classList.add('done');
-        if (i === mod4RiskIdx) step.classList.add('cur');
+        if (i < mod3GameIdx) step.classList.add('done');
+        if (i === mod3GameIdx) step.classList.add('cur');
         container.appendChild(step);
       }
     }
 
-    function startMod4RiskGame() {
-      mod4_done = false;
-      mod4RiskIdx = 0;
-      mod4RiskBusy = false;
-      mod4RiskMistakes = 0;
-      showMod4RiskPanel('mod4-risk-play');
-      renderMod4RiskCard();
+    function startMod3Game() {
+      mod3_game_done = false;
+      mod3GameIdx = 0;
+      mod3GameBusy = false;
+      mod3GameMistakes = 0;
+      showMod3GamePanel('mod3-game-play');
+      renderMod3GameCard();
       updateNextButton();
     }
 
-    function renderMod4RiskCard() {
-      if (mod4RiskIdx >= mod4RiskDeck.length) {
-        finishMod4RiskGame();
+    function renderMod3GameCard() {
+      if (mod3GameIdx >= mod3GameDeck.length) {
+        finishMod3Game();
         return;
       }
-      const item = mod4RiskDeck[mod4RiskIdx];
-      document.getElementById('mod4-risk-text').textContent = item.text;
-      document.getElementById('mod4-risk-counter').textContent = `${mod4RiskIdx + 1} / ${mod4RiskDeck.length}`;
-      const fb = document.getElementById('mod4-risk-feedback');
+      const item = mod3GameDeck[mod3GameIdx];
+      document.getElementById('mod3-game-text').textContent = item.text;
+      document.getElementById('mod3-game-counter').textContent = `${mod3GameIdx + 1} / ${mod3GameDeck.length}`;
+      const fb = document.getElementById('mod3-game-feedback');
       if (fb) fb.textContent = '';
-      const card = document.getElementById('mod4-risk-card');
+      const card = document.getElementById('mod3-game-card');
       if (card) card.classList.remove('mod4-risk-ok');
-      mod4RiskBusy = false;
-      updateMod4RiskProgress();
+      mod3GameBusy = false;
+      updateMod3GameProgress();
     }
 
-    function handleMod4RiskChoice(zone) {
-      if (mod4RiskBusy || mod4RiskIdx >= mod4RiskDeck.length) return;
-      mod4RiskBusy = true;
+    function handleMod3GameChoice(zone) {
+      if (mod3GameBusy || mod3GameIdx >= mod3GameDeck.length) return;
+      mod3GameBusy = true;
 
-      const item = mod4RiskDeck[mod4RiskIdx];
-      const fb = document.getElementById('mod4-risk-feedback');
-      const card = document.getElementById('mod4-risk-card');
-      const buttons = document.querySelectorAll('#mod4-risk-play .mod4-risk-btn');
+      const item = mod3GameDeck[mod3GameIdx];
+      const fb = document.getElementById('mod3-game-feedback');
+      const card = document.getElementById('mod3-game-card');
+      const buttons = document.querySelectorAll('#mod3-game-play .mod4-risk-btn');
       buttons.forEach((b) => { b.disabled = true; });
 
       if (zone === item.zone) {
         playGameFeedback('ok');
         if (fb) { fb.textContent = '✓ ' + item.tip; fb.style.color = '#2ecc71'; }
         if (card) card.classList.add('mod4-risk-ok');
-        mod4RiskIdx++;
+        mod3GameIdx++;
         setTimeout(() => {
           buttons.forEach((b) => { b.disabled = false; });
-          renderMod4RiskCard();
+          renderMod3GameCard();
         }, 700);
       } else {
         playGameFeedback('nok');
-        mod4RiskMistakes++;
+        mod3GameMistakes++;
         if (fb) {
-          fb.textContent = '✗ Era ' + mod4RiskZoneLabels[item.zone];
+          fb.textContent = '✗ Resposta incorreta. Tente novamente!';
           fb.style.color = 'var(--red)';
         }
         if (card) {
@@ -11631,29 +12412,207 @@
         }
         setTimeout(() => {
           buttons.forEach((b) => { b.disabled = false; });
-          mod4RiskBusy = false;
+          mod3GameBusy = false;
         }, 700);
       }
     }
 
-    function finishMod4RiskGame() {
-      mod4_done = true;
-      showMod4RiskPanel('mod4-risk-result');
-      const msg = document.getElementById('mod4-risk-result-msg');
+    function finishMod3Game() {
+      mod3_game_done = true;
+      showMod3GamePanel('mod3-game-result');
+      const msg = document.getElementById('mod3-game-result-msg');
       if (msg) {
-        msg.textContent = mod4RiskMistakes === 0
-          ? 'Excelente! Você identificou corretamente fontes de ignição, riscos químicos e procedimentos inseguros em área classificada.'
-          : `Você concluiu o desafio com ${mod4RiskMistakes} erro(s). Revise riscos inerentes, FDS e procedimentos seguros antes de avançar.`;
+        msg.textContent = mod3GameMistakes === 0
+          ? 'Excelente! Você identificou corretamente os riscos elétricos, classes de temperatura, e modos de proteção para gases, vapores, poeiras e fibras.'
+          : `Você concluiu o desafio com ${mod3GameMistakes} erro(s). Revise os conceitos do Módulo 3 antes de prosseguir.`;
       }
       updateNextButton();
     }
 
-    function resetMod4RiskGame() {
-      mod4_done = false;
-      mod4RiskIdx = 0;
-      mod4RiskMistakes = 0;
-      showMod4RiskPanel('mod4-risk-intro');
+    function resetMod3Game() {
+      mod3_game_done = false;
+      mod3GameIdx = 0;
+      mod3GameMistakes = 0;
+      showMod3GamePanel('mod3-game-intro');
       updateNextButton();
+    }
+
+    /* ══════════════════════════════════════════
+       JOGO MÓDULO 4 — Quiz de Segurança Química
+       ══════════════════════════════════════════ */
+    let mod4_done = false;
+    let qm4_index = 0;
+    let qm4_mistakes = 0;
+    let qm4_answered = false;
+
+    const qm4_data = [
+      {
+        q: 'Qual é a principal função dos pictogramas e da rotulagem GHS nos produtos químicos da planta?',
+        opts: [
+          'Informar apenas a data de validade.',
+          'Identificar rapidamente os perigos padronizados para evitar exposições e reações acidentais.',
+          'Substituir a necessidade de usar EPIs.'
+        ],
+        ans: 1
+      },
+      {
+        q: 'No Painel de Segurança (placa laranja) dos caminhões (ANTT 420), o que o número na parte superior (ex: 63) indica?',
+        opts: [
+          'Os riscos da substância (ex: tóxico com risco de inflamabilidade).',
+          'A identificação internacional ONU do produto.',
+          'A capacidade total do tanque em litros.'
+        ],
+        ans: 0
+      },
+      {
+        q: 'No Diamante de Hommel, o que o quadrado vermelho com numeração de 0 a 4 representa?',
+        opts: [
+          'O risco à vida e à saúde.',
+          'O grau de reatividade e instabilidade química.',
+          'A inflamabilidade e o ponto de fulgor do material.'
+        ],
+        ans: 2
+      },
+      {
+        q: 'Qual documento é o "manual de proteção oficial" que deve ser consultado antes de manusear qualquer produto químico?',
+        opts: [
+          'FISPQ (Ficha de Informação de Segurança de Produto Químico).',
+          'A nota fiscal de recebimento do material.',
+          'O laudo de manutenção do equipamento.'
+        ],
+        ans: 0
+      }
+    ];
+
+    function showMod4Panel(id) {
+      document.getElementById('mod4-quiz-intro').style.display = id === 'intro' ? 'block' : 'none';
+      document.getElementById('mod4-quiz-play').style.display = (id === 'play' || id === 'result') ? 'block' : 'none';
+      const pQuestion = document.getElementById('qm4-question-panel');
+      const pResult = document.getElementById('qm4-result-panel');
+      if (pQuestion) pQuestion.style.display = id === 'play' ? 'block' : 'none';
+      if (pResult) pResult.style.display = id === 'result' ? 'block' : 'none';
+    }
+
+    function startMod4Quiz() {
+      qm4_index = 0;
+      qm4_mistakes = 0;
+      mod4_done = false;
+      showMod4Panel('play');
+      renderQm4Question();
+      updateNextButton();
+    }
+
+    function renderQm4Question() {
+      qm4_answered = false;
+      const data = qm4_data[qm4_index];
+      document.getElementById('qm4-counter').textContent = `Pergunta ${qm4_index + 1} de ${qm4_data.length}`;
+      document.getElementById('qm4-text').textContent = data.q;
+      const optsDiv = document.getElementById('qm4-options');
+      optsDiv.innerHTML = '';
+      const letters = ['A', 'B', 'C', 'D'];
+      data.opts.forEach((opt, idx) => {
+        const el = document.createElement('div');
+        el.className = 'q-opt';
+        el.innerHTML = `<div class="opt-l">${letters[idx]}</div><span>${opt}</span>`;
+        el.onclick = () => checkQm4Answer(idx, el);
+        optsDiv.appendChild(el);
+      });
+      const fb = document.getElementById('qm4-feedback');
+      if (fb) { fb.className = 'q-feedback'; fb.textContent = ''; }
+      const btn = document.getElementById('btn-next-qm4');
+      if (btn) {
+        btn.className = 'btn-next-q';
+        btn.textContent = qm4_index < qm4_data.length - 1 ? 'PRÓXIMA PERGUNTA' : 'VER RESULTADO';
+      }
+
+      for (let i = 0; i < qm4_data.length; i++) {
+        const dot = document.getElementById(`qm4dot${i}`);
+        if (dot) {
+          dot.className = 'qdot2';
+          if (i < qm4_index) dot.classList.add('done');
+          if (i === qm4_index) dot.classList.add('cur');
+        }
+      }
+    }
+
+    function checkQm4Answer(selectedIdx, el) {
+      if (qm4_answered) return;
+      qm4_answered = true;
+      const data = qm4_data[qm4_index];
+      const isCorrect = selectedIdx === data.ans;
+      const fb = document.getElementById('qm4-feedback');
+
+      const allOpts = document.querySelectorAll('#qm4-options .q-opt');
+      allOpts.forEach(o => { o.style.pointerEvents = 'none'; o.classList.add('answered'); });
+
+      if (isCorrect) {
+        el.classList.add('correct');
+        if (fb) { fb.textContent = '✓ Resposta correta!'; fb.className = 'q-feedback ok'; }
+        playGameFeedback('ok');
+        const btn = document.getElementById('btn-next-qm4');
+        if (btn) btn.className = 'btn-next-q show';
+      } else {
+        el.classList.add('wrong');
+        if (fb) { fb.textContent = '✗ Resposta incorreta. Tente novamente!'; fb.className = 'q-feedback nok'; }
+        playGameFeedback('nok');
+        qm4_mistakes++;
+        setTimeout(() => {
+          qm4_answered = false;
+          if (fb) { fb.className = 'q-feedback'; fb.textContent = ''; }
+          allOpts.forEach(o => {
+            o.style.pointerEvents = 'auto';
+            o.classList.remove('wrong', 'answered');
+          });
+        }, 1500);
+      }
+    }
+
+    function nextQuestionMod4() {
+      qm4_index++;
+      if (qm4_index >= qm4_data.length) {
+        finishMod4Quiz();
+      } else {
+        renderQm4Question();
+      }
+    }
+
+    function finishMod4Quiz() {
+      mod4_done = true;
+      showMod4Panel('result');
+      const maxM = 3;
+      const perf = Math.max(0, 100 - (qm4_mistakes * 15));
+
+      const pctEl = document.getElementById('qm4-pct');
+      const starsEl = document.getElementById('qm4-stars');
+      const statusEl = document.getElementById('qm4-status');
+      const subEl = document.getElementById('qm4-sub');
+
+      pctEl.textContent = perf + '%';
+      if (perf === 100) {
+        pctEl.className = 'result-pct green';
+        starsEl.innerHTML = '⭐⭐⭐';
+        statusEl.textContent = '✅ Módulo Concluído!';
+        statusEl.className = 'r-status ap';
+        subEl.textContent = 'Perfeito! Você dominou GHS, Transporte, Hommel e FISPQ sem erros.';
+      } else if (perf >= 70) {
+        pctEl.className = 'result-pct yellow';
+        starsEl.innerHTML = '⭐⭐☆';
+        statusEl.textContent = '✅ Módulo Concluído!';
+        statusEl.className = 'r-status ap';
+        subEl.textContent = `Muito bem, mas você teve ${qm4_mistakes} erro(s). Sempre fique atento às sinalizações químicas.`;
+      } else {
+        pctEl.className = 'result-pct red';
+        starsEl.innerHTML = '⭐☆☆';
+        statusEl.textContent = '❌ Módulo Incompleto';
+        statusEl.className = 'r-status rep';
+        subEl.textContent = `Você teve muitos erros (${qm4_mistakes}). Recomendamos revisar as informações de segurança química.`;
+        mod4_done = false;
+      }
+      updateNextButton();
+    }
+
+    function resetQuizMod4() {
+      startMod4Quiz();
     }
 
     /* Shake animation for errors */
@@ -11768,7 +12727,7 @@
     });
 
     /* ── TUTORIAL MODAL (recarregar na capa — página 1) ── */
-    const TUTORIAL_VIMEO_ID = '1200401221';
+    const TUTORIAL_VIMEO_ID = '1203899461';
 
     function updateTutorialButtonVisibility() {
       const item = document.getElementById('tutorial-control-item');
@@ -11806,7 +12765,7 @@
       if (!modal) return;
 
       const player = iframe ? vimeoPlayers.get(iframe) : null;
-      if (player) player.pause().catch(() => {});
+      if (player) player.pause().catch(() => { });
 
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden', 'true');
@@ -11867,4 +12826,5 @@
   </div>
   <div id="notification">Termine de assistir o vídeo para avançar</div>
 </body>
+
 </html>

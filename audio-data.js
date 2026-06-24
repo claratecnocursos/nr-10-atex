@@ -53,8 +53,7 @@ const NARRATION_OVERRIDES = {
     'Sinalização. Classes de Perigo do GHS — Globally Harmonized System. Tabela de pictogramas de perigo. Oxidantes e peróxidos orgânicos. Toxidade aguda severa. Carcinogênico, sensibilizante à respiração, toxidade à reprodução, toxidade a órgãos-alvo e mutagenicidade. Inflamáveis, auto-reativos, autoforrícos, pirofóricos, auto-aquecíveis e emissão de gás inflamável. Corrosivos. Irritante, sensibilizante dérmico e toxidade aguda perigosa. Explosivos, reativos e peróxidos orgânicos. Gases sob pressão. Perigoso para o meio ambiente. Consulte a tabela de sinalização GHS para identificar corretamente os produtos químicos.',
   s4a:
     'Riscos Inerentes. O que torna uma área classificada perigosa no dia a dia? Além da classificação de zonas, existem riscos inerentes — perigos que podem estar presentes mesmo quando seguimos procedimentos. Fontes de Ignição: faíscas, superfícies quentes, descargas eletrostáticas e equipamentos elétricos não certificados Ex podem acender uma mistura inflamável. Formação de AE: vazamentos, evaporação, acúmulo de poeiras e névoas aumentam a concentração de substâncias inflamáveis no ar. Equipamento Inadequado: usar material sem certificação Ex, temperatura superficial incorreta ou categoria de proteção inadequada para a zona é risco inerente grave.',
-  s4b:
-    'Identificação de Produtos Químicos. FDS, Rotulagem e Compatibilidade. Em áreas classificadas, o manuseio de produtos químicos inflamáveis exige identificação correta antes de qualquer operação. FDS — Ficha de Dados de Segurança: documento obrigatório com informações sobre perigos, manuseio, armazenamento, EPIs e procedimentos de emergência. Consulte ponto de fulgor, limites de explosividade e incompatibilidades. Rotulagem GHS e CLP: pictogramas, frases de perigo H e de precaução P identificam inflamabilidade, toxicidade e reatividade. Compatibilidade Química: misturar produtos incompatíveis pode gerar reação violenta, calor ou gases inflamáveis. Sempre consulte a FDS, separe incompatíveis e use recipientes adequados. Toque em todos os cards para avançar.',
+
   s4f: null, // montado a partir do deck do jogo Módulo 4
 };
 
@@ -189,12 +188,11 @@ function parseMod3BinaryDeck(html) {
   }
 }
 
-function parseMod4RiskDeck(html) {
-  const match = html.match(/const\s+mod4RiskDeck\s*=\s*(\[[\s\S]*?\n\s*\]);/);
+function parseQm4Questions(html) {
+  const match = html.match(/const\s+qm4_data\s*=\s*(\[[\s\S]*?\n\s*\]);/);
   if (!match) return [];
-
   try {
-    return Function(`"use strict"; return (${match[1]});`)();
+    return Function('"use strict"; return (' + match[1] + ');')();
   } catch {
     return [];
   }
@@ -212,28 +210,6 @@ function buildMod3Narration(deck) {
   deck.forEach((item, index) => {
     const answer = item.allowed ? 'Permitido' : 'Proibido';
     parts.push(`Situação ${index + 1}: ${cleanText(item.text)} Resposta correta: ${answer}. ${cleanText(item.tip)}`);
-  });
-
-  parts.push('Conclua o jogo para validar o módulo.');
-  return parts.join(' ');
-}
-
-function buildMod4Narration(deck) {
-  const alternatives = ['Fonte de Ignição', 'Produto Químico', 'Procedimento Inseguro'];
-
-  if (!deck.length) {
-    return 'Desafio do Módulo 4. Identifique o Risco. Classifique cada situação como Fonte de Ignição, Produto Químico ou Procedimento Inseguro. Conclua o jogo para validar o módulo.';
-  }
-
-  const parts = [
-    'Desafio do Módulo 4. Identifique o Risco. Classifique cada situação como Fonte de Ignição, Produto Químico ou Procedimento Inseguro. Três cenários sobre riscos inerentes e manuseio de químicos em área classificada.',
-  ];
-
-  deck.forEach((item, index) => {
-    parts.push(`Situação ${index + 1}: ${cleanText(item.text)}`);
-    alternatives.forEach((opt, optIndex) => {
-      parts.push(`Alternativa ${optIndex + 1}: ${opt}`);
-    });
   });
 
   parts.push('Conclua o jogo para validar o módulo.');
@@ -271,8 +247,7 @@ function buildManifest(htmlPath = HTML_PATH) {
   const quizQuestions = parseQuizQuestions(html);
   const q5Questions = parseQ5Questions(html);
   const mod3Deck = parseMod3BinaryDeck(html);
-  const mod4Deck = parseMod4RiskDeck(html);
-  const mod1Deck = parseMod1GameDeck(html);
+    const mod1Deck = parseMod1GameDeck(html);
   const qm2Questions = parseQm2Questions(html);
 
   const slides = [...doc.querySelectorAll('#slides .slide')].map((slide, index) => {
@@ -286,7 +261,7 @@ function buildManifest(htmlPath = HTML_PATH) {
     } else if (text === null && id === 's26') {
       text = buildMod3Narration(mod3Deck);
     } else if (text === null && id === 's4f') {
-      text = buildMod4Narration(mod4Deck);
+      text = buildQuizNarration(parseQm4Questions(html), 4);
     } else if (text === null && id === 's2e') {
       text = buildMod1Narration(mod1Deck);
     } else if (text === null && id === 's3f') {

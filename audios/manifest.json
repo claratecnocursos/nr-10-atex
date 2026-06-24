@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-18T14:20:47.617Z",
+  "generatedAt": "2026-06-24T18:48:00.575Z",
   "source": "index.html",
   "audioDir": "audios",
   "slides": [
@@ -158,18 +158,10 @@
     },
     {
       "index": 19,
-      "id": "s4b",
-      "title": "Identificação de Produtos Químicos",
-      "file": "audios/s4b.mp3",
-      "text": "Identificação de Produtos Químicos. FDS, Rotulagem e Compatibilidade. Em áreas classificadas, o manuseio de produtos químicos inflamáveis exige identificação correta antes de qualquer operação. FDS — Ficha de Dados de Segurança: documento obrigatório com informações sobre perigos, manuseio, armazenamento, EPIs e procedimentos de emergência. Consulte ponto de fulgor, limites de explosividade e incompatibilidades. Rotulagem GHS e CLP: pictogramas, frases de perigo H e de precaução P identificam inflamabilidade, toxicidade e reatividade. Compatibilidade Química: misturar produtos incompatíveis pode gerar reação violenta, calor ou gases inflamáveis. Sempre consulte a FDS, separe incompatíveis e use recipientes adequados. Toque em todos os cards para avançar.",
-      "audioReady": false
-    },
-    {
-      "index": 20,
       "id": "s4f",
       "title": "Identifique o Risco",
       "file": "audios/s4f.mp3",
-      "text": "Desafio do Módulo 4. Identifique o Risco. Classifique cada situação como Fonte de Ignição, Produto Químico ou Procedimento Inseguro. Três cenários sobre riscos inerentes e manuseio de químicos em área classificada. Situação 1: Usar celular ou lanterna comum (não intrínseco seguro) dentro de uma Zona 0 com vapores inflamáveis. Alternativa 1: Fonte de Ignição Alternativa 2: Produto Químico Alternativa 3: Procedimento Inseguro Situação 2: Descartar resíduo químico no mesmo recipiente de outro produto sem consultar a FDS de compatibilidade. Alternativa 1: Fonte de Ignição Alternativa 2: Produto Químico Alternativa 3: Procedimento Inseguro Situação 3: Manter tampa aberta de tanque de solvente inflamável durante operação rotineira em área classificada. Alternativa 1: Fonte de Ignição Alternativa 2: Produto Químico Alternativa 3: Procedimento Inseguro Conclua o jogo para validar o módulo.",
+      "text": "Quiz do Módulo 4. Responda às perguntas sobre os conceitos apresentados no módulo.",
       "audioReady": false
     }
   ]
