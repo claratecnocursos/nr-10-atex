@@ -8764,6 +8764,542 @@
       0% { transform: scale(1); box-shadow: 0 0 8px rgba(231, 76, 60, 0.1); }
       100% { transform: scale(1.03); box-shadow: 0 0 16px rgba(231, 76, 60, 0.22); }
     }
+
+    /* ── Slide As 5 Regras de Ouro (s6_rules) ── */
+    .rules-slide-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 24px 45px;
+    }
+    .rules-carousel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .rules-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 22px;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .rule-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: clamp(24px, 3.5vh, 36px) clamp(16px, 1.5vw, 24px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+      position: relative;
+      overflow: hidden;
+      min-height: clamp(310px, 43vh, 375px);
+      box-sizing: border-box;
+    }
+    .rule-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      transition: height 0.4s ease;
+    }
+    .rule-card-1::before { background: linear-gradient(90deg, #ffd700, #ffa500); }
+    .rule-card-2::before { background: linear-gradient(90deg, #ff4757, #ff6b81); }
+    .rule-card-3::before { background: linear-gradient(90deg, #00d2d3, #0abde3); }
+    .rule-card-4::before { background: linear-gradient(90deg, #9b59b6, #8e44ad); }
+    .rule-card-5::before { background: linear-gradient(90deg, #2ecc71, #27ae60); }
+
+    .rule-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+    .rule-card-1:hover { box-shadow: 0 15px 30px rgba(255, 215, 0, 0.15), 0 20px 40px rgba(0, 0, 0, 0.4); }
+    .rule-card-2:hover { box-shadow: 0 15px 30px rgba(255, 71, 87, 0.15), 0 20px 40px rgba(0, 0, 0, 0.4); }
+    .rule-card-3:hover { box-shadow: 0 15px 30px rgba(0, 210, 211, 0.15), 0 20px 40px rgba(0, 0, 0, 0.4); }
+    .rule-card-4:hover { box-shadow: 0 15px 30px rgba(155, 89, 182, 0.15), 0 20px 40px rgba(0, 0, 0, 0.4); }
+    .rule-card-5:hover { box-shadow: 0 15px 30px rgba(46, 204, 113, 0.15), 0 20px 40px rgba(0, 0, 0, 0.4); }
+
+    .rule-card:hover::before {
+      height: 8px;
+    }
+    .rule-num {
+      width: clamp(54px, 7vh, 70px);
+      height: clamp(54px, 7vh, 70px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-h);
+      font-size: clamp(22px, 2.8vh, 28px);
+      font-weight: 900;
+      margin-bottom: clamp(16px, 2vh, 24px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      color: #fff;
+    }
+    .rule-card-1 .rule-num { background: linear-gradient(135deg, #ffd700, #ffa500); text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    .rule-card-2 .rule-num { background: linear-gradient(135deg, #ff4757, #ff6b81); text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    .rule-card-3 .rule-num { background: linear-gradient(135deg, #00d2d3, #0abde3); text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    .rule-card-4 .rule-num { background: linear-gradient(135deg, #9b59b6, #8e44ad); text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+    .rule-card-5 .rule-num { background: linear-gradient(135deg, #2ecc71, #27ae60); text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+
+    .rule-body h4 {
+      font-family: var(--font-h);
+      font-size: clamp(17px, 2vh + 0.25vw, 21.5px);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+    .rule-body p {
+      font-size: clamp(14px, 1.6vh + 0.15vw, 16.5px);
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.6;
+    }
+
+    .rules-nav {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    .rules-nav-btn {
+      background: linear-gradient(135deg, #7209b7, #8f2dcb);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      min-height: 44px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 15px rgba(114, 9, 183, 0.35);
+      transition: transform 0.2s, opacity 0.2s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .rules-nav-btn:active:not(:disabled) {
+      transform: scale(0.94);
+    }
+    .rules-nav-btn:disabled {
+      opacity: 0.3;
+      cursor: default;
+    }
+    .rules-nav-btn svg {
+      pointer-events: none;
+    }
+    .rules-counter {
+      font-family: var(--font-h);
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.85);
+      min-width: 50px;
+      text-align: center;
+    }
+
+    @media (max-width: 1024px) {
+      .rules-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        max-width: 800px;
+      }
+    }
+    @media (max-width: 768px) {
+      .rules-slide-content {
+        padding: 72px 16px 68px !important;
+      }
+      .rules-nav {
+        display: flex;
+      }
+      .rules-container {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+      }
+      .rule-card {
+        display: none !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: clamp(24px, 4vh, 32px) 24px !important;
+        border-radius: 20px !important;
+        min-height: 270px !important;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      .rule-card.rule-card-active {
+        display: flex !important;
+      }
+      .rule-card::before {
+        width: 100% !important;
+        height: 4px !important;
+      }
+      .rule-card:hover::before {
+        height: 6px !important;
+      }
+      .rule-num {
+        width: 56px !important;
+        height: 56px !important;
+        font-size: 24px !important;
+        margin-bottom: 16px !important;
+      }
+      .rule-body h4 {
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+      }
+      .rule-body p {
+        font-size: 15.5px !important;
+        line-height: 1.6 !important;
+      }
+    }
+
+    /* ── Slide Requisitos Legais NR-10 (s6_reqs) ── */
+    .reqs-slide-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 24px 45px;
+    }
+    .reqs-carousel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    .reqs-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .reqs-card {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 20px;
+      padding: clamp(20px, 3vh, 30px) clamp(16px, 1.5vw, 24px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      position: relative;
+      overflow: hidden;
+      min-height: clamp(240px, 33vh, 290px);
+      box-sizing: border-box;
+    }
+    .reqs-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #9333ea, #a855f7);
+      transition: height 0.4s ease;
+    }
+    .reqs-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(147, 51, 234, 0.35);
+      box-shadow: 0 15px 30px rgba(147, 51, 234, 0.15), 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+    .reqs-card:hover::before {
+      height: 6px;
+    }
+    .reqs-icon {
+      font-size: clamp(28px, 4vh, 36px);
+      margin-bottom: clamp(10px, 1.5vh, 16px);
+      filter: drop-shadow(0 4px 10px rgba(147, 51, 234, 0.25));
+      transition: transform 0.3s ease;
+    }
+    .reqs-card:hover .reqs-icon {
+      transform: scale(1.15);
+    }
+    .reqs-card h4 {
+      font-family: var(--font-h);
+      font-size: clamp(17px, 2.1vh + 0.2vw, 21px);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 10px;
+      line-height: 1.35;
+    }
+    .reqs-card p {
+      font-size: clamp(14px, 1.65vh + 0.15vw, 16px);
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.6;
+    }
+
+    .reqs-nav {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+      width: 100%;
+    }
+    .reqs-nav-btn {
+      background: linear-gradient(135deg, #9333ea, #a855f7);
+      color: var(--white);
+      border: none;
+      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      min-height: 44px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 15px rgba(147, 51, 234, 0.35);
+      transition: transform 0.2s, opacity 0.2s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .reqs-nav-btn:active:not(:disabled) {
+      transform: scale(0.94);
+    }
+    .reqs-nav-btn:disabled {
+      opacity: 0.3;
+      cursor: default;
+    }
+    .reqs-nav-btn svg {
+      pointer-events: none;
+    }
+    .reqs-counter {
+      font-family: var(--font-h);
+      font-size: 14px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.85);
+      min-width: 50px;
+      text-align: center;
+    }
+
+    @media (max-width: 1200px) {
+      .reqs-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        max-width: 1000px;
+      }
+    }
+    @media (max-width: 900px) {
+      .reqs-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+      }
+    }
+    @media (max-width: 600px) {
+      .reqs-slide-content {
+        padding: 72px 16px 68px !important;
+      }
+      .reqs-nav {
+        display: flex;
+      }
+      .reqs-container {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+      }
+      .reqs-card {
+        display: none;
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: clamp(24px, 4vh, 32px) 24px !important;
+        border-radius: 20px !important;
+        min-height: 270px !important;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      .reqs-card.req-card-active {
+        display: flex !important;
+      }
+      .reqs-icon {
+        font-size: 46px !important;
+        margin-bottom: 14px !important;
+      }
+      .reqs-card h4 {
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+      }
+      .reqs-card p {
+        font-size: 15.5px !important;
+        line-height: 1.6 !important;
+      }
+    }
+
+    /* ── Slide Conclusão (s_end) ── */
+    .end-slide-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 24px 80px;
+    }
+    .end-card-wrap {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: clamp(30px, 5vh, 50px) clamp(20px, 4vw, 60px);
+      max-width: 680px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .trophy-badge {
+      font-size: clamp(60px, 9vh, 84px);
+      margin-bottom: 20px;
+      display: inline-block;
+      animation: bouncePulse 2.5s infinite ease-in-out;
+      filter: drop-shadow(0 8px 16px rgba(251, 191, 36, 0.35));
+    }
+    .end-card-wrap h2 {
+      font-family: var(--font-h);
+      font-size: clamp(24px, 4.5vh, 32px);
+      font-weight: 800;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .end-subtitle {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: clamp(14px, 1.8vh, 16px);
+      line-height: 1.6;
+      margin-bottom: clamp(24px, 4.5vh, 36px);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 440px;
+      margin: 0 auto clamp(24px, 4.5vh, 36px);
+      gap: 16px;
+    }
+    .stat-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 16px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.3s;
+    }
+    .stat-item:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .stat-icon {
+      font-size: 24px;
+      margin-bottom: 2px;
+    }
+    .stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: rgba(255, 255, 255, 0.45);
+      font-weight: 700;
+    }
+    .stat-value {
+      font-family: var(--font-h);
+      font-size: clamp(13px, 1.8vh, 15px);
+      font-weight: 800;
+      color: var(--white);
+    }
+    .end-feedback-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      border-radius: 14px;
+      padding: clamp(12px, 2vh, 18px);
+      font-size: clamp(12px, 1.6vh, 13.5px);
+      color: #34d399;
+      line-height: 1.5;
+      margin-bottom: clamp(24px, 4.5vh, 36px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      text-align: left;
+    }
+    .lock-icon {
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+    .btn-restart-course {
+      background: linear-gradient(135deg, #7209b7, #f72585);
+      color: var(--white);
+      border: none;
+      border-radius: 50px;
+      padding: clamp(14px, 2vh, 18px) clamp(30px, 4vw, 45px);
+      font-family: var(--font-h);
+      font-size: clamp(13px, 1.8vh, 14.5px);
+      font-weight: 800;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(114, 9, 183, 0.4);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .btn-restart-course:hover {
+      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 15px 30px rgba(114, 9, 183, 0.6);
+    }
+    .btn-restart-course:active {
+      transform: translateY(-1px) scale(0.98);
+    }
+
+    @keyframes bouncePulse {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-8px) scale(1.04); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .end-slide-content {
+        padding: 72px 16px 68px !important;
+      }
+      .end-card-wrap {
+        padding: 28px 20px !important;
+        border-radius: 20px !important;
+      }
+      .stats-grid {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+        margin-bottom: 24px !important;
+      }
+      .stat-item {
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        padding: 12px 16px !important;
+        gap: 12px !important;
+      }
+      .stat-label {
+        margin-right: auto;
+      }
+      .end-feedback-box {
+        margin-bottom: 24px !important;
+      }
+    }
   </style>
 </head>
 
@@ -10395,6 +10931,31 @@
           </svg></div>
       </section>
 
+      <!-- ── S5v4: VÍDEO — Extintores Portáteis e o Combate em Áreas Classificadas (Módulo 5) ── -->
+      <section class="slide video-slide" id="s5v4">
+        <div class="top-bar">
+          <div><span class="section-tag">📹 Vídeo</span>
+            <div class="slide-title" style="margin-top:6px">Extintores <span>Portáteis</span></div>
+            <div class="slide-subtitle">Extintores Portáteis e o Combate em Áreas Classificadas</div>
+          </div>
+        </div>
+        <div class="content-area" style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+          <div class="video-wrap">
+            <div class="video-box">
+              <iframe
+                src="https://player.vimeo.com/video/1204952937?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0&dnt=1"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                title="Extintores Portáteis e o Combate em Áreas Classificadas — NR-10 ATEX Áreas Classificadas">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
       <!-- ── S5f: DESAFIO — Módulo 5 (Poeiras e Extintores — Verdadeiro ou Falso) ── -->
       <section class="slide" id="s5f">
         <div class="top-bar">
@@ -10509,6 +11070,77 @@
           </svg></div>
       </section>
 
+      <!-- ── S6_Legal_Reqs: CONTEÚDO — Requisitos Legais da NR-10 para ATEX (Módulo 6) ── -->
+      <section class="slide" id="s6_legal_reqs">
+        <div class="top-bar">
+          <span class="section-tag">⚖️ Requisitos Legais</span>
+          <div class="slide-title" style="margin-top:6px">Requisitos Legais da <span>NR-10</span></div>
+          <div class="slide-subtitle">Requisitos Legais Mínimos Mandatórios para ATEX</div>
+        </div>
+        <div class="content-area reqs-slide-content">
+          <div class="reqs-carousel">
+            <div class="reqs-container">
+              <div class="reqs-card">
+                <div class="reqs-icon">🔍</div>
+                <h4>Análise de Riscos</h4>
+                <p>Análise de riscos formais devidamente elaborada e atualizada.</p>
+              </div>
+              <div class="reqs-card">
+                <div class="reqs-icon">🛡️</div>
+                <h4>Medidas de Controle</h4>
+                <p>Medidas de controle adotadas com base no estudo de classificação de área.</p>
+              </div>
+              <div class="reqs-card">
+                <div class="reqs-icon">⚡</div>
+                <h4>Unifilares e Aterramentos</h4>
+                <p>Diagramas unifilares e aterramentos dos sistemas elétricos e protecionais.</p>
+              </div>
+              <div class="reqs-card">
+                <div class="reqs-icon">🏷️</div>
+                <h4>Equipamentos Ex</h4>
+                <p>Equipamentos e materiais certificados para ATEX mantidos em prontuário formal.</p>
+              </div>
+              <div class="reqs-card">
+                <div class="reqs-icon">📝</div>
+                <h4>Permissão de Trabalho</h4>
+                <p>Procedimentos formais estabelecidos para emissão de Permissão de Trabalho (PT).</p>
+              </div>
+              <div class="reqs-card">
+                <div class="reqs-icon">⚠️</div>
+                <h4>Sinalização</h4>
+                <p>Sinalização visual adequada e de advertência para áreas classificadas.</p>
+              </div>
+              <div class="reqs-card">
+                <div class="reqs-icon">🔧</div>
+                <h4>Manutenção</h4>
+                <p>Treinamento e capacitação específica para atuação segura em área classificada.</p>
+              </div>
+              <div class="reqs-card">
+                <div class="reqs-icon">📢</div>
+                <h4>Informação aos Trabalhadores</h4>
+                <p>Divulgação clara sobre os riscos envolvidos e as respectivas medidas de controle.</p>
+              </div>
+            </div>
+            <div class="reqs-nav">
+              <button type="button" class="reqs-nav-btn" id="btn-reqs-prev" onclick="prevReqSlide()" aria-label="Requisito anterior">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                  <polygon points="15,3 3,10 15,17" />
+                </svg>
+              </button>
+              <div class="reqs-counter" id="reqs-counter">1 / 8</div>
+              <button type="button" class="reqs-nav-btn" id="btn-reqs-next" onclick="nextReqSlide()" aria-label="Próximo requisito">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                  <polygon points="5,3 17,10 5,17" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
       <!-- ── S6v3: VÍDEO — Regras de Ouro (Módulo 6) ── -->
       <section class="slide video-slide" id="s6v3">
         <div class="top-bar">
@@ -10526,6 +11158,72 @@
                 style="position:absolute;top:0;left:0;width:100%;height:100%;"
                 title="Regras de Ouro — NR-10 ATEX Áreas Classificadas">
               </iframe>
+            </div>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,55 C480,10 960,90 1440,40 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S6_Rules: CONTEÚDO — As 5 Regras de Ouro (Módulo 6) ── -->
+      <section class="slide" id="s6_rules">
+        <div class="top-bar">
+          <span class="section-tag">📚 Fundamentos</span>
+          <div class="slide-title" style="margin-top:6px">As 5 Regras de <span>Ouro</span></div>
+          <div class="slide-subtitle">Regras de Ouro da NR-10 para Segurança Elétrica</div>
+        </div>
+        <div class="content-area rules-slide-content">
+          <div class="rules-carousel">
+            <div class="rules-container">
+              <div class="rule-card rule-card-1">
+                <div class="rule-num">1</div>
+                <div class="rule-body">
+                  <h4>Desligar as fontes de tensão</h4>
+                  <p>Realizar o desligamento e isolamento de todas as fontes de alimentação do circuito elétrico.</p>
+                </div>
+              </div>
+              <div class="rule-card rule-card-2">
+                <div class="rule-num">2</div>
+                <div class="rule-body">
+                  <h4>Impedir a reenergização</h4>
+                  <p>Bloquear fisicamente os dispositivos de manobra (garras, cadeados) para impedir religamentos.</p>
+                </div>
+              </div>
+              <div class="rule-card rule-card-3">
+                <div class="rule-num">3</div>
+                <div class="rule-body">
+                  <h4>Constatar ausência de tensão</h4>
+                  <p>Verificar e certificar a ausência total de energia por meio de testes práticos calibrados.</p>
+                </div>
+              </div>
+              <div class="rule-card rule-card-4">
+                <div class="rule-num">4</div>
+                <div class="rule-body">
+                  <h4>Aterrar e curto-circuitar</h4>
+                  <p>Instalar o aterramento temporário e curto-circuitar as fases para desviar eventuais correntes.</p>
+                </div>
+              </div>
+              <div class="rule-card rule-card-5">
+                <div class="rule-num">5</div>
+                <div class="rule-body">
+                  <h4>Sinalizar os bloqueios</h4>
+                  <p>Fixar avisos, cartões e etiquetas indicando o bloqueio para alertar sobre o trabalho em andamento.</p>
+                </div>
+              </div>
+            </div>
+            <div class="rules-nav">
+              <button type="button" class="rules-nav-btn" id="btn-rules-prev" onclick="prevRuleSlide()" aria-label="Regra anterior">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                  <polygon points="15,3 3,10 15,17" />
+                </svg>
+              </button>
+              <div class="rules-counter" id="rules-counter">1 / 5</div>
+              <button type="button" class="rules-nav-btn" id="btn-rules-next" onclick="nextRuleSlide()" aria-label="Próxima regra">
+                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                  <polygon points="5,3 17,10 5,17" />
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -10606,6 +11304,44 @@
         </div>
         <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
             <path d="M0,50 C480,10 960,85 1440,30 L1440,100 L0,100 Z" fill="rgba(114,9,183,0.07)" />
+          </svg></div>
+      </section>
+
+      <!-- ── S_End: CONCLUSÃO — Treinamento Concluído ── -->
+      <section class="slide" id="s_end">
+        <div class="top-bar">
+          <span class="section-tag" style="background: linear-gradient(135deg, #10b981, #059669);">🎉 CURSO CONCLUÍDO</span>
+          <div class="slide-title" style="margin-top:6px">Parabéns!</div>
+        </div>
+        <div class="content-area end-slide-content">
+          <div class="end-card-wrap">
+            <div class="trophy-badge">🏆</div>
+            <h2>Treinamento Concluído!</h2>
+            <p class="end-subtitle">Você finalizou com sucesso o treinamento de <strong>NR-10 — Segurança em Instalações e Serviços com Eletricidade em Atmosferas Explosivas (ATEX)</strong>.</p>
+            
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-icon">📚</span>
+                <span class="stat-label">Módulos</span>
+                <span class="stat-value">6 Concluídos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-icon">⭐</span>
+                <span class="stat-label">Avaliação</span>
+                <span class="stat-value">Aprovado</span>
+              </div>
+            </div>
+
+            <button type="button" class="btn-restart-course" onclick="restartCourse()">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="margin-right:8px; display:inline-block; vertical-align:middle;">
+                <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+              </svg>
+              REINICIAR CURSO
+            </button>
+          </div>
+        </div>
+        <div class="wave"><svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path d="M0,50 C480,10 960,85 1440,30 L1440,100 L0,100 Z" fill="rgba(16,185,129,0.07)" />
           </svg></div>
       </section>
 
@@ -10727,6 +11463,36 @@
     function pauseAccessibilityAudio() {
       const audio = document.getElementById('accessibility-audio');
       if (audio && !audio.paused) audio.pause();
+      if (typeof window !== 'undefined' && window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    function speakTextWebSpeech(text, playbackId) {
+      if (typeof window === 'undefined' || !window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+
+      const cleanText = text.replace(/[*#]/g, '');
+      const utterance = new SpeechSynthesisUtterance(cleanText);
+      utterance.lang = 'pt-BR';
+
+      const voices = window.speechSynthesis.getVoices();
+      const ptVoice = voices.find(v => v.lang.includes('pt-BR') || v.lang.includes('pt_BR'));
+      if (ptVoice) utterance.voice = ptVoice;
+
+      utterance.onstart = () => {
+        if (playbackId !== narrationPlaybackId) {
+          window.speechSynthesis.cancel();
+          return;
+        }
+        onNarrationStart();
+      };
+
+      utterance.onend = () => {
+        // Callback no-op
+      };
+
+      window.speechSynthesis.speak(utterance);
     }
 
     function onNarrationStart() {
@@ -10796,14 +11562,9 @@
       if (!slide || !audio) return false;
 
       const entry = getAccessibilityEntry(slide);
-      if (!entry || !entry.file) {
+      if (!entry || !entry.text) {
         console.log('Transcrição não disponível para o slide:', slide.id);
         showNarrationError('Transcrição em áudio indisponível para este slide.');
-        return false;
-      }
-
-      if (entry.audioReady === false) {
-        showNarrationError('Áudio ainda não gerado. Execute: node generate-audios.js');
         return false;
       }
 
@@ -10817,14 +11578,20 @@
         onNarrationStart();
       };
 
+      if (entry.audioReady === false || !entry.file) {
+        console.log('Áudio MP3 ElevenLabs não gerado. Utilizando síntese de voz do navegador.');
+        speakTextWebSpeech(entry.text, playbackId);
+        return true;
+      }
+
       const mp3Ok = await tryPlayMp3(audio, entry.file, playbackId);
       if (playbackId !== narrationPlaybackId) return false;
 
       if (mp3Ok) return true;
 
-      console.log('Não foi possível reproduzir o áudio ElevenLabs:', entry.file);
-      showNarrationError('Não foi possível reproduzir a narração. Verifique a pasta audios/.');
-      return false;
+      console.log('Não foi possível reproduzir o MP3 ElevenLabs. Utilizando síntese de voz do navegador.');
+      speakTextWebSpeech(entry.text, playbackId);
+      return true;
     }
 
     async function toggleAccessibilityNarration() {
@@ -11099,6 +11866,110 @@
       });
       updateAtexSourcesCarousel();
       updateNextButton();
+    }
+
+    let currentReqSlide = 0;
+
+    function isReqsMobile() {
+      return window.matchMedia('(max-width: 768px)').matches;
+    }
+
+    function updateReqsCarousel() {
+      const cards = document.querySelectorAll('#s6_legal_reqs .reqs-card');
+      if (!cards.length) return;
+
+      if (isReqsMobile()) {
+        cards.forEach((c, i) => {
+          const active = i === currentReqSlide;
+          c.classList.toggle('req-card-active', active);
+          c.style.display = active ? 'flex' : 'none';
+        });
+        const counter = document.getElementById('reqs-counter');
+        if (counter) counter.textContent = (currentReqSlide + 1) + ' / ' + cards.length;
+        const prevBtn = document.getElementById('btn-reqs-prev');
+        const nextBtn = document.getElementById('btn-reqs-next');
+        if (prevBtn) prevBtn.disabled = currentReqSlide === 0;
+        if (nextBtn) nextBtn.disabled = currentReqSlide === cards.length - 1;
+      } else {
+        cards.forEach((c) => {
+          c.style.display = 'flex';
+          c.classList.remove('req-card-active');
+        });
+      }
+    }
+
+    function nextReqSlide() {
+      if (!isReqsMobile()) return;
+      const cards = document.querySelectorAll('#s6_legal_reqs .reqs-card');
+      if (!cards.length || currentReqSlide >= cards.length - 1) return;
+      currentReqSlide++;
+      playClickSound();
+      updateReqsCarousel();
+    }
+
+    function prevReqSlide() {
+      if (!isReqsMobile()) return;
+      if (currentReqSlide <= 0) return;
+      currentReqSlide--;
+      playClickSound();
+      updateReqsCarousel();
+    }
+
+    function resetReqsCarousel() {
+      currentReqSlide = 0;
+      updateReqsCarousel();
+    }
+
+    let currentRuleSlide = 0;
+
+    function isRulesMobile() {
+      return window.matchMedia('(max-width: 768px)').matches;
+    }
+
+    function updateRulesCarousel() {
+      const cards = document.querySelectorAll('#s6_rules .rule-card');
+      if (!cards.length) return;
+
+      if (isRulesMobile()) {
+        cards.forEach((c, i) => {
+          const active = i === currentRuleSlide;
+          c.classList.toggle('rule-card-active', active);
+          c.style.display = active ? 'flex' : 'none';
+        });
+        const counter = document.getElementById('rules-counter');
+        if (counter) counter.textContent = (currentRuleSlide + 1) + ' / ' + cards.length;
+        const prevBtn = document.getElementById('btn-rules-prev');
+        const nextBtn = document.getElementById('btn-rules-next');
+        if (prevBtn) prevBtn.disabled = currentRuleSlide === 0;
+        if (nextBtn) nextBtn.disabled = currentRuleSlide === cards.length - 1;
+      } else {
+        cards.forEach((c) => {
+          c.style.display = 'flex';
+          c.classList.remove('rule-card-active');
+        });
+      }
+    }
+
+    function nextRuleSlide() {
+      if (!isRulesMobile()) return;
+      const cards = document.querySelectorAll('#s6_rules .rule-card');
+      if (!cards.length || currentRuleSlide >= cards.length - 1) return;
+      currentRuleSlide++;
+      playClickSound();
+      updateRulesCarousel();
+    }
+
+    function prevRuleSlide() {
+      if (!isRulesMobile()) return;
+      if (currentRuleSlide <= 0) return;
+      currentRuleSlide--;
+      playClickSound();
+      updateRulesCarousel();
+    }
+
+    function resetRulesCarousel() {
+      currentRuleSlide = 0;
+      updateRulesCarousel();
     }
 
 
@@ -11946,6 +12817,8 @@
       if (newSlide.id === 's3d') resetS3dZonesCarousel();
       if (newSlide.id === 's4a') resetS4aRisksCarousel();
       if (newSlide.id === 's4b') resetS4bChemCarousel();
+      if (newSlide.id === 's6_legal_reqs') resetReqsCarousel();
+      if (newSlide.id === 's6_rules') resetRulesCarousel();
 
       if (newSlide.id === 's3f') {
         const intro = document.getElementById('mod2-quiz-intro');
@@ -13745,6 +14618,11 @@
       startMod6Quiz();
     }
 
+    function restartCourse() {
+      localStorage.removeItem('nr17_current_slide');
+      location.reload();
+    }
+
     /* Shake animation for errors */
     const style = document.createElement('style');
     style.textContent = `
@@ -13793,6 +14671,8 @@
       initS3dZonesCarousel();
       initS4aRisksCarousel();
       initS4bChemCarousel();
+      updateReqsCarousel();
+      updateRulesCarousel();
       window.addEventListener('resize', () => {
         syncMod1GameVerticalLayout();
         syncS3SlidesLayout();
@@ -13800,7 +14680,8 @@
         updateS3dZonesCarousel();
         updateS4aRisksCarousel();
         updateS4bChemCarousel();
-
+        updateReqsCarousel();
+        updateRulesCarousel();
       });
       requestAnimationFrame(() => {
         syncMod1GameVerticalLayout();

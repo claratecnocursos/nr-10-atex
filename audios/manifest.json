@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-06-26T19:26:34.019Z",
+  "generatedAt": "2026-06-29T14:20:34.233Z",
   "source": "index.html",
   "audioDir": "audios",
   "slides": [
@@ -153,7 +153,7 @@
       "id": "s3t",
       "title": "Classes de Temperatura",
       "file": "audios/s3t.mp3",
-      "text": "Tabela de Classes de Temperatura. Esta tabela apresenta a classificação da temperatura máxima de superfície de equipamentos elétricos conforme a norma NEC quinhentos ponto oito C. A temperatura máxima de superfície é a maior temperatura que o equipamento pode atingir na sua carcaça ou partes externas para evitar a ignição da atmosfera explosiva. As classes são divididas de T1 a T6. Por exemplo: a classe T1 permite uma temperatura máxima de quatrocentos e cinquenta graus Celsius. A classe T2 permite trezentos graus Celsius, dividindo-se também em subgrupos como T2A de duzentos e oitenta graus, T2B de duzentos e sessenta graus, T2C de duzentos e trinta graus, e T2D de duzentos e quinze graus. A classe T3 permite duzentos graus Celsius, contendo os subgrupos T3A de cento e oitenta graus, T3B de cento e sessenta e cinco graus, e T3C de cento e sessenta graus. A classe T4 permite cento e trinta e cinco graus Celsius, com a subclasse T4A de cento e vinte graus. A classe T5 permite cem graus Celsius. E por fim, a classe T6 é a mais segura e restritiva, limitando a temperatura a no máximo oitenta e cinco graus Celsius.",
+      "text": "Tabela de Classes de Temperatura. Esta tabela apresenta a classificação da temperatura máxima de superfície de equipamentos elétricos conforme a norma NEC quinhentos ponto oito C. A temperatura máxima de superfície é a maior temperatura que o equipamento pode atingir na sua carcaça ou partes externas para evitar a ignição da atmosfera explosiva. A classe T1 permite uma temperatura máxima de quatrocentos e cinquenta graus Celsius. A classe T2 permite trezentos graus Celsius, dividindo-se também em subgrupos como T2A de duzentos e oitenta graus, T2B de duzentos e sessenta graus, T2C de duzentos e trinta graus, e T2D de duzentos e quinze graus. A classe T3 permite duzentos graus Celsius, contendo os subgrupos T3A de cento e oitenta graus, T3B de cento e sessenta e cinco graus, e T3C de cento e sessenta graus. A classe T4 permite cento e trinta e cinco graus Celsius, com a subclasse T4A de cento e vinte graus. A classe T5 permite cem graus Celsius. E por fim, a classe T6 é a mais segura e restritiva, limitando a temperatura a no máximo oitenta e cinco graus Celsius.",
       "audioReady": true
     },
     {
@@ -169,7 +169,7 @@
       "id": "s3v4",
       "title": "Tipos de Proteção Ex",
       "file": "audios/s3v4.mp3",
-      "text": "Sinalização Tipos de Proteção Ex Tipos de Proteção Ex para Gases e Vapores",
+      "text": "Tabela de Tipos de Proteção Ex para Gases e Vapores. A tabela de tipos de proteção Ex para gases e vapores nos mostra quais tipos de proteção são adequados para cada zona de risco, que vão da Zona zero, que é a mais crítica, até as Zonas um e dois. Primeiro, temos o modo de proteção letra d, que corresponde ao Equipamento à Prova de Explosão. Ele é indicado para aplicação nas Zonas um e dois. Em seguida, o tipo e, que representa o Equipamento de Segurança Aumentada, também permitido nas Zonas um e dois. Já o modo de proteção i, de Segurança Intrínseca, é dividido em duas categorias: A categoria i-a é extremamente segura e pode ser utilizada em qualquer zona, ou seja, nas Zonas zero, um e dois. A categoria i-b é permitida apenas nas Zonas um e dois. Continuando, temos o tipo m, que identifica Equipamentos Imersos em Resina, e o tipo n, que representa os Equipamentos Não Acendíveis. Ambos são aplicados nas Zonas um e dois. O tipo o refere-se a Equipamentos Imersos em Óleo, o tipo p a Equipamentos Pressurizados, e o tipo q a Equipamentos Imersos em Areia. Todos estes três modos de proteção são adequados para as Zonas um e dois. Por fim, temos o tipo s, que representa os Equipamentos Especiais. Eles podem ser aplicados nas Zonas um e dois e, sob condições e certificações específicas, também na Zona zero, indicado pelo asterisco com a letra X na tabela. Lembre-se: conhecer o tipo de proteção e a zona correta de aplicação é essencial para evitar riscos de ignição no ambiente de trabalho!",
       "audioReady": true
     },
     {
@@ -185,7 +185,7 @@
       "id": "s3v5",
       "title": "Modos de Proteção Ex",
       "file": "audios/s3v5.mp3",
-      "text": "Sinalização Modos de Proteção Ex Modos de Proteção para Poeiras e Fibras Combustíveis",
+      "text": "Tabela de Modos de Proteção para Poeiras e Fibras Combustíveis. A tabela de modos de proteção para poeiras e fibras combustíveis nos mostra quais tipos de proteção são adequados para as zonas de risco, que vão da Zona vinte, que é a mais crítica, até as Zonas vinte e um e vinte e dois. Primeiro, temos o modo de proteção t-D, que corresponde ao Equipamento com Invólucro Estanque a Poeira. Ele é indicado para aplicação nas Zonas vinte e um e vinte e dois. Em seguida, o modo de proteção m-D, que identifica equipamentos com partes protegidas em resina, é dividido em duas categorias: A categoria m-a-D é extremamente segura e pode ser utilizada em qualquer zona de poeira, ou seja, nas Zonas vinte, vinte e um e vinte e dois. A categoria m-b-D é permitida apenas nas Zonas vinte e um e vinte e dois. Por fim, temos o tipo i-D, que representa o Equipamento de Segurança Intrínseca. Este modo de proteção é altamente seguro e adequado para aplicação em todas as zonas de risco, cobrindo as Zonas vinte, vinte e um e vinte e dois. Lembre-se: selecionar o equipamento com o modo de proteção adequado para poeiras é essencial para evitar o risco de explosões catastróficas em áreas classificadas!",
       "audioReady": true
     },
     {
@@ -193,7 +193,7 @@
       "id": "s3v6",
       "title": "Rotulagem de Equipamentos Ex",
       "file": "audios/s3v6.mp3",
-      "text": "Sinalização Rotulagem de Equipamentos Ex Rotulagem de Equipamentos Ex",
+      "text": "Tabela de Rotulagem de Equipamentos Ex. A rotulagem de equipamentos Ex nos mostra as marcações obrigatórias impressas na placa de identificação de um equipamento certificado para áreas classificadas. Ao analisar a imagem da placa de identificação, identificamos os seguintes itens essenciais: Primeiro, no canto superior esquerdo, temos o Logotipo do INMETRO e a marcação UL Listed, que comprovam que o equipamento passou por ensaios em laboratórios credenciados. Logo abaixo, a indicação BR indica a Rotulagem e Certificação Brasileira, atestando a conformidade com as normas nacionais. No centro da placa, vemos a marcação BR hífen Ex m II T3. O código Ex m indica que o tipo de proteção do equipamento é por encapsulamento, geralmente em resina epóxi, impedindo que uma centelha interna entre em contato com a atmosfera explosiva. O algarismo romano II indica o Grupo de utilização do equipamento, adequado para indústrias de superfície com presença de gases ou vapores inflamáveis. A indicação T3 representa a classe de temperatura, definindo que a temperatura máxima que a superfície externa do equipamento pode atingir é de duzentos graus Celsius. Abaixo dessa linha, vemos a indicação Tamb de menos quinze graus a mais cinquenta graus Celsius, informando a faixa de temperatura ambiente de operação segura, seguida pelas especificações de tensão elétrica. No rodapé da placa, vemos o código do certificado do equipamento, que no exemplo é zero quatro barra U-L hífen B-R-A-E hífen zero zero zero nove X. O caractere X ao final do número do certificado indica que existem condições específicas para a instalação ou uso seguro do equipamento, descritas em seu manual. Por fim, no canto inferior esquerdo, temos a indicação de certificado relativo ao equipamento. Lembre-se: ler e interpretar corretamente a placa de identificação Ex é fundamental antes de realizar qualquer instalação ou manutenção em áreas classificadas!",
       "audioReady": true
     },
     {
@@ -210,7 +210,7 @@
       "title": "MÓDULO 4",
       "file": "audios/s-mod4.mp3",
       "text": "Módulo 4. Riscos Inerentes e Identificação de Produtos Químicos. Neste módulo você aprenderá a reconhecer fontes de ignição, formação de atmosferas explosivas, riscos de equipamentos inadequados, e como identificar produtos químicos por meio da FDS, rotulagem GHS e compatibilidade química.",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 26,
@@ -218,15 +218,15 @@
       "title": "Riscos Químicos",
       "file": "audios/s4v.mp3",
       "text": "Vídeo. Riscos Químicos. Riscos Inerentes e Identificação de Produtos Químicos. Assista ao vídeo sobre riscos químicos em áreas classificadas, identificação de produtos perigosos e cuidados no manuseio em ambiente ATEX. Avance quando concluir.",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 27,
       "id": "s4s",
       "title": "Classes de Perigo do GHS",
       "file": "audios/s4s.mp3",
-      "text": "Sinalização. Classes de Perigo do GHS — Globally Harmonized System. Tabela de pictogramas de perigo. Oxidantes e peróxidos orgânicos. Toxidade aguda severa. Carcinogênico, sensibilizante à respiração, toxidade à reprodução, toxidade a órgãos-alvo e mutagenicidade. Inflamáveis, auto-reativos, autoforrícos, pirofóricos, auto-aquecíveis e emissão de gás inflamável. Corrosivos. Irritante, sensibilizante dérmico e toxidade aguda perigosa. Explosivos, reativos e peróxidos orgânicos. Gases sob pressão. Perigoso para o meio ambiente. Consulte a tabela de sinalização GHS para identificar corretamente os produtos químicos.",
-      "audioReady": false
+      "text": "Tabela de Classes de Perigo do GHS. A tabela de classes de perigo do GHS, ou Sistema Globalmente Harmonizado, apresenta os pictogramas de perigo utilizados na rotulagem de produtos químicos. A tabela está organizada em três linhas de pictogramas, facilitando a identificação visual dos riscos. Na primeira linha, temos três pictogramas: O primeiro mostra uma chama sobre um círculo, que representa substâncias oxidantes e peróxidos orgânicos. O segundo mostra uma caveira e ossos cruzados, indicando risco de toxicidade aguda severa, ou seja, perigo grave à saúde em caso de exposição ou ingestão. O terceiro exibe a silhueta de uma pessoa com uma estrela no peito, simbolizando perigos crônicos à saúde, como substâncias carcinogênicas, sensibilizantes respiratórios, tóxicas à reprodução, mutagênicas ou com toxicidade a órgãos-alvo. Na segunda linha, encontramos mais três riscos: O primeiro pictograma mostra uma chama simples, identificando produtos inflamáveis, auto-reativos, pirofóricos, auto-aquecíveis ou que emitem gases inflamáveis. O segundo mostra substâncias pingando sobre uma superfície e sobre uma mão, indicando produtos corrosivos, que causam queimaduras severas na pele e danos aos olhos. O terceiro mostra um ponto de exclamação, representando produtos irritantes, sensibilizantes cutâneos ou com toxicidade aguda perigosa. Na terceira linha, concluímos com os últimos três pictogramas: O primeiro representa uma bomba explodindo, indicando substâncias altamente explosivas, reativas ou peróxidos orgânicos. O segundo exibe um cilindro de gás, identificando recipientes contendo gases sob pressão. O terceiro mostra uma árvore sem folhas e um peixe fora da água, identificando substâncias com perigo agudo ou crônico para o meio ambiente, especialmente a vida aquática. Lembre-se: reconhecer e entender estes pictogramas de perigo na FDS e nos rótulos é essencial para garantir a segurança no manuseio de produtos químicos em áreas classificadas!",
+      "audioReady": true
     },
     {
       "index": 28,
@@ -234,15 +234,15 @@
       "title": "Sinalização no Transporte",
       "file": "audios/s4s2.mp3",
       "text": "Vídeo Sinalização no Transporte Sinalização no Transporte e Painel de Segurança",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 29,
       "id": "s4s3",
       "title": "Painel de Segurança",
       "file": "audios/s4s3.mp3",
-      "text": "Sinalização Painel de Segurança Painel de Segurança e Ficha de Emergência",
-      "audioReady": false
+      "text": "Tabela do Painel de Segurança e Ficha de Emergência. O Painel de Segurança é uma placa retangular na cor laranja utilizada no transporte de produtos perigosos para identificação rápida dos riscos. Ao analisarmos a imagem, vemos que o painel é composto por duas linhas de números. Na linha superior, temos o Número de Risco, composto por dois ou três algarismos. O primeiro algarismo indica o risco principal, e o segundo e terceiro algarismos representam os riscos subsidiários ou a intensidade do risco. No primeiro exemplo da imagem, vemos o número oitenta na parte superior. O número oitenta indica que o produto é corrosivo, e o zero indica a ausência de risco subsidiário. Na parte inferior do painel, vemos o Número da ONU, composto por quatro algarismos que identificam internacionalmente a substância química. No primeiro exemplo, o número mil oitocentos e vinte e quatro identifica o Hidróxido de Sódio em solução, popularmente conhecido como soda cáustica. A imagem também mostra fotos de caminhões tanques carregados com cargas perigosas, exibindo os respectivos painéis de segurança e rótulos de risco nas laterais e na traseira, incluindo a identificação de Atmosferas Explosivas com o símbolo EX. No segundo exemplo, na parte inferior da tela, temos um painel com o número de risco meia três na linha superior e o número da ONU dois mil setecentos e oitenta e três na linha inferior. Neste caso, no número de risco meia três, o primeiro algarismo, seis, indica que o produto é tóxico. O segundo algarismo, três, representa o risco subsidiário de inflamabilidade. Portanto, temos um produto tóxico e inflamável. O número dois mil setecentos e oitenta e três na linha de baixo identifica o produto como um defensivo agrícola organofosforado. Lembre-se: em caso de acidentes ou vazamentos, identificar corretamente os números no Painel de Segurança e consultar a Ficha de Emergência é a primeira e mais importante ação para resgates e contenção segura do produto!",
+      "audioReady": true
     },
     {
       "index": 30,
@@ -250,23 +250,23 @@
       "title": "Diamante de Hommel",
       "file": "audios/s4s4.mp3",
       "text": "Vídeo Diamante de Hommel Entendendo o Diamante de Hommel",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 31,
       "id": "s4s5",
       "title": "Riscos à Saúde e Reatividade",
       "file": "audios/s4s5.mp3",
-      "text": "Sinalização Riscos à Saúde e Reatividade Riscos à Saúde Reatividade",
-      "audioReady": false
+      "text": "Tabela de Riscos à Saúde e Reatividade. Esta página apresenta as tabelas de classificação detalhadas para duas das quatro cores do Diamante de Hommel: o Risco à Saúde, na cor azul, e a Instabilidade ou Reatividade, na cor amarela. Ambas as escalas vão do nível zero, representando a ausência de perigo, até o nível quatro, que representa o perigo máximo. Vamos analisar primeiro a tabela de Risco à Saúde, representada em azul: O nível zero indica que a substância não apresenta riscos à saúde e nenhuma precaução especial é necessária, como a água ou o propilenoglicol. O nível um indica que a exposição pode causar irritação local, mas apenas danos residuais leves, como a acetona ou o cloreto de sódio. O nível dois indica que a exposição prolongada ou persistente, mas não crônica, pode causar incapacidade temporária ou possíveis danos residuais, como o éter etílico e o clorofórmio. O nível três indica que uma exposição curta pode causar sérios danos residuais temporários ou permanentes, como a amônia e o ácido sulfúrico. O nível quatro representa o risco máximo, indicando que uma exposição muito curta pode causar a morte ou sérios danos residuais graves, como o cianeto de hidrogênio e o fosgênio. Agora, analisando a tabela de Reatividade, representada em amarelo: O nível zero indica substâncias normalmente estáveis, mesmo sob exposição ao fogo, e que não reagem com a água, como a água e o gás hélio. O nível um indica produtos normalmente estáveis, mas que podem se tornar instáveis sob temperaturas e pressões elevadas, como o propano. O nível dois indica que o material sofre alteração química violenta sob altas temperaturas e pressões, reage violentamente com a água ou pode formar misturas explosivas com ela, como o metal sódio e o ácido sulfúrico. O nível três indica substâncias capazes de detonar ou decompor-se de forma explosiva, mas que requerem uma fonte de ignição forte, aquecimento sob confinamento, ou que reagem de forma explosiva com a água ou sob impacto, como o nitrato de amônio e o nitrometano. O nível quatro indica o risco máximo de reatividade, representando produtos instantaneamente capazes de detonar ou decompor-se de forma explosiva sob condições normais de temperatura e pressão, como a nitroglicerina e o trinitrotolueno, também conhecido como T-N-T. Lembre-se: compreender essas classificações nos permite escolher o equipamento de proteção individual correto e os procedimentos de manuseio seguros para cada substância no ambiente industrial!",
+      "audioReady": true
     },
     {
       "index": 32,
       "id": "s4s6",
       "title": "Inflamabilidade e Risco Específico",
       "file": "audios/s4s6.mp3",
-      "text": "Sinalização Inflamabilidade e Risco Específico Inflamabilidade Risco Específico",
-      "audioReady": false
+      "text": "Tabela de Inflamabilidade e Risco Específico. Esta página apresenta as tabelas de classificação detalhadas para as duas cores restantes do Diamante de Hommel: a Inflamabilidade, na cor vermelha, e o Risco Específico, na cor branca. Vamos analisar primeiro a tabela de Inflamabilidade, representada em vermelho, que varia de zero a quatro: O nível zero indica materiais que não queimam, mesmo sob condições severas de exposição ao fogo, como a água e o gás hélio. O nível um indica produtos que precisam ser pré-aquecidos para que a ignição ocorra, com ponto de fulgor por volta de noventa e três graus Celsius, como o óleo mineral. O nível dois indica que o material precisa ser moderadamente aquecido ou exposto a uma temperatura ambiente relativamente alta para que a ignição possa ocorrer, apresentando ponto de fulgor entre trinta e oito e noventa e três graus Celsius, como o combustível diesel. O nível três indica líquidos e sólidos que podem inflamar-se sob quase todas as condições de temperatura ambiente, com ponto de fulgor abaixo de vinte e três graus e ponto de ebulição acima de trinta e oito graus Celsius, como o etanol e o benzeno. O nível quatro indica o grau máximo de inflamabilidade. São gases e líquidos inflamáveis que vaporizam rápida e completamente sob condições normais de pressão e temperatura, ou que se dispersam no ar inflamando-se instantaneamente, com ponto de fulgor abaixo de vinte e três graus Celsius, como o éter etílico. Agora, analisando a tabela de Risco Específico, representada em branco na parte inferior ou lateral do diamante. Esta área não exibe números, mas sim símbolos e siglas de advertência especiais: A sigla O-X representa substâncias oxidantes, que liberam oxigênio facilmente e alimentam a combustão de outros materiais, como o hipoclorito de potássio. A letra W cortada por um traço indica materiais que reagem com a água de maneira incomum ou perigosa, como o metal sódio. A sigla S-A indica gases asfixiantes simples, que deslocam o oxigênio do ar e representam risco de sufocamento em ambientes confinados, como o hélio e o nitrogênio gasoso. Lembre-se: ler o Diamante de Hommel nos ajuda a identificar rapidamente os riscos principais de qualquer produto armazenado ou transportado nas dependências da fábrica!",
+      "audioReady": true
     },
     {
       "index": 33,
@@ -274,7 +274,7 @@
       "title": "Riscos Inerentes",
       "file": "audios/s4a.mp3",
       "text": "Riscos Inerentes. O que torna uma área classificada perigosa no dia a dia? Além da classificação de zonas, existem riscos inerentes — perigos que podem estar presentes mesmo quando seguimos procedimentos. Fontes de Ignição: faíscas, superfícies quentes, descargas eletrostáticas e equipamentos elétricos não certificados Ex podem acender uma mistura inflamável. Formação de AE: vazamentos, evaporação, acúmulo de poeiras e névoas aumentam a concentração de substâncias inflamáveis no ar. Equipamento Inadequado: usar material sem certificação Ex, temperatura superficial incorreta ou categoria de proteção inadequada para a zona é risco inerente grave.",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 34,
@@ -282,7 +282,7 @@
       "title": "Quiz: Segurança Química",
       "file": "audios/s4f.mp3",
       "text": "Quiz do Módulo 4. Responda às 4 perguntas sobre os conceitos do módulo. Pergunta 1: Qual é a principal função dos pictogramas e da rotulagem GHS nos produtos químicos da planta? Alternativa 1: Informar apenas a data de validade. Alternativa 2: Identificar rapidamente os perigos padronizados para evitar exposições e reações acidentais. Alternativa 3: Substituir a necessidade de usar EPIs. Pergunta 2: No Painel de Segurança (placa laranja) dos caminhões (ANTT 420), o que o número na parte superior (ex: 63) indica? Alternativa 1: Os riscos da substância (ex: tóxico com risco de inflamabilidade). Alternativa 2: A identificação internacional ONU do produto. Alternativa 3: A capacidade total do tanque em litros. Pergunta 3: No Diamante de Hommel, o que o quadrado vermelho com numeração de 0 a 4 representa? Alternativa 1: O risco à vida e à saúde. Alternativa 2: O grau de reatividade e instabilidade química. Alternativa 3: A inflamabilidade e o ponto de fulgor do material. Pergunta 4: Qual documento é o \"manual de proteção oficial\" que deve ser consultado antes de manusear qualquer produto químico? Alternativa 1: FISPQ (Ficha de Informação de Segurança de Produto Químico). Alternativa 2: A nota fiscal de recebimento do material. Alternativa 3: O laudo de manutenção do equipamento.",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 35,
@@ -290,7 +290,7 @@
       "title": "MÓDULO 5",
       "file": "audios/s-mod5.mp3",
       "text": "Módulo 5. Prevenção Contra Poeiras Combustíveis e Incêndios. Neste módulo você aprenderá sobre a prevenção e controle de poeiras combustíveis, mitigação de riscos de incêndio em áreas classificadas, e os principais procedimentos e equipamentos de segurança associados.",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 36,
@@ -298,7 +298,7 @@
       "title": "Poeiras e Incêndios",
       "file": "audios/s5v.mp3",
       "text": "Vídeo. Poeiras e Incêndios. Prevenção Contra Poeiras Combustíveis e Incêndios. Assista ao vídeo sobre a prevenção contra poeiras combustíveis e incêndios em áreas classificadas. Avance quando concluir.",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 37,
@@ -314,14 +314,14 @@
       "title": "Pentágono de Explosão",
       "file": "audios/s5v2.mp3",
       "text": "Vídeo. Pentágono de Explosão. O Pentágono de Explosão de Poeira. Assista ao vídeo sobre os cinco elementos do pentágono de explosão de poeiras em ambientes industriais. Avance quando concluir.",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 39,
       "id": "s5p",
       "title": "Pentágono de Explosão",
       "file": "audios/s5p.mp3",
-      "text": "Fundamentos. Pentágono de Explosão. Tabela do Pentágono de Explosão de Poeira. Aviso Importante: Remover qualquer um dos elementos previne a explosão, mas não necessariamente o fogo.",
+      "text": "Tabela do Pentágono de Explosão de Poeira. Esta página apresenta o conceito do Pentágono de Explosão, que descreve os cinco elementos físicos e químicos necessários para que ocorra uma explosão catastrófica envolvendo poeiras combustíveis suspensas no ar. No topo da tela, temos um aviso de segurança de extrema importância: Remover qualquer um dos elementos previne a explosão, mas não necessariamente o fogo. Abaixo desse aviso, vemos o diagrama gráfico do pentágono, contendo cinco lados de proteção que convergem ao centro, onde está escrito Explosão sobre o desenho de uma chama. Os cinco elementos indispensáveis para a ocorrência de uma explosão de poeira são: Primeiro, a Poeira Combustível, que atua como o combustível sólido particulado finamente dividido. Segundo, o Oxigênio no ar, que funciona como o comburente alimentando a combustão. Terceiro, a Ignição, que fornece a energia térmica necessária para dar início à reação química, como faíscas elétricas ou eletrostáticas. Estes três primeiros elementos formam o tradicional triângulo do fogo. Para que ocorra a explosão de poeira, contudo, são necessários dois elementos físicos adicionais: O quarto elemento é a Dispersão de Partículas, que cria uma nuvem de poeira suspensa no ar na concentração correta de inflamabilidade. O quinto elemento é o Confinamento de Poeiras, representando um ambiente fechado ou semi-fechado que impede a dissipação da pressão, gerando uma onda de choque destrutiva quando a queima rápida acontece. Lembre-se: em áreas industriais com risco de poeiras combustíveis, a nossa principal estratégia de segurança é romper este pentágono, eliminando as fontes de ignição, limpando o acúmulo de poeiras ou evitando o confinamento de misturas perigosas!",
       "audioReady": true
     },
     {
@@ -330,63 +330,95 @@
       "title": "Reação das Substâncias",
       "file": "audios/s5v3.mp3",
       "text": "Vídeo. Reação das Substâncias. Particularidades de Reação das Substâncias. Assista ao vídeo sobre as características específicas de combustão e reação física de poeiras em áreas ATEX. Avance quando concluir.",
-      "audioReady": false
+      "audioReady": true
     },
     {
       "index": 41,
+      "id": "s5v4",
+      "title": "Extintores Portáteis",
+      "file": "audios/s5v4.mp3",
+      "text": "Vídeo. Extintores Portáteis. Extintores Portáteis e o Combate em Áreas Classificadas. Assista ao vídeo sobre a correta utilização de extintores portáteis e técnicas de combate a incêndio em áreas classificadas. Avance quando concluir.",
+      "audioReady": true
+    },
+    {
+      "index": 42,
       "id": "s5f",
       "title": "Poeiras e Incêndios",
       "file": "audios/s5f.mp3",
       "text": "Desafio do Módulo 5. Julgue as afirmações sobre poeiras e extintores. Quatro afirmações sobre o Pentágono de Explosão, energias mínimas de ignição e a escolha do agente extintor correto para a segurança em áreas classificadas. Responda Verdadeiro ou Falso para cada afirmação e conclua o desafio para validar o módulo.",
-      "audioReady": false
+      "audioReady": true
     },
     {
-      "index": 42,
+      "index": 43,
       "id": "s-mod6",
       "title": "MÓDULO 6",
       "file": "audios/s-mod6.mp3",
       "text": "Módulo 6. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10. Neste módulo você aprenderá sobre a importância da gestão integrada, análise de riscos e as regras de segurança fundamentais da NR-10 em áreas ATEX.",
-      "audioReady": false
+      "audioReady": true
     },
     {
-      "index": 43,
+      "index": 44,
       "id": "s6v",
       "title": "Boas Práticas e Regras",
       "file": "audios/s6v.mp3",
       "text": "Vídeo. Boas Práticas e Regras de Ouro. Boas Práticas de Gestão ATEX e Regras de Ouro da NR-10. Assista ao vídeo sobre as boas práticas de gestão ATEX e regras de ouro para segurança na NR-10. Avance quando concluir.",
-      "audioReady": false
+      "audioReady": true
     },
     {
-      "index": 44,
+      "index": 45,
       "id": "s6v2",
       "title": "Requisitos Legais da NR-10",
       "file": "audios/s6v2.mp3",
       "text": "Vídeo. Requisitos Legais. Requisitos Legais da NR-10 para ATEX. Assista ao vídeo sobre os requisitos legais mínimos da NR-10 para atmosferas explosivas. Avance quando concluir.",
-      "audioReady": false
+      "audioReady": true
     },
     {
-      "index": 45,
+      "index": 46,
+      "id": "s6_legal_reqs",
+      "title": "Requisitos Legais da NR-10",
+      "file": "audios/s6_legal_reqs.mp3",
+      "text": "Fundamentos. Requisitos Legais da NR-10. A NR-10 estabelece quesitos legais mínimos mandatórios para atmosferas explosivas. Os tópicos incluem: Análise de riscos formais elaborada e atualizada. Medidas de controle adotadas com base no estudo de classificação de área. Diagramas unifilares e aterramentos dos sistemas elétricos e protecionais. Equipamentos e materiais certificados para ATEX, mantidos em prontuário formal. Procedimentos formais estabelecidos para emissão de Permissão de Trabalho. Sinalização visual adequada para as áreas classificadas. Treinamento e capacitação específica para atuação na manutenção de áreas classificadas. E informação clara fornecida aos trabalhadores sobre os riscos envolvidos e as medidas de controle aplicadas. Revise todos esses quesitos legais obrigatórios.",
+      "audioReady": true
+    },
+    {
+      "index": 47,
       "id": "s6v3",
       "title": "As 5 Regras de Ouro",
       "file": "audios/s6v3.mp3",
       "text": "Vídeo. Regras de Ouro. As 5 Regras de Ouro da NR-10. Assista ao vídeo sobre as 5 regras de ouro para segurança em instalações elétricas desenergizadas. Avance quando concluir.",
-      "audioReady": false
+      "audioReady": true
     },
     {
-      "index": 46,
+      "index": 48,
+      "id": "s6_rules",
+      "title": "As 5 Regras de Ouro",
+      "file": "audios/s6_rules.mp3",
+      "text": "Fundamentos. As 5 Regras de Ouro. Conheça as cinco regras de ouro da NR-10 para garantir a segurança em instalações elétricas desenergizadas. Regra 1: Desligar as fontes de tensão, realizando o seccionamento do circuito. Regra 2: Impedir a reenergização por meio de bloqueios mecânicos e travamentos. Regra 3: Constatar a ausência de tensão com detectores adequados e calibrados. Regra 4: Aterrar o sistema elétrico e curto-circuitar as fases para proteção temporária. Regra 5: Sinalizar os bloqueios com etiquetas, placas e cartões de aviso.",
+      "audioReady": true
+    },
+    {
+      "index": 49,
       "id": "s6v4",
       "title": "Conclusão do Treinamento",
       "file": "audios/s6v4.mp3",
       "text": "Vídeo. Conclusão. Conclusão do Treinamento. Assista ao vídeo de encerramento com mensagem final e recomendações de segurança. Avance quando concluir.",
-      "audioReady": false
+      "audioReady": true
     },
     {
-      "index": 47,
+      "index": 50,
       "id": "s6f",
       "title": "Avaliação Final",
       "file": "audios/s6f.mp3",
       "text": "Quiz do Módulo 6. Responda às 5 perguntas sobre os conceitos do módulo. Pergunta 1: Qual das seguintes alternativas descreve uma prática correta de gestão operacional e controle de bloqueio LOTO em áreas classificadas? Alternativa 1: A LOTO só é necessária se houver outros operadores na mesma área. Alternativa 2: As inspeções dividem-se em níveis visual, apurado e detalhado; a LOTO isola totalmente fontes de energia no serviço. Alternativa 3: Qualquer mudança física dispensa o procedimento MOC (Gerenciamento de Mudanças). Pergunta 2: De acordo com a NR-10 para atmosferas explosivas, quais registros são obrigatórios no prontuário formal de instalações elétricas? Alternativa 1: Apenas o recibo de compra das ferramentas anti-faiscantes. Alternativa 2: Análises de risco formais, classificação de áreas, diagramas unifilares atualizados e sistema de aterramento da planta. Alternativa 3: A lista de presença dos colaboradores no treinamento de integração. Pergunta 3: Qual é a sequência correta e completa das 5 Regras de Ouro para desenergização segura de um circuito elétrico? Alternativa 1: 1. Desligar; 2. Impedir reenergização (LOTO); 3. Constatar ausência de tensão; 4. Aterrar e curto-circuitar; 5. Sinalizar. Alternativa 2: 1. Desligar; 2. Avisar a equipe; 3. Medir a tensão; 4. Isolar os cabos; 5. Limpar a área. Alternativa 3: 1. Ligar o aterramento; 2. Desligar o disjuntor; 3. Testar a corrente; 4. Colocar cadeado; 5. Iniciar o trabalho. Pergunta 4: O que caracteriza o conceito de Gestão Multinível e em camadas para a segurança de plantas industriais em áreas ATEX? Alternativa 1: Focar unicamente no combate a incêndios secundários sem agir na prevenção de ignição. Alternativa 2: Estudo isolado de zoneamento ATEX, sem integração com outras técnicas de prevenção de riscos industriais. Alternativa 3: Abranger desde o design do processo, controle básico, prevenção de ignição até mitigação de emergências (como IEC 61511). Pergunta 5: Para intervenções com ferramentas e instalações de aterramento temporário em áreas classificadas, o técnico deve: Alternativa 1: Utilizar quaisquer ferramentas disponíveis, pois áreas classificadas só restringem circuitos elétricos. Alternativa 2: Inspecionar o aterramento/equalização anualmente (NBR 5410/5419), usar ferramentas anti-faiscantes e certificação Ex. Alternativa 3: Efetuar manutenções rápidas sem emitir Permissão de Trabalho formal para agilizar a operação.",
-      "audioReady": false
+      "audioReady": true
+    },
+    {
+      "index": 51,
+      "id": "s_end",
+      "title": "Parabéns!",
+      "file": "audios/s_end.mp3",
+      "text": "Treinamento Concluído! Parabéns, você finalizou com sucesso todas as etapas deste treinamento de NR-10 e Atmosferas Explosivas. Obrigado pela sua atenção e lembre-se sempre de priorizar a segurança integrada e os procedimentos corretos em todas as suas atividades industriais!",
+      "audioReady": true
     }
   ]
 }
